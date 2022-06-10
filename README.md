@@ -1,5 +1,5 @@
 # Site - Pre-conceito Altas Habilidades/Super Dotação (AH/SD)
- Um site criado para *tentar combater o preconceito* das pessoas que tem Altas Habilades/Super Dotação.
+ Um site criado para *tentar combater o preconceito* das pessoas contra quem tem Altas Habilades/Super Dotação.
  
  Esse é um projeto da _Sala de Recursos Multifuncionais de Altas Habilidades/Super Dotação(SRM - AH/SD) do Colégio Estadual do Paraná_ no ano de 2022. 
 ***
