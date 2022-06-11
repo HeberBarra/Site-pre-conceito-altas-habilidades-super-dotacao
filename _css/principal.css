@@ -126,3 +126,36 @@ div#fatos-mitos {
     top: 1300px;
     left: 700px;
 }
+
+div#menu_inferior {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    top: 1750px;
+}
+
+div#menu_inferior div.box_m2 {
+    border: solid white;
+    background-color: rgb(80, 80, 87);
+    height: 75px;
+    width: 430px;
+    font-size: 15pt;
+    text-align: center;
+}
+
+div#menu_inferior div.box_m2:hover {
+    background-color: gray;
+}
+
+div#menu_inferior div.box_m2 a {
+    display: block;
+    position: relative;
+    top: 22px;
+    color: lightblue;
+    text-decoration: none;
+}
+
+div#menu_inferior div.box_m2 a:hover {
+    color: white;
+    font-weight: bolder;
+}
