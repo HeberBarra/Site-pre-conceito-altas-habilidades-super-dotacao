@@ -4,6 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        /*Formatação menu*/
+
+        div#menu {
+            display: flex;
+            position: absolute;
+            flex-direction: row;
+            right: 1px;
+        }
+
+        div#menu div.menu-item {
+            border: 1px solid white;
+            background-color: rgb(80, 80, 87);
+            width: 145px;
+            height: 30px;
+            text-align: center;
+            font-size: 12pt;
+        }
+
+        div#menu div.menu-item a {
+            display: block;
+            position: relative;
+            top: 5px;
+            color: lightblue;
+            text-decoration: none;
+        }
+
+    </style>
     <link rel="stylesheet" href="_css/principal.css" media="screen and (min-width: 900px)">
     <title>Super Dotação na Sociedade</title>
 </head>
