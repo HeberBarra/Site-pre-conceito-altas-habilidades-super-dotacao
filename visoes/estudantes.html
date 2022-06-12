@@ -7,38 +7,42 @@
     <title>Visão dos estudantes</title>
     <style>
 
-        body {
-            background-color: rgb(139, 139, 145);
+        @media screen and (min-width: 350px) {
+            
+            body {
+                background-color: rgb(139, 139, 145);
+            }
+
+            div#menu {
+                display: flex;
+                position: absolute;
+                flex-direction: row;
+                right: 5px;
+            }
+
+            div#menu div.menu-item {
+                border: 1px solid white;
+                background-color: rgb(80, 80, 87);
+                width: 145px;
+                height: 30px;
+                text-align: center;
+                font-size: 12pt;
+            }
+
+            div#menu div.menu-item a{
+                display: block;
+                position: relative;
+                top: 5px;
+                color: lightblue;
+                text-decoration: none;
+            }
+
+            h1 {
+                font-size: 13pt;
+            }
         }
 
-        div#menu {
-            display: flex;
-            position: absolute;
-            flex-direction: row;
-            right: 5px;
-        }
-
-        div#menu div.menu-item {
-            border: 1px solid white;
-            background-color: rgb(80, 80, 87);
-            width: 145px;
-            height: 30px;
-            text-align: center;
-            font-size: 12pt;
-        }
-
-        div#menu div.menu-item a{
-            display: block;
-            position: relative;
-            top: 5px;
-            color: lightblue;
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 13pt;
-        }
-
+        
         @media screen and (min-width: 900px) {
             
             body {
