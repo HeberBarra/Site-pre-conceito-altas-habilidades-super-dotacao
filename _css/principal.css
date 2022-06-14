@@ -10,64 +10,105 @@ body p {
     text-align: center;
 }
 
-div#menu {
+/*Formatação header*/
+
+header h1 {
+    display: block;
+    position: relative;
+    width: fit-content;
+    left: 160px;
+    font-family: Impact, sans-serif;
+    font-weight: normal;
+    font-size: 27pt;
+}
+
+header div#logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 150px; 
+    height: 150px;
+    background-color: black;
+    border: 1px solid blue;
+    color: white;
+    text-align: center;
+    font-size: 27pt;
+}
+
+/*Formatação do menu*/
+
+nav#menu {
     display: flex;
     position: absolute;
     flex-direction: row;
-    left: 1028px;
+    left: 978px;
+    top: 10px;
 }
 
-div#menu div.menu-item {
+nav#menu div.menu-item {
     border: solid white;
     background-color: rgb(80, 80, 87);
-    width: 150px;
+    width: 175px;
     height: 75px;
     text-align: center;
     font-size: 15pt;
 }
 
-div#menu div.menu-item:hover {
-    background-color: gray;
+nav#menu div.menu-item:hover {
+   background-color: gray;
 }
 
-div#menu div.menu-item a{
+nav#menu div.menu-item a{
+    display: block;
+    position: relative;
+    top: -27px;
+    color: lightblue;
+    text-decoration: none;
+    height: 75px;
+}
+
+nav#menu div.menu-item p {
     display: block;
     position: relative;
     top: 20px;
-    color: lightblue;
-    text-decoration: none;
 }
 
-div#menu div.menu-item a:hover {
+nav#menu div.menu-item p:hover {
     color: white;
     font-weight: bolder;
 }
 
-div#sub-titulo1 h2{
-    display: block;
-    position: absolute;
-    top: 120px;
-    font-family: 'Times new Roman' sans-serif;
-    font-size: 24pt;
-    font-weight: bold;
-    width: 400px;
-    padding-left: 10px;
-}
+/*Formatação do article do texto de introdução*/
 
-div#texto_introdutorio {
+article#texto_introdutorio {
     display: block;
     position: absolute;
     top: 200px;
     background-color: rgb(80, 80, 87);
     border: solid white;
-    color: white;
-    font-size: 30pt;
-    text-align: center;
     width: 1325px;
     height: 400px;
 }
 
-div#texto_principal {
+article#texto_introdutorio h2 {
+    display: block;
+    position: absolute;
+    top: -75px;
+    left: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+article#texto_introdutorio p {
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+}
+
+/*Formatação do article do texto principal*/
+
+article#texto_principal {
     display: block;
     position: absolute;
     top: 650px;
@@ -80,7 +121,9 @@ div#texto_principal {
     border: solid white;
 }
 
-div#logo-foto {
+/*Formatação da primeira foto*/
+
+div#foto {
     height: 200px;
     width: 300px;
     background-color: black;
@@ -91,7 +134,7 @@ div#logo-foto {
     border: solid blue;
 }
 
-div#texto_secundario {
+article#texto_secundario {
     border: solid white;
     background-color: rgb(80, 80, 87);
     width: 1325px;
@@ -113,7 +156,7 @@ div#video1 {
     left: 27px;
 }
 
-div#fatos-mitos iframe{
+iframe#fatos_mitos {
     border: solid white;
     display: block;
     position: absolute;
@@ -124,35 +167,45 @@ div#fatos-mitos iframe{
     left: 700px;
 }
 
-div#menu_inferior {
+/*Formatação do menu inferior*/
+
+nav#menu_inferior {
     display: flex;
     position: absolute;
     flex-direction: row;
     top: 1750px;
 }
 
-div#menu_inferior div.box_m2 {
+nav#menu_inferior div.box_m2 {
     border: solid white;
     background-color: rgb(80, 80, 87);
     height: 75px;
-    width: 430px;
+    width: 437px;
     font-size: 15pt;
     text-align: center;
 }
 
-div#menu_inferior div.box_m2:hover {
+nav#menu_inferior div.box_m2:hover {
     background-color: gray;
 }
 
-div#menu_inferior div.box_m2 a {
+nav#menu_inferior div.box_m2 a {
+    height: 75px;
     display: block;
     position: relative;
-    top: 22px;
+    top: -23px;
     color: lightblue;
     text-decoration: none;
 }
 
-div#menu_inferior div.box_m2 a:hover {
+nav#menu_inferior div.box_m2 p:hover {
     color: white;
     font-weight: bolder;
+}
+
+nav#menu_inferior div.box_m2 a p {
+    display: block;
+    position: relative;
+    top: 21px;
+    font-size: 16pt;
 }
