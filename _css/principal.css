@@ -1,4 +1,5 @@
 @charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
     background-color: lightgray;
@@ -17,7 +18,7 @@ header h1 {
     position: relative;
     width: fit-content;
     left: 160px;
-    font-family: Impact, sans-serif;
+    font-family: 'Lobster', cursive;
     font-weight: normal;
     font-size: 27pt;
 }
