@@ -5,6 +5,8 @@
 
 body {
     background-color: lightgray;
+    background: url("../fundo.jpg") top center fixed;
+    background-repeat: no-repeat;
 }
 
 body p {
@@ -16,9 +18,6 @@ body p {
 /*Formatação header*/
 
 header {
-    border: solid wheat;
-    background-image: url("../teste.jpg");
-    background-repeat: no-repeat;
     height: 300px;
 }
 
@@ -38,8 +37,8 @@ header div#logo {
     display: block;
     position: absolute;
     top: 8px;
-    width: 197px; 
-    height: 197px;
+    width: 196px; 
+    height: 196px;
     background-color: black;
     border: 1px solid blue;
     color: white;
@@ -54,9 +53,11 @@ header div#foto_fundo {
     left: 200px;
     border: 1px solid blue;
     background-color: white;
-    width: fit-content;
+    width: 775px;
     height: 100px;
     font-size: 27pt;
+    background: url("../fundo_titulo.jpg");
+    background-repeat: no-repeat;
 }
 
 /*Formatação do menu*/
@@ -67,6 +68,7 @@ nav#menu {
     flex-direction: row;
     left: 986px;
     top: 8px;
+    box-shadow: 5px 5px 5px black;
 }
 
 nav#menu div.menu-item {
@@ -112,6 +114,7 @@ article#texto_introdutorio {
     border: solid white;
     width: 1325px;
     height: 400px;
+    box-shadow: 5px 5px 5px black;
 }
 
 article#texto_introdutorio h2 {
@@ -122,6 +125,7 @@ article#texto_introdutorio h2 {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 20pt;
     font-weight: bold;
+    color: white;
 }
 
 article#texto_introdutorio h3 {
@@ -154,6 +158,7 @@ article#texto_principal {
     font-size: 30pt;
     color: white;
     border: solid white;
+    box-shadow: 5px 5px 5px black;
 }
 
 /*Formatação da primeira foto*/
@@ -167,6 +172,7 @@ div#foto {
     left: 1033px;
     top: 540px;
     border: solid blue;
+    box-shadow: 5px 5px 5px black;
 }
 
 article#texto_secundario {
@@ -177,6 +183,7 @@ article#texto_secundario {
     display: block;
     position: absolute;
     top: 1080px;
+    box-shadow: 5px 5px 5px black;
 }
 
 
@@ -189,6 +196,7 @@ div#video1 {
     position: absolute;
     top: 1300px;
     left: 27px;
+    box-shadow: 5px 5px 5px black;
 }
 
 iframe#fatos_mitos {
@@ -200,6 +208,7 @@ iframe#fatos_mitos {
     height: 401px;
     top: 1300px;
     left: 700px;
+    box-shadow: 5px 5px 5px black;
 }
 
 /*Formatação do menu inferior*/
@@ -218,6 +227,7 @@ nav#menu_inferior div.box_m2 {
     width: 437px;
     font-size: 15pt;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 nav#menu_inferior div.box_m2:hover {
