@@ -130,7 +130,6 @@ article#texto_introdutorio {
     top: 200px;
     background-color: rgb(80, 80, 87);
     border: solid white;
-    width: 1325px;
     height: 400px;
     box-shadow: 5px 5px 5px black;
 }
@@ -153,7 +152,6 @@ article#texto_principal {
     position: absolute;
     top: 650px;
     background-color: rgb(80, 80, 87);
-    width: 1325px;
     height: 400px;
     border: solid white;
     box-shadow: 5px 5px 5px black;
@@ -178,7 +176,6 @@ div#foto {
 article#texto_secundario {
     border: solid white;
     background-color: rgb(80, 80, 87);
-    width: 1325px;
     height: 200px;
     display: block;
     position: absolute;
