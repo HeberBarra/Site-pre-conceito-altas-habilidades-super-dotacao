@@ -10,294 +10,259 @@
 
         body {
             background-color: rgb(132, 163, 250);
+            color: white;
+        }
+
+        ul {
+            list-style: none;
         }
 
         /*Formatação menu*/
 
-        nav#menu {
+        li#menu01 nav#menu {
             display: flex;
-            position: absolute;
             flex-direction: row;
-            top:5px;
-            left: 5%;
+            margin: 3%;
             width: 90%;
-        }   
-
-        nav#menu div.menu-item {
-            display: flex;
-            border: 1px solid white;
-            background-color: rgb(80, 80, 87);
-            width: 300%;
-            height: 30px;
-            text-align: center;
-            font-size: 12pt;
-            justify-content: center;
-            align-items: center;
+            left: 3%;
         }
 
-        nav#menu div.menu-item a {
-            position: relative;
-            color: lightblue;
+        li#menu01 nav#menu div.menu-item{
+            display: flex;
+            border: solid white;
+            width: 45%;
+            padding: auto 2% auto 2%;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(80, 80, 87);
+        }
+
+        li#menu01 nav#menu div.menu-item a{
+            color: white;
             text-decoration: none;
         }
 
-        header {
-            margin-bottom: 5%;
+        /*Formatação cabeçalho*/
+
+        li#header div#logo{
+            display: none;
         }
 
-        header h1 {
-            font-family: 'Lobster', cursive;
-            font-size: 12pt;
-        }
-
-        header div#foto_fundo {
-            background: url("_imagens/Fundo_titulo_mobile.png");
+        li#header div#foto_fundo {
             display: flex;
             position: absolute;
             border: solid white;
-            top: 4.5%;
+            width: 90%;
             left: 3%;
-            width: 94%;
-            justify-content: center;
+            background: url("_imagens/Fundo_titulo_mobile.png");
             align-items: center;
+            justify-content: center;
+        }
+        
+        li#header div#foto_fundo h1{
+            font-size: 12pt;
+            font-family: 'Lobster', cursive;
         }
 
-        header div#foto_fundo h1 span#one {
+        span#one {
             color: aquamarine;
         }
 
-
-        header div#foto_fundo h1 span#two {
+        span#two {
             color: red;
         }
 
-
-        header div#foto_fundo h1 span#three {
+        span#three {
             color: cyan;
         }
 
-        header div#logo {
-            display: none;                                                                        
-        }
+        /*Formatação geral dos textos*/
 
-        article {
-            display: block;
-            position: fixed;
-            background-color: rgb(80, 80, 87);
-            border: solid white;
-            display: block;
-            position: absolute;
-            color: white;
+        li.texto {
             width: 90%;
-            height: fit-content;
-            left: 3%;
-            right: 3%;
-            padding-right: 2%;
-            padding-left: 2%;   
+            left: 2%;
         }
 
-        article p.article_content {
+        li.texto article {
+            border: solid white;
+            margin-bottom: 3%;
+            background-color: rgb(80, 80, 87);
+        }
+
+        li.texto article p {
+            padding: 3%;
             text-align: justify;
         }
 
-        article#texto_introdutorio {
-            top: 12%;
-            margin-top: 5%;
-            margin-bottom: 5%;
-            height: 35%;
+        li#texto01 {
+            margin-top: 27%;
         }
 
-        article#texto_introdutorio h2 {
-            position: absolute;
-            top: -65px;
-            font-family: 'Kdam Thmor Pro', sans-serif;
-            height: 50%;
-        }
+        /*Formatação foto*/
 
-        div#foto {
+        li#foto {
             display: flex;
-            position: absolute;
-            border: solid blue;
-            background-color: black;
-            aspect-ratio: 1/1;
-            top: 52%;
-            left: 5%;
-            right: 5%;
-            align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 30pt;
-        }
-
-        article#texto_principal {
-            top: 92%;
-            height: 35%;
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-
-        article#texto_secundario {
-            top: 128%;
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-
-        iframe {
-            display: block;
-            position: absolute;
+            align-items: center;
             border: solid white;
-            top: 148%;
-            width: 94%;
-            right: 3%;
-            left: 3%;
-            margin-top: 5%;
-            margin-bottom: 5%; 
-        }
-
-        div#video1 {
-            display: flex;
-            position: absolute;
-            background-color: black;
-            border: solid blue;
-            color: white;
-            left: 5%;
-            right: 5%;
-            align-items: center;
-            justify-content: center;
-            aspect-ratio: 1 / 1;
-            top: 169%;
-            font-size: 30pt;
-        }
-
-        nav#menu_inferior {
-            display: flex;
-            position: absolute;
-            flex-direction: column;
-            top: 212%;
-            margin-bottom: 5%;
-            width: 90%;
-            height: 45%;
-        }
-
-        nav#menu_inferior div.box_m2 {
-            display: flex;
-            position: relative;
-            width: 90%;
-            height: 15%;
-            left: 5%;
-            right: 5%;
             background-color: rgb(80, 80, 87);
+            width: 88%;
+            height: fit-content;
+            margin-bottom: 3%;
+        }
+
+        /*Formatação IFrame*/
+
+        li#fatos iframe {
+            width: 88%;
             border: solid white;
+            margin-bottom: 3%;
         }
 
-        nav#menu_inferior div.box_m2 a {
-            display: flex;
-            text-decoration: none;
-            color: lightblue;
-            width: inherit;
-            height: inherit;
-        }
+        /*Formatação vídeo*/
 
-        nav#menu_inferior div.box_m2 p {
+        li#video {
             display: flex;
             justify-content: center;
             align-items: center;
+            border: solid white;
+            background-color: rgb(80, 80, 87);
+            width: 88%;
+            height: fit-content;
+            margin-bottom: 3%;
         }
 
+        /*Formatação Menu 02*/
+
+        li#menu02 nav#menu_inferior {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            font-size: 9pt;
+        }
+
+        li#menu02 nav#menu_inferior div.box_m2 {
+            display: flex;
+            border: solid white;
+            background-color: rgb(80, 80, 87);
+            width: 98%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li#menu02 nav#menu_inferior div.box_m2 a{
+            color: white;
+            text-decoration: none;
+        }
+        
     </style>
     <link rel="stylesheet" href="_css/principal.css" media="screen and (min-width: 900px)">
     <title>Super Dotação na Sociedade</title>
 </head>
 <body>
-    <header>
-        <!--Logo SRM AH/SD-->
-        <div id="logo">
-            [logo]
-        </div>
+  <ul>
+    
+    <!--HTML do menu principal-->
+    <li id="menu01">
+        <nav id="menu">
+            <div class="menu-item">
+                <a href="index.html">
+                    <p>Home</p>
+                </a>  
+            </div>
+            <div class="menu-item">
+                <a href="fale_conosco.html">
+                    <p>Fale Conosco</p>
+                </a>
+            </div>
+        </nav>
+    </li>
 
-         <!--Título principal-->
-        <div id="foto_fundo">
-            <h1><span id="one">Pre-Conceito</span> <span id="two">contra Altas Habilidades</span> / <span id="three">Super Dotação</span></h1>
-        </div>
-    </header>   
 
-     <!--HTML do menu principal-->
-    <nav id="menu">
-        <div class="menu-item">
-            <a href="index.html">
-                <p>Home</p>
-            </a>  
-        </div>
-        <div class="menu-item">
-            <a href="fale_conosco.html">
-                <p>Fale Conosco</p>
-            </a>
-        </div>
-    </nav>
+    <li id="header">
+        <header>
+            <!--Logo SRM AH/SD-->
+            <div id="logo">
+                [logo]
+            </div>
 
+            <!--Título principal-->
+            <div id="foto_fundo">
+                <h1><span id="one">Pre-Conceito</span> <span id="two">contra Altas Habilidades</span> / <span id="three">Super Dotação</span></h1>
+            </div>
+        </header>
+    </li>   
 
     <!--Texto introdutório-->
-
-    <article id="texto_introdutorio">
-        <h2>A invisibilidade sendo vísivel</h2>
-        <h3 class="titulo_provisorio">[texto introdutório]</h3>
-        <p class="article_content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat sunt facilis molestias recusandae eaque pariatur perferendis aliquam, provident natus itaque repellendus aspernatur obcaecati maiores necessitatibus dicta, sint, commodi assumenda? 
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eius pariatur impedit excepturi non sunt perferendis? Quae eveniet eligendi autem nihil dolor repellendus, reprehenderit, tempore voluptates dicta sapiente quibusdam provident!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit iste possimus quam deleniti, minima temporibus veritatis assumenda, voluptatem itaque tempore deserunt omnis culpa eius? Optio vel eius harum nemo.
-        </p>
-    </article>
+    <li class="texto" id="texto01">
+        <article id="texto_introdutorio">
+            <h2>A invisibilidade sendo vísivel</h2>
+            <h3 class="titulo_provisorio">[texto introdutório]</h3>
+            <p class="article_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat sunt facilis molestias recusandae eaque pariatur perferendis aliquam, provident natus itaque repellendus aspernatur obcaecati maiores necessitatibus dicta, sint, commodi assumenda? 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eius pariatur impedit excepturi non sunt perferendis? Quae eveniet eligendi autem nihil dolor repellendus, reprehenderit, tempore voluptates dicta sapiente quibusdam provident!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit iste possimus quam deleniti, minima temporibus veritatis assumenda, voluptatem itaque tempore deserunt omnis culpa eius? Optio vel eius harum nemo.
+            </p>
+        </article>
+    </li>
 
         <!--Texto principal-->
-
-    <article id="texto_principal">
-        <h3 class="titulo_provisorio">[texto principal]</h3>
-        <p class="article_content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptate, maxime sed delectus suscipit excepturi expedita vero earum repellat fuga, laboriosam architecto officiis facere omnis. Ex excepturi non consectetur quos.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus dolores rem quasi itaque. Rem placeat quos velit! Perferendis maxime eius distinctio quibusdam sequi, ipsa in aperiam! Nesciunt, atque magni.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, optio saepe quaerat quos nihil beatae. Nesciunt dolorum eligendi voluptas est veniam eius laudantium officiis totam! Aspernatur culpa ratione perspiciatis expedita!
-        </p>
-    </article>
+    <li class="texto">
+        <article id="texto_principal">
+            <h3 class="titulo_provisorio">[texto principal]</h3>
+            <p class="article_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptate, maxime sed delectus suscipit excepturi expedita vero earum repellat fuga, laboriosam architecto officiis facere omnis. Ex excepturi non consectetur quos.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus dolores rem quasi itaque. Rem placeat quos velit! Perferendis maxime eius distinctio quibusdam sequi, ipsa in aperiam! Nesciunt, atque magni.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, optio saepe quaerat quos nihil beatae. Nesciunt dolorum eligendi voluptas est veniam eius laudantium officiis totam! Aspernatur culpa ratione perspiciatis expedita!
+            </p>
+        </article>
+    </li>
 
         <!--Foto-->
-
-    <div id="foto">
+    <li id="foto">
         <p>[Foto]</p>
-    </div>
+    </li>
 
         <!--Texto secundário-->
+    <li class="texto">
+        <article id="texto_secundario">
+            <h3 class="titulo_provisorio">[texto secundário]</h3>
+            <p class="article_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis dignissimos omnis numquam velit veniam totam expedita perferendis blanditiis obcaecati minima sunt, quidem asperiores neque! Modi obcaecati earum tempora fuga.
+            </p>
+        </article>
+    </li>
 
-    <article id="texto_secundario">
-        <h3 class="titulo_provisorio">[texto secundário]</h3>
-        <p class="article_content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis dignissimos omnis numquam velit veniam totam expedita perferendis blanditiis obcaecati minima sunt, quidem asperiores neque! Modi obcaecati earum tempora fuga.
-        </p>
-    </article>
-    <div id="video1">
+        <!--Vídeo 1-->
+    <li id="video">
         <p>[video]</p>
-    </div>
+    </li>
+
         <!--HTML do iframe para colocar a página de fatos e mitos na página principal-->
 
-    <iframe id="fatos_mitos" src="fatos_mitos.html" frameborder="0" ></iframe>
+    <li id="fatos"><iframe id="fatos_mitos" src="fatos_mitos.html" frameborder="0" ></iframe></li>
 
         <!--HTML do menu inferior-->
 
-    <nav id="menu_inferior">
-        <div class="box_m2">
-            <a href="desabafos.html">
-                <p>Desabafe sobre alguma história de preconceito</p>
-            </a>
-        </div>
-        <div class="box_m2">
-            <a href="visoes/estudantes.html">
-                <p>Conheça a visão dos estudantes</p>
-            </a>
-        </div>
-        <div class="box_m2">
-            <a href="visoes/professores.html">
-                <p>Conheça a visão dos professores</p>
-            </a>
-        </div>
-    </nav>
+    <li id="menu02">
+        <nav id="menu_inferior">
+            <div class="box_m2">
+                <a href="desabafos.html">
+                    <p>Desabafe sobre alguma história de preconceito</p>
+                </a>
+            </div>
+            <div class="box_m2">
+                <a href="visoes/estudantes.html">
+                    <p>Conheça a visão dos estudantes</p>
+                </a>
+            </div>
+            <div class="box_m2">
+                <a href="visoes/professores.html">
+                    <p>Conheça a visão dos professores</p>
+                </a>
+            </div>
+        </nav>
+    </li>
+    </ul>
 </body>
 </html>
