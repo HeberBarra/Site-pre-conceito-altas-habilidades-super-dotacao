@@ -12,10 +12,25 @@
             list-style: none;
         }
 
+        
+        span#one {
+            color: aquamarine;
+        }
+
+        span#two {
+            color: red;
+        }
+
+        span#three {
+            color: cyan;
+        }
+
         @media screen and (max-width: 900px) {
         body {
             background-color: rgb(132, 163, 250);
             color: white;
+            display: flex;
+            font-family: 'Kdam Thmor Pro', sans-serif;
         }
 
         /*Formatação menu*/
@@ -23,16 +38,15 @@
         li#menu01 nav#menu {
             display: flex;
             flex-direction: row;
-            margin: 3%;
-            width: 90%;
-            left: 3%;
+            width: 91%;
+            margin-bottom: 3%;
         }
 
         li#menu01 nav#menu div.menu-item{
             display: flex;
             border: solid white;
             width: 45%;
-            padding: auto 2% auto 2%;
+            padding: 0 2% 0 2%;
             align-items: center;
             justify-content: center;
             background-color: rgb(80, 80, 87);
@@ -44,7 +58,6 @@
         }
 
         /*Formatação cabeçalho*/
-
         li#header div#logo{
             display: none;
         }
@@ -54,7 +67,7 @@
             position: absolute;
             border: solid white;
             width: 90%;
-            left: 3%;
+            right: 4%;
             background: url("_imagens/Fundo_titulo_mobile.png");
             align-items: center;
             justify-content: center;
@@ -63,18 +76,6 @@
         li#header div#foto_fundo h1{
             font-size: 12pt;
             font-family: 'Lobster', cursive;
-        }
-
-        span#one {
-            color: aquamarine;
-        }
-
-        span#two {
-            color: red;
-        }
-
-        span#three {
-            color: cyan;
         }
 
         /*Formatação geral dos textos*/
@@ -91,12 +92,17 @@
         }
 
         li.texto article p {
-            padding: 3%;
+            padding: 0 3% 0 3%;
             text-align: justify;
         }
 
-        li#texto01 {
-            margin-top: 27%;
+        /*Formatação texto principal*/
+        li#texto01 h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30%;
+            font-size: 15pt;
         }
 
         /*Formatação foto*/
@@ -196,8 +202,8 @@
 
     <!--Texto introdutório-->
     <li class="texto" id="texto01">
+        <h2>A invisibilidade sendo vísivel</h2>
         <article id="texto_introdutorio">
-            <h2>A invisibilidade sendo vísivel</h2>
             <h3 class="titulo_provisorio">[texto introdutório]</h3>
             <p class="article_content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat sunt facilis molestias recusandae eaque pariatur perferendis aliquam, provident natus itaque repellendus aspernatur obcaecati maiores necessitatibus dicta, sint, commodi assumenda? 

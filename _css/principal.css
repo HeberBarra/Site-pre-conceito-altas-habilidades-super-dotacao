@@ -24,7 +24,7 @@ header div#logo {
     display: flex;
     position: absolute;
     top: 8px;
-    left: 7px;
+    left: 47px;
     width: 175px; 
     height: 175px;
     background-color: black;
@@ -40,11 +40,11 @@ header div#foto_fundo {
     position: relative;
     justify-content: center;
     align-items: center;
-    top: 0px;
-    left: 200px;
+    top: 24%;
+    left: 183px;
     border: solid white;
     width: 775px;
-    height: 100px;
+    height: 90px;
     background: url("../_imagens/fundo_titulo.jpg");
 }
 
@@ -55,7 +55,19 @@ header div#foto_fundo h1 {
     font-family: 'Lobster', cursive;
     font-weight: normal;
     font-size: 27pt;
-    color: rgb(255, 255, 255);
+    color: white;
+}
+
+span#one {
+    color: aquamarine;
+}
+
+span#two {
+    color: red;
+}
+
+span#three {
+    color: cyan;
 }
 
 /*Formatação do menu*/
@@ -64,13 +76,13 @@ nav#menu {
     display: flex;
     position: absolute;
     flex-direction: row;
-    left: 986px;
+    left: 963px;
     top: 8px;
     box-shadow: 5px 5px 5px black;
 }
 
 nav#menu div.menu-item {
-    border: solid white;
+    border: 1px solid white;
     background-color: rgb(80, 80, 87);
     width: 171px;
     height: 75px;
@@ -131,6 +143,7 @@ article#texto_introdutorio {
     background-color: rgb(80, 80, 87);
     border: solid white;
     height: 400px;
+    width: 93%;
     box-shadow: 5px 5px 5px black;
 }
 
@@ -153,19 +166,22 @@ article#texto_principal {
     top: 650px;
     background-color: rgb(80, 80, 87);
     height: 400px;
+    width: 93%;
     border: solid white;
     box-shadow: 5px 5px 5px black;
 }
 
 /*Formatação da primeira foto*/
 
-div#foto {
+li#foto {
     height: 200px;
     width: 300px;
     background-color: black;
     display: flex;
     position: absolute;
-    left: 1033px;
+    justify-content: center;
+    align-items: center;
+    left: 1002px;
     top: 540px;
     border: solid blue;
     box-shadow: 5px 5px 5px black;
@@ -177,6 +193,7 @@ article#texto_secundario {
     border: solid white;
     background-color: rgb(80, 80, 87);
     height: 200px;
+    width: 93%;
     display: block;
     position: absolute;
     top: 1080px;
@@ -185,15 +202,17 @@ article#texto_secundario {
 
 /*Formatação video*/
 
-div#video1 {
+li#video {
     border: solid white;
-    width: 650px;
+    width: 630px;
     height: 400px;
     background-color: rgb(72, 72, 121);
-    display: block;
+    display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     top: 1300px;
-    left: 27px;
+    left: 47px;
     box-shadow: 5px 5px 5px black;
 }
 
@@ -204,10 +223,10 @@ iframe#fatos_mitos {
     display: block;
     position: absolute;
     background-color: rgb(80, 80, 87);
-    width: 630px;
+    width: 600px;
     height: 401px;
     top: 1300px;
-    left: 700px;
+    left: 703px;
     box-shadow: 5px 5px 5px black;
 }
 
@@ -218,13 +237,15 @@ nav#menu_inferior {
     position: absolute;
     flex-direction: row;
     top: 1750px;
+    width: 93.6%;
+    left: 3.5%;
 }
 
 nav#menu_inferior div.box_m2 {
     border: solid white;
     background-color: rgb(80, 80, 87);
     height: 75px;
-    width: 437px;
+    width: 40%;
     font-size: 15pt;
     text-align: center;
     margin-bottom: 5px;
