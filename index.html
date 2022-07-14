@@ -7,62 +7,20 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-        
-        ul {
-            list-style: none;
+        @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+
+        :root {
+            --border_color: white;
+            --item_background_color: rgb(80, 80, 87);
+            --global_font_color: white;
+            --font_size_mobile: 13pt;
+            --font_size_pc: 14pt;
         }
 
-        @media screen and (max-width: 900px) {
         body {
             background-color: rgb(132, 163, 250);
-            color: white;
-        }
-
-        /*Formatação menu*/
-
-        li#menu01 nav#menu {
-            display: flex;
-            flex-direction: row;
-            margin: 3%;
-            width: 90%;
-            left: 3%;
-        }
-
-        li#menu01 nav#menu div.menu-item{
-            display: flex;
-            border: solid white;
-            width: 45%;
-            padding: auto 2% auto 2%;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(80, 80, 87);
-        }
-
-        li#menu01 nav#menu div.menu-item a{
-            color: white;
-            text-decoration: none;
-        }
-
-        /*Formatação cabeçalho*/
-
-        li#header div#logo{
-            display: none;
-        }
-
-        li#header div#foto_fundo {
-            display: flex;
-            position: absolute;
-            border: solid white;
-            width: 90%;
-            left: 3%;
-            background: url("_imagens/Fundo_titulo_mobile.png");
-            align-items: center;
-            justify-content: center;
-        }
-        
-        li#header div#foto_fundo h1{
-            font-size: 12pt;
-            font-family: 'Lobster', cursive;
+            color: var(--global_font_color);
         }
 
         span#one {
@@ -70,200 +28,77 @@
         }
 
         span#two {
-            color: red;
+            color: rgb(133, 61, 61);
         }
 
         span#three {
             color: cyan;
         }
 
-        /*Formatação geral dos textos*/
-
-        li.texto {
-            width: 90%;
-            left: 2%;
-        }
-
-        li.texto article {
-            border: solid white;
-            margin-bottom: 3%;
-            background-color: rgb(80, 80, 87);
-        }
-
-        li.texto article p {
-            padding: 3%;
-            text-align: justify;
-        }
-
-        li#texto01 {
-            margin-top: 27%;
-        }
-
-        /*Formatação foto*/
-
-        li#foto {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: solid white;
-            background-color: rgb(80, 80, 87);
-            width: 88%;
-            height: fit-content;
-            margin-bottom: 3%;
-        }
-
-        /*Formatação IFrame*/
-
-        li#fatos iframe {
-            width: 88%;
-            border: solid white;
-            margin-bottom: 3%;
-        }
-
-        /*Formatação vídeo*/
-
-        li#video {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: solid white;
-            background-color: rgb(80, 80, 87);
-            width: 88%;
-            height: fit-content;
-            margin-bottom: 3%;
-        }
-
-        /*Formatação Menu 02*/
-
-        li#menu02 nav#menu_inferior {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            font-size: 9pt;
-        }
-
-        li#menu02 nav#menu_inferior div.box_m2 {
-            display: flex;
-            border: solid white;
-            background-color: rgb(80, 80, 87);
-            width: 98%;
-            align-items: center;
-            justify-content: center;
-        }
-
-        li#menu02 nav#menu_inferior div.box_m2 a{
-            color: white;
-            text-decoration: none;
-        }
-    }
     </style>
-    <link rel="stylesheet" href="_css/principal.css" media="screen and (min-width: 900px)">
-    <title>Super Dotação na Sociedade</title>
+    <link rel="stylesheet" href="_css/style_mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="_css/style.css" media="screen and (min-width: 800px)">
+    <title>Pre-conceito contra Super Dotação</title>
 </head>
 <body>
-  <ul>
-    
-    <!--HTML do menu principal-->
-    <li id="menu01">
-        <nav id="menu">
+    <header>
+        <div id="logo">
+            [logo]
+        </div>
+        <h1><span id="one">Pre-Conceito</span> <span id="two">contra Altas Habilidades</span> / <span id="three">Super Dotação</span></h1>
+        <nav #menu-principal>
             <div class="menu-item">
-                <a href="index.html">
-                    <p>Home</p>
-                </a>  
+                <a href="index.html"><span>Home</span></a>
             </div>
             <div class="menu-item">
-                <a href="fale_conosco.html">
-                    <p>Fale Conosco</p>
-                </a>
+                <a href="fale_conosco.html"><span>Fale Conosco</span></a>
             </div>
         </nav>
-    </li>
+    </header>
 
+    <main>
+        <h2>A invisibilidade sendo vísivel</h2>
 
-    <li id="header">
-        <header>
-            <!--Logo SRM AH/SD-->
-            <div id="logo">
-                [logo]
-            </div>
-
-            <!--Título principal-->
-            <div id="foto_fundo">
-                <h1><span id="one">Pre-Conceito</span> <span id="two">contra Altas Habilidades</span> / <span id="three">Super Dotação</span></h1>
-            </div>
-        </header>
-    </li>   
-
-    <!--Texto introdutório-->
-    <li class="texto" id="texto01">
-        <article id="texto_introdutorio">
-            <h2>A invisibilidade sendo vísivel</h2>
-            <h3 class="titulo_provisorio">[texto introdutório]</h3>
-            <p class="article_content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat sunt facilis molestias recusandae eaque pariatur perferendis aliquam, provident natus itaque repellendus aspernatur obcaecati maiores necessitatibus dicta, sint, commodi assumenda? 
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eius pariatur impedit excepturi non sunt perferendis? Quae eveniet eligendi autem nihil dolor repellendus, reprehenderit, tempore voluptates dicta sapiente quibusdam provident!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit iste possimus quam deleniti, minima temporibus veritatis assumenda, voluptatem itaque tempore deserunt omnis culpa eius? Optio vel eius harum nemo.
-            </p>
+        <article class="texto" id="texto-introdutorio">
+            <h3>[Texto Introdutório]</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quasi eum quia magni corrupti impedit deserunt, et ullam? Temporibus repellendus hic possimus suscipit consequatur quod quos perspiciatis deleniti. Ab, quo!</p>
         </article>
-    </li>
 
-        <!--Texto principal-->
-    <li class="texto">
-        <article id="texto_principal">
-            <h3 class="titulo_provisorio">[texto principal]</h3>
-            <p class="article_content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptate, maxime sed delectus suscipit excepturi expedita vero earum repellat fuga, laboriosam architecto officiis facere omnis. Ex excepturi non consectetur quos.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus dolores rem quasi itaque. Rem placeat quos velit! Perferendis maxime eius distinctio quibusdam sequi, ipsa in aperiam! Nesciunt, atque magni.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, optio saepe quaerat quos nihil beatae. Nesciunt dolorum eligendi voluptas est veniam eius laudantium officiis totam! Aspernatur culpa ratione perspiciatis expedita!
-            </p>
+        <div id="foto">
+            [foto]
+        </div>
+
+        <article class="texto" id="texto-principal">
+            <h3>[Texto Principal]</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quos sequi explicabo pariatur doloremque! Praesentium odit est magni unde vel sapiente cupiditate adipisci, excepturi repudiandae voluptatem voluptatum omnis totam quidem.</p>
         </article>
-    </li>
 
-        <!--Foto-->
-    <li id="foto">
-        <p>[Foto]</p>
-    </li>
+        <div id="video-fatos_mitos">
+            <div id="video">
+                [video]
+            </div>
+        
+            <iframe src="fatos_mitos.html" frameborder="0"></iframe>
+        </div>
 
-        <!--Texto secundário-->
-    <li class="texto">
-        <article id="texto_secundario">
-            <h3 class="titulo_provisorio">[texto secundário]</h3>
-            <p class="article_content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis dignissimos omnis numquam velit veniam totam expedita perferendis blanditiis obcaecati minima sunt, quidem asperiores neque! Modi obcaecati earum tempora fuga.
-            </p>
+        <article class="texto" id="texto-secundario">
+            <h3>[Texto Secundário]</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, assumenda necessitatibus consectetur officiis soluta aliquam sit inventore velit harum at sequi deleniti. Dolorum quidem consequuntur quas libero beatae sapiente obcaecati.</p>
         </article>
-    </li>
+    </main>
 
-        <!--Vídeo 1-->
-    <li id="video">
-        <p>[video]</p>
-    </li>
-
-        <!--HTML do iframe para colocar a página de fatos e mitos na página principal-->
-
-    <li id="fatos"><iframe id="fatos_mitos" src="fatos_mitos.html" frameborder="0" ></iframe></li>
-
-        <!--HTML do menu inferior-->
-
-    <li id="menu02">
-        <nav id="menu_inferior">
-            <div class="box_m2">
-                <a href="desabafos.html">
-                    <p>Desabafe sobre alguma história de preconceito</p>
-                </a>
+    <footer>
+        <nav id="menu-inferior">
+            <div class="item-menu-inferior">
+                <a href="desabafos.html"><span>Desabafe sobre alguma história de preconceito</span></a>
             </div>
-            <div class="box_m2">
-                <a href="visoes/estudantes.html">
-                    <p>Conheça a visão dos estudantes</p>
-                </a>
+            <div class="item-menu-inferior">
+                <a href="_visoes/estudantes.html"><span>Conheça a visão dos estudantes</span></a>
             </div>
-            <div class="box_m2">
-                <a href="visoes/professores.html">
-                    <p>Conheça a visão dos professores</p>
-                </a>
+            <div class="item-menu-inferior">
+                <a href="_visoes/professores.html"><span>Conheça a visão dos professores</span></a>
             </div>
         </nav>
-    </li>
-    </ul>
+    </footer>
 </body>
 </html>
