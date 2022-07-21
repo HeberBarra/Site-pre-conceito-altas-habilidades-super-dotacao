@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" name="color-scheme" content="dark light">
+    <meta>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
+        /*Dark  theme*/
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --border_color: white;
+                --item_background_color: rgb(80, 80, 87);
+                --alternative_background_color: lightgray;
+                --body_color: rgb(53, 52, 52);
+                --shadow_color: rgba(199, 193, 193, 0.4);
+                --link_color: aquamarine;
+                --alternative_link_color: cyan;
+                --global_font_color: white;
+            }
+        }
+
+        /*Light theme*/
+
+        @media (prefers-color-scheme: light){
+            :root {
+                --border_color: gray;
+                --item_background_color: white;
+                --alternative_background_color: lightgray;
+                --global_font_color: black;
+                --body_color: lightblue;
+                --link_color: lightblue;
+                --alternative_link_color: blue;
+                --shadow_color: rgba(0, 0, 0, 0.4);
+            }
+        }
+
         :root {
-            --border_color: white;
-            --item_background_color: rgb(80, 80, 87);
-            --global_font_color: white;
             --font_size_mobile: 13pt;
             --font_size_pc: 14pt;
         }
@@ -20,8 +47,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: rgb(132, 163, 250);
             color: var(--global_font_color);
+            background-color: var(--body_color);
         }
 
         @media screen and (max-width: 800px) {
@@ -41,7 +68,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: var(--global_font_color);
+                color: var(--link_color);
                 text-decoration: none;
                 width: 100%;
                 height: 100%;
@@ -51,6 +78,8 @@
                 border: solid var(--border_color);
                 background-color: var(--item_background_color);
                 margin-top: 3%;
+                border-radius: 5%;
+                box-shadow: 5px 5px 5px var(--shadow_color);
             }
 
             article#contatos h1 {
@@ -69,7 +98,7 @@
             }
 
             article#contatos ul li a {
-                color: lightblue;
+                color: var(--link_color);
             }
         }
 
@@ -91,7 +120,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: var(--global_font_color);
+                color: var(--link_color);
                 width: 100%;
                 height: 100%;
                 text-decoration: none;
@@ -99,12 +128,8 @@
             }
 
             nav#menu div.menu-item a:hover {
-                background-color: lightgray;
-            }
-
-            nav#menu div.menu-item a span:hover {
-                color: lightblue;
-                text-decoration: underline;
+                background-color: var(--alternative_background_color);
+                color: var(--alternative_link_color);
             }
 
             article#contatos {
@@ -112,6 +137,8 @@
                 border: solid var(--border_color);
                 margin-top: 1%;
                 width: 90%;
+                border-radius: 5%;
+                box-shadow: 5px 5px 5px var(--shadow_color);
             }
 
             article#contatos h1 {
@@ -128,7 +155,7 @@
             }
 
             article#contatos ul li a {
-                color: lightblue;
+                color: var(--link_color);
             }
         }
 
@@ -139,12 +166,12 @@
     <nav id="menu">
         <div class="menu-item">
             <a href="index.html">
-                <span>Home</span>
+                Home
             </a>
         </div>
         <div class="menu-item">
             <a href="fale_conosco.html">
-                <span>Fale Conosco</span>
+                Fale Conosco
             </a>
         </div>
     </nav>

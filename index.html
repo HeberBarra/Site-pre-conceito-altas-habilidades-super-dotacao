@@ -4,40 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
 
+        /*Dark theme*/
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --border_color: white;
+                --item_background_color: rgb(80, 80, 87);
+                --alternative_background_color: lightgray;
+                --body_color: rgb(53, 52, 52);
+                --shadow_color: rgba(199, 193, 193, 0.4);
+                --link_color: aquamarine;
+                --alternative_link_color: cyan;
+                --global_font_color: white;
+            }
+        }
+
+        /*Light theme*/ 
+
+        @media (prefers-color-scheme: light) {  
+            :root {
+                --border_color: gray;
+                --item_background_color: white;
+                --alternative_background_color: lightgray;
+                --global_font_color: black;
+                --body_color: lightblue;
+                --link_color: lightblue;
+                --alternative_link_color: blue;
+                --shadow_color: rgba(0, 0, 0, 0.4);
+            }
+        }
 
         :root {
-            --border_color: white;
-            --item_background_color: rgb(80, 80, 87);
-            --global_font_color: white;
             --font_size_mobile: 13pt;
             --font_size_pc: 14pt;
         }
 
-        body {
-            background-color: rgb(132, 163, 250);
-            color: var(--global_font_color);
-        }
-
-        span.one {
-            color: aquamarine;
-        }
-
-        span.two {
-            color: red;
-        }
-
-        span.three {
-            color: cyan;
+        body{
+            display: flex;
+            flex-direction: column;
+            background-color: var(--body_color);
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
         }
 
     </style>
     <link rel="stylesheet" href="_css/style_mobile.css" media="screen and (max-width: 800px)">
     <link rel="stylesheet" href="_css/style.css" media="screen and (min-width: 800px)">
+    <script src="_javascript/scripts_index.js" defer></script>
     <title>Pre-conceito contra Super Dotação</title>
 </head>
 <body>
@@ -46,14 +68,21 @@
             [logo]
         </div>
         <h1><span class="one">Pre-Conceito</span> <span class="two">contra Altas Habilidades</span> / <span class="three">Super Dotação</span></h1>
-        <nav #menu-principal>
-            <div class="menu-item">
-                <a href="index.html"><span>Home</span></a>
-            </div>
-            <div class="menu-item">
-                <a href="fale_conosco.html"><span>Fale Conosco</span></a>
-            </div>
-        </nav>
+        <div id="menu-botao">
+            <button>Parar de seguir</button>
+            <nav #menu-principal>
+                <div class="menu-item">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="fale_conosco.html">
+                        Fale Conosco
+                    </a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -87,18 +116,22 @@
         </article>
     </main>
 
-    <footer>
-        <nav id="menu-inferior">
-            <div class="item-menu-inferior">
-                <a href="desabafos.php"><span>Desabafe sobre alguma história de preconceito</span></a>
-            </div>
-            <div class="item-menu-inferior">
-                <a href="_visoes/estudantes.html"><span>Conheça a visão dos estudantes</span></a>
-            </div>
-            <div class="item-menu-inferior">
-                <a href="_visoes/professores.html"><span>Conheça a visão dos professores</span></a>
-            </div>
-        </nav>
-    </footer>
+    <nav id="menu-inferior">
+        <div class="item-menu-inferior">
+            <a href="desabafos.php">
+                Desabafe sobre alguma história de preconceito
+            </a>
+        </div>
+        <div class="item-menu-inferior">
+            <a href="_visoes/estudantes.html">
+                Conheça a visão dos estudantes
+            </a>
+        </div>
+        <div class="item-menu-inferior">
+            <a href="_visoes/professores.html">
+                Conheça a visão dos professores
+            </a>
+        </div>
+    </nav>
 </body>
 </html>
