@@ -16,7 +16,7 @@ header {
 }
 
 header div#logo {
-    display: inherit;
+    display: flex;
     align-items: center;
     justify-content: center;
     border: solid var(--border_color);
@@ -27,6 +27,9 @@ header div#logo {
 }
 
 header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 5%;
     width: 80%;
     font-family: 'Lobster', cursive, Arial;

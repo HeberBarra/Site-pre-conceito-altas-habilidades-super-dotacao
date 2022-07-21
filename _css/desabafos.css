@@ -1,34 +1,88 @@
 @charset "UTF8";
 
-div#menu {
+body {
+    gap: 1em;
+}
+
+header {
+    width: 90%;
+}
+
+header nav#menu {
     display: flex;
-    position: absolute;
     flex-direction: row;
-    left: 1028px;
 }
 
-div#menu div.menu-item {
-    border: solid white;
-    background-color: rgb(80, 80, 87);
-    width: 150px;
-    height: 75px;
-    text-align: center;
-    font-size: 15pt;
+header nav#menu div.menu-item {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 50%;
 }
 
-div#menu div.menu-item:hover {
-    background-color: gray;
+header nav#menu div.menu-item:hover {
+    background-color: lightgray;
 }
 
-div#menu div.menu-item a{
-    display: block;
-    position: relative;
-    top: 20px;
-    color: lightblue;
-    text-decoration: none;
-}
-
-div#menu div.menu-item a:hover {
+header nav#menu div.menu-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-weight: bolder;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Kdam Thmor Pro', Arial;
+}
+
+header nav#menu div.menu-item a span:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+main article {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+}
+
+main article p {
+    font-size: var(--font_size_pc);
+    text-indent: 3%;
+    text-align: justify;
+    padding: 0 1% 0 1%;
+}
+
+main div#desabafos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+}
+
+main div#desabafos div#inicio {
+    font-size: var(--font_size_pc);
+    text-align: center;
+    border-bottom: solid var(--border_color);
+    width: 100%;
+}
+
+main div#desabafos h2 {
+    align-self: flex-start;
+    font-size: var(--font_size_pc);
+    padding: 0 2% 0 2%;
+}
+
+main div#desabafos p.comentario {
+    border: solid gray;
+    background-color: white;
+    color: black;
+    width: 95%;
+    padding: 0 1% 0 1%;
 }
