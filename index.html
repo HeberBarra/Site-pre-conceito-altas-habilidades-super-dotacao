@@ -32,11 +32,11 @@
                 --border_color: gray;
                 --item_background_color: white;
                 --alternative_background_color: lightgray;
-                --global_font_color: black;
+                --shadow_color: rgba(0, 0, 0, 0.4);
                 --body_color: lightblue;
                 --link_color: lightblue;
                 --alternative_link_color: blue;
-                --shadow_color: rgba(0, 0, 0, 0.4);
+                --global_font_color: black;
             }
         }
 
@@ -49,11 +49,16 @@
             display: flex;
             flex-direction: column;
             background-color: var(--body_color);
+            color: var(--global_font_color);
             margin: 0;
             width: 100%;
             height: 100%;
             justify-content: center;
             align-items: center;
+        }
+
+        iframe > *{
+            color: var(--global_font_color);
         }
 
     </style>
@@ -69,7 +74,7 @@
         </div>
         <h1><span class="one">Pre-Conceito</span> <span class="two">contra Altas Habilidades</span> / <span class="three">Super Dotação</span></h1>
         <div id="menu-botao">
-            <button>Parar de seguir</button>
+            <button id="botao_seguir">Parar de seguir</button>
             <nav #menu-principal>
                 <div class="menu-item">
                     <a href="index.html">
@@ -82,6 +87,7 @@
                     </a>
                 </div>
             </nav>
+            <button>Alternar tema</button>
         </div>
     </header>
 
@@ -107,7 +113,15 @@
                 [video]
             </div>
         
-            <iframe src="fatos_mitos.html" frameborder="0"></iframe>
+            <iframe src="" frameborder="0">
+                <p>Fatos e mitos sobre as Altas Habilidades e Super Dotação:</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nihil, dicta nesciunt magnam voluptatem architecto aliquid rem at saepe culpa enim nam ut debitis consectetur alias autem delectus perspiciatis voluptas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere obcaecati architecto laboriosam amet quam consectetur, consequuntur eaque voluptatibus odio ipsum, recusandae dolore voluptatem quod doloribus in veniam quasi? Nisi!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nihil, dicta nesciunt magnam voluptatem architecto aliquid rem at saepe culpa enim nam ut debitis consectetur alias autem delectus perspiciatis voluptas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere obcaecati architecto laboriosam amet quam consectetur, consequuntur eaque voluptatibus odio ipsum, recusandae dolore voluptatem quod doloribus in veniam quasi? Nisi!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nihil, dicta nesciunt magnam voluptatem architecto aliquid rem at saepe culpa enim nam ut debitis consectetur alias autem delectus perspiciatis voluptas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere obcaecati architecto laboriosam amet quam consectetur, consequuntur eaque voluptatibus odio ipsum, recusandae dolore voluptatem quod doloribus in veniam quasi? Nisi!</p>
+            </iframe>
         </div>
 
         <article class="texto" id="texto-secundario">

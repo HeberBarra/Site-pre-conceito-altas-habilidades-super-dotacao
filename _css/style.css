@@ -34,7 +34,7 @@ header div#menu-botao {
     height: 50%;
 }
 
-header div button {
+header div button#botao_seguir {
     align-self: center;
 }
 
@@ -122,6 +122,7 @@ div#video-fatos_mitos > * {
     background-color: var(--item_background_color);
     box-shadow: 5px 5px 5px var(--shadow_color);
     border-radius: 5%;
+    color: var(--global_font_color);
 }
 
 nav {
