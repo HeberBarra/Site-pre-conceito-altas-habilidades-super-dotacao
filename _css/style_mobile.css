@@ -18,7 +18,7 @@ header {
     border-bottom: solid var(--border_color);
 }
 
-header button {
+header button#botao_seguir {
     display: none;
 }
 
