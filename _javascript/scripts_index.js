@@ -14,3 +14,25 @@ followButton.addEventListener("click", function() {
     }
 }
 )
+
+getTrueTheme = function() {
+    if (theme === "dark") {
+        return "light";
+    } else {
+        return "dark";
+    }
+}
+
+let trueTheme = getTrueTheme();
+let iframe = document.getElementsByTagName("iframe")[0];
+let iframeOriginalSrc = iframe.src
+
+console.log(url);
+console.log(trueTheme);
+console.log(iframeOriginalSrc);
+
+changeIframe = function(Theme) {
+    iframe.src = `${iframeOriginalSrc}?theme=${Theme}`;
+    console.log(iframeOriginalSrc);
+}
+changeIframe(trueTheme)
