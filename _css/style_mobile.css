@@ -32,6 +32,8 @@ header div#menu-botao {
     display: inherit;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 header div nav {

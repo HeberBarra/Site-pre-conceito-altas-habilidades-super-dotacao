@@ -41,8 +41,11 @@ const lightColors = [
 
 const menuAnchors = document.getElementsByClassName("menu-link");
 const originalHrefs = []
+const url = window.location.href
 
-const parameters = new URLSearchParams(window.location.search)
+let themeButton = document.getElementById('botao_de_tema');
+let root = document.querySelector(':root');
+let theme = null;
 
 function getOriginalHrefs() {
     let c = 0
@@ -55,30 +58,53 @@ function getOriginalHrefs() {
     console.log(originalHrefs)
 }
 
-getOriginalHrefs()
-
-let themeButton = document.getElementById('botao_de_tema');
-let root = document.querySelector(':root');
-let theme = 'dark';
-
-decideTheme = function() {
-    if (parameters.has('theme')){
-        siteTheme = parameters.get(theme)
-        console.log(siteTheme)
-
-    } else {
-        if (window.matchMedia('prefers-color-scheme: dark')) {
-            theme = 'light';
-        } else {
-            theme = 'dark';
-        }
-        return;
+function changeTheme() {
+    for (let anchorIndex = 0; anchorIndex < menuAnchors.length;anchorIndex++) {
+        menuAnchors[anchorIndex].href = originalHrefs[anchorIndex] + `?theme=${theme}`;
     }
+
+    if (theme === "dark") {
+        for (index in cssVariables) {
+                root.style.setProperty(cssVariables[index], darkColors[index]);
+                console.log(`${cssVariables[index]}: ${darkColors[index]}`);
+        }
+        theme = "light";
+    } else {
+        for (index in cssVariables) {
+        root.style.setProperty(cssVariables[index], lightColors[index]);
+        console.log(`${cssVariables[index]}: ${lightColors[index]}`);
+        theme = "dark";
+    }
+    }
+
 }
 
+function decideTheme() {
+    if (window.matchMedia("prefers-color-scheme: dark")) {
+        theme = "light";
+    } else {
+        theme = "dark";
+    }
+
+    const parameters = url.split("?");
+
+    if (parameters.length == 1) {
+        return;
+    }
+    console.log("Has parameters!");
+    if (parameters[1] === 'theme=dark') {
+        theme = "dark";
+    } else {
+        theme = "light";
+    }
+
+    changeTheme()
+}
+
+getOriginalHrefs()
 decideTheme()
 
-themeButton.addEventListener("click", changeTheme = function () {
+themeButton.addEventListener("click", function () {
     for (let a = 0; a < menuAnchors.length;a++) {
         menuAnchors[a].href = originalHrefs[a] + `?theme=${theme}`;
     }
