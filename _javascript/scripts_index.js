@@ -33,6 +33,5 @@ console.log(iframeOriginalSrc);
 
 changeIframe = function(Theme) {
     iframe.src = `${iframeOriginalSrc}?theme=${Theme}`;
-    console.log(iframeOriginalSrc);
+    console.log(iframe.src);
 }
-changeIframe(trueTheme)
