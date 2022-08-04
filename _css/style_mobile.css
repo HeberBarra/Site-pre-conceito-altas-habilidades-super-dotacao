@@ -79,10 +79,14 @@ article > * {
 }
 
 div#foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid var(--border_color);
     width: 40%;
     aspect-ratio: 1 / 1;
     box-shadow: 5px 5px 5px var(--shadow_color);
+    background-color: var(--item_background_color);
 }
 
 div#video-fatos_mitos {
@@ -98,9 +102,13 @@ div#video-fatos_mitos > * {
 }
 
 div#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid var(--border_color);
     width: 100%;
     aspect-ratio: 16 / 9;
+    background-color: var(--item_background_color);
 }
 
 iframe {
