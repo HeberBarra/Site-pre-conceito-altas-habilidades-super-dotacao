@@ -1,1 +1,83 @@
-@charset "UTF8";
+@charset "UFT8";
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--item_background_color);
+    width: 100%;
+    border-bottom: solid var(--border_color);
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 3%;
+}
+
+header nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 120%;
+    border: solid var(--border_color);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--link_color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--alternative_link_color);
+    background-color: var(--alternative_background_color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--global_font_color);
+}
+
+article {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 90%;
+    align-self: center;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px var(--shadow_color);
+}
+
+article p {
+    padding: 5%;
+    text-indent: 5%;
+    text-align: justify;
+}
+
+div#desabafos {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 90%;
+    align-self: center;
+    border-radius: 3%;
+}
