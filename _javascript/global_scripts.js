@@ -117,29 +117,14 @@ siteTheme = getUrlTheme()
 
 console.log(siteTheme)
 
-if (!(siteTheme)) {
-    siteTheme = getCurrentTheme()
-    if (siteTheme == "light") {
-        siteTheme = "dark";
-    } else {
-        siteTheme = "light";
-    }
-} else {
-    changeIframe(siteTheme)
-    changeAnchorsherfs(siteTheme)
-    if (siteTheme == "light") {
-        changeTheme(lightColors)
-        siteTheme = "dark"
-    } else {
-        changeTheme(darkColors)
-        siteTheme = "light"
-    }
+siteTheme = getCurrentTheme()
+if (siteTheme === 'dark') {
+    siteTheme = 'light';
 }
 
 console.log(siteTheme)
 
 themeButton.addEventListener('click', function () {
-
     changeAnchorsherfs(siteTheme)
     changeIframe(siteTheme)
 
