@@ -70,11 +70,11 @@ getOriginalIframeSrc = function () {
 }
 
 getCurrentTheme = function() {
-    if (getComputedStyle(root).getPropertyValue('--body_color') === 'white') {
-        return 'light';
+    if (matchMedia('prefers-color-scheme: dark')) {
+        return 'dark';
     }
 
-    return 'dark'
+    return 'light';
 }
 
 getUrlTheme = function() {
@@ -84,9 +84,11 @@ getUrlTheme = function() {
     }
 
     if (urlParameters[1] === "theme=dark") {
+        console.log(urlParameters)
         return 'dark';
     }
 
+    console.log(urlParameters)
     return 'light';
 }
 
@@ -111,30 +113,45 @@ changeIframe = function(theme) {
     iframe.src = `${iframeSrc}?theme=${theme}`;
 }
 
-getOriginalHrefs()
-getOriginalIframeSrc()
-siteTheme = getUrlTheme()
+changeThemeOnLoad = function() {
+    getOriginalHrefs()
+    siteTheme = getUrlTheme()
+    console.log(siteTheme)
+    if(siteTheme != null) {
+        if (siteTheme === 'light') {
+            changeTheme(lightColors)
+            changeIframe('light')
+            changeAnchorsherfs('light')
+            siteTheme = 'dark';
+            return;
+        }
 
-console.log(siteTheme)
-
-siteTheme = getCurrentTheme()
-if (siteTheme === 'dark') {
-    siteTheme = 'light';
+        changeTheme(darkColors)
+        changeIframe('dark')
+        changeAnchorsherfs('dark')
+        siteTheme = 'light'
+        return;
+    }
+    
+    siteTheme = getCurrentTheme()
+    console.log(siteTheme)
 }
 
+changeThemeOnLoad()
 console.log(siteTheme)
 
-themeButton.addEventListener('click', function () {
-    changeAnchorsherfs(siteTheme)
-    changeIframe(siteTheme)
+if (themeButton != null) {
+    themeButton.addEventListener('click', function () {
+        changeAnchorsherfs(siteTheme)
+        changeIframe(siteTheme)
 
-    if (siteTheme == "light") {
-        changeTheme(lightColors);
-        console.log('changed to light theme');
-        siteTheme = "dark";
-    } else {
-        changeTheme(darkColors);
-        console.log('changed to dark theme');
-        siteTheme = "light";
-    }
-})
+        if (siteTheme == "light") {
+            changeTheme(lightColors);
+            console.log('changed to light theme');
+            siteTheme = "dark";
+        } else {
+            changeTheme(darkColors);
+            console.log('changed to dark theme');
+            siteTheme = "light";
+        }
+})}
