@@ -70,7 +70,7 @@ getOriginalIframeSrc = function () {
 }
 
 getCurrentTheme = function() {
-    if (matchMedia('prefers-color-scheme: dark')) {
+    if (matchMedia('prefers-color-scheme: dark').matches) {
         return 'dark';
     }
 

@@ -118,17 +118,23 @@ article form, h2 {
         font-size 0.3s ease;
 }
 
-input:placeholder-shown + .placeholder{
+input:placeholder-shown + .placeholder, textarea:placeholder-shown + .placeholder{
     display: none;   
 }
 
-input:not(:placeholder-shown) + .placeholder {
+input:not(:placeholder-shown) + .placeholder, textarea:not(:placeholder-shown) + .placeholder {
     display: initial;
     top: -10px;
     font-size: 13pt;
     color: var(--global_font_color);
 }
-    
+
+textarea {
+    width: 92.1%;
+    aspect-ratio: 4 / 1;
+    font-size: var(--font_size);
+}
+
 button#enviar {
     margin-top: 2%;
     width: 40%;
