@@ -70,11 +70,14 @@ getOriginalIframeSrc = function () {
 }
 
 getCurrentTheme = function() {
-    if (matchMedia('prefers-color-scheme: dark').matches) {
-        return 'dark';
-    }
+    if (matchMedia('(prefers-color-scheme: dark)').matches) {
+        console.log('light')
+        return 'light';
+    } else {
 
-    return 'light';
+    console.log('dark')
+    return 'dark';
+    }
 }
 
 getUrlTheme = function() {
