@@ -5,61 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visão dos estudantes</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-
-        
-        /*Dark theme*/
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --border_color: white;
-                --item_background_color: rgb(80, 80, 87);
-                --alternative_background_color: lightgray;
-                --body_color: rgb(53, 52, 52);
-                --shadow_color: rgba(199, 193, 193, 0.4);
-                --link_color: aquamarine;
-                --alternative_link_color: cyan;
-                --global_font_color: white;
-            }
-        }
-
-        /*Light theme*/ 
-
-        @media (prefers-color-scheme: light) {  
-            :root {
-                --border_color: gray;
-                --item_background_color: white;
-                --alternative_background_color: lightgray;
-                --global_font_color: black;
-                --body_color: lightblue;
-                --link_color: lightblue;
-                --alternative_link_color: blue;
-                --shadow_color: rgba(0, 0, 0, 0.4);
-            }
-        }
-
-        :root {
-            --font_size_mobile: 13pt;
-            --font_size_pc: 14pt;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            background-color: var(--body_color);
-            color: var(--global_font_color);
-            margin: 0;
-            width: 100%;
-            min-height: 100%;
-            gap: 1rem;
-        }
-
-    </style>
     <script src="../_javascript/global_scripts.js" defer></script>
-    <link rel="stylesheet" href="../_css/visoes_mobile.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="../_css/visoes.css" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="../_css/visoes.css">
 </head>
 <body>
     <nav id="menu">
