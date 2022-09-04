@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/*Light theme*/ 
+
+:root {
+    --border_color: gray;
+    --item_background_color: white;
+    --alternative_background_color: lightgray;
+    --global_font_color: black;
+    --body_color: lightblue;
+    --link_color: lightblue;
+    --alternative_link_color: blue;
+    --shadow_color: rgba(0, 0, 0, 0.4);
+    --font_size: 14pt;
+}
+
+/*Dark theme*/
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --border_color: white;
+        --item_background_color: rgb(80, 80, 87);
+        --alternative_background_color: lightgray;
+        --body_color: rgb(53, 52, 52);
+        --shadow_color: rgba(199, 193, 193, 0.4);
+        --link_color: aquamarine;
+        --alternative_link_color: cyan;
+        --global_font_color: white;
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--body_color);
+    color: var(--global_font_color);
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+nav div.menu-item {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 50%;
+    height: 20%;
+}
+
+nav div.menu-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--link_color);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    font-size: calc(var(--font_size) - 2pt);
+}
+
+nav div.menu-item a:hover {
+    background-color: var(--alternative_background_color);
+    color: var(--alternative_link_color);
+}
+
+article {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 90%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px var(--shadow-color);
+    font-size: var(--font-size);
+}
+
+article > * {
+    padding: 0 1% 0 1%;
+    text-indent: 4%;
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+}
+
+article h1 {
+    font-size: calc(var(--font_size) + 4pt);
+}

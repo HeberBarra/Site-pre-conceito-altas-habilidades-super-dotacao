@@ -1,34 +1,141 @@
-@charset "UTF8";
+@charset "UFT8";
 
-div#menu {
+:root {
+    --font_size: 14pt;
+}
+
+header {
     display: flex;
-    position: absolute;
-    flex-direction: row;
-    left: 1028px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid var(--border_color);
+    background-color: var(--item_background_color);
 }
 
-div#menu div.menu-item {
-    border: solid white;
-    background-color: rgb(80, 80, 87);
-    width: 150px;
-    height: 75px;
-    text-align: center;
-    font-size: 15pt;
+nav {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40%;
 }
 
-div#menu div.menu-item:hover {
-    background-color: gray;
+nav div {
+    border: solid var(--border_color);
+    width: 50%;
+    margin: 2% 0 2% 0;
 }
 
-div#menu div.menu-item a{
-    display: block;
-    position: relative;
-    top: 20px;
-    color: lightblue;
+nav div a {
+    display: flex;
+    color: var(--link_color);
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    font-size: calc(var(--font_size) - 2pt);
 }
 
-div#menu div.menu-item a:hover {
-    color: white;
-    font-weight: bolder;
+nav div a:hover {
+    color: var(--alternative_link_color);
+    background-color: var(--alternative_background_color);
+}
+
+button {
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    font-size: calc(var(--font_size) - 4pt);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+article {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    border-radius: 5%;
+    width: 90%;
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+}
+
+article p {
+    padding: 0 2% 0 2%;
+    text-indent: 3%;
+    text-align: justify;
+    font-size: var(--font_size);
+}
+
+h1 {
+    font-size: calc(var(--font_size) + 3pt);
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+}
+
+
+article#adicionar_desabafo form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+article form, h2 {
+    padding: 0 2% 0 2%;
+}
+
+.desabafo_field {
+    font-size: 13pt;
+    position: relative;
+    color: #222;
+    border-top: 20px solid transparent;
+}
+
+.desabafo_field input {
+    border: solid var(--border_color);
+    appearance: none;
+    padding: 12px;
+    border-radius: 3px;
+    width: 90%;
+    font-size: 13pt;
+}
+
+.desabafo_field .placeholder {
+    position: absolute;
+    left: 12px;
+    top: 22px;
+    transform: translateY(-50%);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: 
+        top 0.3s ease,
+        color 0.3s ease,
+        font-size 0.3s ease;
+}
+
+input:placeholder-shown + .placeholder, textarea:placeholder-shown + .placeholder{
+    display: none;   
+}
+
+input:not(:placeholder-shown) + .placeholder, textarea:not(:placeholder-shown) + .placeholder {
+    display: initial;
+    top: -10px;
+    font-size: 13pt;
+    color: var(--global_font_color);
+}
+
+textarea {
+    width: 92.1%;
+    aspect-ratio: 4 / 1;
+    font-size: var(--font_size);
+}
+
+button#enviar {
+    margin-top: 2%;
+    width: 40%;
 }

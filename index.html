@@ -4,140 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-
-        body {
-            background-color: lightgray;
-        }
-
-        /*Formatação menu*/
-
-        nav#menu {
-            display: flex;
-            position: absolute;
-            flex-direction: row;
-            right: 1px;
-        }
-
-        nav#menu div.menu-item {
-            border: 1px solid white;
-            background-color: rgb(80, 80, 87);
-            width: 145px;
-            height: 30px;
-            text-align: center;
-            font-size: 12pt;
-        }
-
-        nav#menu div.menu-item a {
-            display: block;
-            position: relative;
-            top: 5px;
-            color: lightblue;
-            text-decoration: none;
-        }
-
-        header h1 {
-            font-family: 'Lobster', cursive;
-            font-size: 12pt;
-        }
-
-        article#texto_introdutorio h2 {
-            font-family: 'Kdam Thmor Pro', sans-serif;
-        }
-
-    </style>
-    <link rel="stylesheet" href="_css/principal.css" media="screen and (min-width: 900px)">
-    <title>Super Dotação na Sociedade</title>
+    <meta name="color-scheme" content="dark light">
+    <link rel="stylesheet" href="_css/style.css">
+    <script src="_javascript/global_scripts.js" defer></script>
+    <script src="_javascript/scripts_index.js" defer></script>
+    <script src="_javascript/feather.js"></script>
+    <title>Pre-conceito contra Super Dotação</title>
 </head>
 <body>
     <header>
-
-        <!--Título principal-->
-       
-
-        <!--Logo SRM AH/SD-->
         <div id="logo">
             [logo]
         </div>
-
-        <div id="foto_fundo">
-            <h1>Pre-Conceito contra Altas Habilidades / Super Dotação</h1>
+        <h1>Pre-Conceito contra Altas Habilidades/Super Dotação (AH/SD)</h1>
+        <div id="menu-botao">
+            <button id="botao_seguir">Parar de seguir</button>
+            <nav #menu-principal>
+                <div class="menu-item">
+                    <a href="index.html" class="menu-link" id="essa_pagina">
+                        Home
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="fale_conosco.html" class="menu-link">
+                        Fale Conosco
+                    </a>
+                </div>
+            </nav>
+            <button id="botao_de_tema" style="width: 15%;height: 15%;"><i data-feather="sun"></i></button>
+            <script>
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.getElementById('botao_de_tema').innerHTML = '<i data-feather="moon"></i>'
+                }
+            </script>
         </div>
     </header>
 
-     <!--HTML do menu principal-->
-    <nav id="menu">
-        <div class="menu-item">
-            <a href="index.html">
-                <p>Home</p>
-            </a>  
+    <main>
+        <h2>A Invisibilidade Sendo Vísivel</h2>
+
+        <article class="texto" id="texto-introdutorio">
+            <p>Aqui você pode contar todos os seus problemas e sua experiência como superdotado, e suas dificuldades de socializar com pessoas, as expectativas colocadas em cima de você, toda a pressão, mental que você sente como portador de Altas Habilidades. Também nós tentaremos combater o preconceito contra Altas Habilidades/Superdotação. Aqui apresentaremos alguns fatos e mitos sobre alunos superdotados, também mostraremos a visão e o preconceito dos professores alunos, por fim, diremos com realmente é ter Altas Habilidades.</p>
+        </article>
+
+        <img id="foto" src="_media/Foto.jpg">
+
+        <article class="texto" id="texto-principal">
+            <p></p>
+        </article>
+
+        <div id="video-fatos_mitos">
+            <iframe src="fatos_mitos.html" frameborder="0" class="Verdades"></iframe>
+            <figure>
+                <video controls poster="_media/video_thumbnail.jpg" preload="metadata">
+                    <source type="video/mp4" src="_media/Why Gifted Kids Are Actually Special Needs.mp4">
+                    <track label="English" kind="subtitles" srclang="en" src="_subtitles/cc--aen (a.en).en.vtt">
+                </video>
+                <ul id="video-controls" class="controls" style="list-style: none;">
+                    <li><button id="play-pause" type="button">
+                        <i data-feather="play"></i>
+                    </button></li>
+                    <li><button id="reset_video" type="button">
+                        <i data-feather="repeat"></i>
+                    </button></li>
+                    <li><button id="mute_video" type="button">
+                        <i data-feather="volume-2"></i>
+                    </button></li>
+                    <li><button id="volume_increase" type="button">
+                        <i data-feather="plus"></i>
+                    </button></li>
+                    <li><button id="volume_decrease" type="button">
+                        <i data-feather="minus"></i>
+                    </button></li>
+                    <li><button id="subtitles" type="button">Legendas</button></li>
+                    <li><button id="fullscreen" type="button">
+                        <i data-feather="maximize"></i>
+                    </button></li>
+                    <script>
+                        feather.replace()
+                    </script>
+                </ul>
+                <progress id="video_progress_bar" value="0" min="0" style="width: 100%;height: 1em;"></progress>
+                <figcaption>
+                    <a href="https://www.youtube.com/watch?v=QUjYy4Ksy1E">Link para o vídeo original. Por favor suporte o canal do criador do vídeo</a>
+                </figcaption>
+            </figure>
         </div>
-        <div class="menu-item">
-            <a href="fale_conosco.html">
-                <p>Fale Conosco</p>
+
+        <article class="texto" id="texto-secundario">
+            <h3>Como realmente é ser superdotado:</h3>
+            <p>Ter Altas Habilidades não é tão simples como parece, tem coisas ruins também, por exemplo a pressão que colocam sobre você e falam coisas do tipo: "Ah você é Altas Habilidades, você tem que ser bom em tudo o que você faz!", ou "você tem que tirar 10 nessas provas, você é de Altas". Mas tem um lado bom por exemplo: você tem uma facilidade em terminar algo mais rápido, aprender as coisas mais rápido e com isso você pode ajudar as outras pessoas, também você pode ter uma habilidade de desenhar ou ser bom em algum esporte.</p>
+        </article>
+    </main>
+
+    <nav id="menu-inferior">
+        <div class="item-menu-inferior">
+            <a href="desabafos.php" class="menu-link">
+                Desabafe sobre alguma história de preconceito
             </a>
         </div>
-    </nav>
-
-    <!--Texto introdutório-->
-
-    <article id="texto_introdutorio">
-        <h2>A invisibilidade sendo vísivel</h2>
-        <h3>[texto introdutório]</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat sunt facilis molestias recusandae eaque pariatur perferendis aliquam, provident natus itaque repellendus aspernatur obcaecati maiores necessitatibus dicta, sint, commodi assumenda? 
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eius pariatur impedit excepturi non sunt perferendis? Quae eveniet eligendi autem nihil dolor repellendus, reprehenderit, tempore voluptates dicta sapiente quibusdam provident!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit iste possimus quam deleniti, minima temporibus veritatis assumenda, voluptatem itaque tempore deserunt omnis culpa eius? Optio vel eius harum nemo.
-        </p>
-    </article>
-
-    <!--Texto principal-->
-
-    <article id="texto_principal">
-        <p>
-            [texto principal]
-        </p>
-    </article>
-
-    <!--Foto-->
-
-    <div id="foto">
-        <p>[Foto]</p>
-    </div>
-
-    <!--Texto secundário-->
-
-    <article id="texto_secundario">
-        <p>
-            [texto secundário]
-        </p>
-    </article>
-    <div id="video1">
-        <p>[video]</p>
-    </div>
-
-    <!--HTML do iframe para colocar a página de fatos e mitos na página principal-->
-
-    <iframe id="fatos_mitos" src="fatos_mitos.html" frameborder="0" ></iframe>
-
-    <!--HTML do menu inferior-->
-
-    <nav id="menu_inferior">
-        <div class="box_m2">
-            <a href="desabafos.html">
-               <p> Desabafe sobre alguma história de preconceito</p>
+        <div class="item-menu-inferior">
+            <a href="_visoes/estudantes.html" class="menu-link">
+                Conheça a visão dos estudantes
             </a>
         </div>
-        <div class="box_m2">
-            <a href="visoes/estudantes.html">
-                <p>Conheça a visão dos estudantes</p>
-            </a>
-        </div>
-        <div class="box_m2">
-            <a href="visoes/professores.html">
-                <p>Conheça a visão dos professores</p>
+        <div class="item-menu-inferior">
+            <a href="_visoes/professores.html" class="menu-link">
+                Conheça a visão dos professores
             </a>
         </div>
     </nav>

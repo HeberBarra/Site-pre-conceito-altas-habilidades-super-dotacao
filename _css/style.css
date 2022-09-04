@@ -1,0 +1,248 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+/*Light theme*/ 
+
+:root {
+    --border_color: gray;
+    --item_background_color: white;
+    --alternative_background_color: lightgray;
+    --shadow_color: rgba(0, 0, 0, 0.4);
+    --body_color: lightblue;
+    --link_color: lightblue;
+    --alternative_link_color: blue;
+    --global_font_color: black;
+    --font_size: 14pt;
+}
+
+/*Dark theme*/
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --border_color: white;
+        --item_background_color: rgb(80, 80, 87);
+        --alternative_background_color: lightgray;
+        --body_color: rgb(53, 52, 52);
+        --shadow_color: rgba(199, 193, 193, 0.4);
+        --link_color: aquamarine;
+        --alternative_link_color: cyan;
+        --global_font_color: white;
+    }
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body_color);
+    color: var(--global_font_color);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe > *{
+    color: var(--global_font_color);
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--link_color);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    font-size: calc(var(--font_size) - 2pt);
+}
+
+a:hover {
+    background-color: var(--alternative_background_color);
+    color: var(--alternative_link_color);
+}
+
+h1, h2 {
+    font-family: Roboto, 'Times new Roman', Arial, serif;
+}
+
+button {
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    font-size: calc(var(--font_size) - 4pt);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    background-color: var(--item_background_color);
+    border-bottom: solid var(--border_color);
+    position: sticky;
+    top: 0%;
+}
+
+header div#menu-botao {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+header div button#botao_seguir {
+    align-self: center;
+}
+
+header div nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+}
+
+header div nav div.menu-item {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 50%;
+    height: 20%;
+}
+
+header div#logo {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--border_color);
+    width: 15%;
+    aspect-ratio: 1 / 1;
+}
+
+header h1 {
+    font-size: 20pt;
+    align-self: center;
+    width: 93%;
+    margin-left: 3%;
+}
+
+header button {
+    width: 50%;
+    height: 10%;
+    align-self: flex-end;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+article {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 90%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px var(--shadow_color);
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+}
+
+article p, h3 {
+    padding: 0 1% 0 1%;
+    text-indent: 5%;
+    font-size: var(--font_size);
+    text-align: justify;
+}
+
+h3 {
+    font-size: calc(var(--font_size) + 3pt);
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+}
+
+img#foto {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    box-shadow: 5px 5px 5px var(--shadow_color);
+    border-radius: 5%;
+}
+
+div#video-fatos_mitos {
+    display: flex;
+    gap: 1em;
+    width: 90%;
+}
+
+div#video-fatos_mitos > * { 
+    margin: 0;
+    width: 100%;
+    border: solid var(--border_color);
+    box-shadow: 5px 5px 5px var(--shadow_color);
+    background-color: var(--item_background_color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    div#video-fatos_mitos{
+        flex-direction: column;
+    }
+}
+
+
+div#video-fatos_mitos figure ul {
+    width: 100%;
+    display: grid;
+    grid-auto-rows: minmax(100%, 100%);
+    gap: 0.3em;
+    padding: 0.3em 0.3em 0 0.3em;
+}
+
+div#video-fatos_mitos figure ul li {
+    grid-row: 1;
+    width: 100%;
+}
+
+div#video-fatos_mitos figure ul li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+div#video-fatos_mitos figure video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+nav#menu-inferior div {
+    width: 100%;
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    box-shadow: 5px 5px 5px var(--shadow_color);
+}
