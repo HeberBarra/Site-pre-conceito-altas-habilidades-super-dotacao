@@ -13,31 +13,28 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            [logo]
-        </div>
         <h1>Pre-Conceito contra Altas Habilidades/Super Dotação (AH/SD)</h1>
-        <div id="menu-botao">
-            <button id="botao_seguir">Parar de seguir</button>
-            <nav #menu-principal>
-                <div class="menu-item">
-                    <a href="index.html" class="menu-link" id="essa_pagina">
-                        Home
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="fale_conosco.html" class="menu-link">
-                        Fale Conosco
-                    </a>
-                </div>
-            </nav>
-            <button id="botao_de_tema" style="width: 15%;height: 15%;"><i data-feather="sun"></i></button>
-            <script>
-                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    document.getElementById('botao_de_tema').innerHTML = '<i data-feather="moon"></i>'
-                }
-            </script>
+        <nav #menu-principal>
+            <div class="menu-item">
+                <a href="index.html" class="menu-link" id="essa_pagina">
+                    Home
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="fale_conosco.html" class="menu-link">
+                    Fale Conosco
+                </a>
+            </div>
+        </nav>
+        <div style="grid-column: 1;grid-row: 3;display: flex;align-items: center;gap: 0.5em;">
+            <button style="height: 100%;" title="clique aqui para muder o tema do site" id="botao_de_tema"><i data-feather="sun"></i></button>
+            <button id="botao_seguir" style="height: 100%;">Parar de seguir</button>
         </div>
+        <script>
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.getElementById('botao_de_tema').innerHTML = '<i data-feather="moon"></i>'
+            }
+        </script>
     </header>
 
     <main>
