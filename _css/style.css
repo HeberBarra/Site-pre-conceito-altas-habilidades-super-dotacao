@@ -121,6 +121,7 @@ article {
     width: 90%;
     height: 100%;
     border-radius: 5%;
+    padding: 1.5%;
     box-shadow: 5px 5px 5px var(--shadow_color);
     font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
 }   
