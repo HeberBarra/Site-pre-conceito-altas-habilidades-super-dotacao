@@ -104,3 +104,8 @@ article h1 {
 span.nota {
     background-color:  rgba(87, 175, 146, 0.692);
 }
+
+div.disclaimer {
+    border: solid var(--border_color);
+    background-color: lightcoral;
+}
