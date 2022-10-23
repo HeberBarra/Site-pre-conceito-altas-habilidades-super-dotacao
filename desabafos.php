@@ -68,6 +68,9 @@
         <h1>Desabafos</h1>
     </header>
     <main>
+        <?php
+            require_once "databaseConnector.php";
+        ?>
         <article>
             <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ter Altas Habillidades/Superdotação, por ter certo sofrido um certo grau de preconceito por ser inteligente, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Por favor, seja gentil e empático, eu apagarei qualquer desabafo que fuja do tema do site ou que seja má de índole, faça o mal e terá tribulação, faça o bem e terá paz.</p>
         </article>
@@ -76,11 +79,7 @@
             <form action="desabafos.php" method="post">
                 <label class="desabafo_field">
                     <input type="text" placeholder=" " name="username">
-                    <span class="placeholder">Seu nome/apelido (opcional)</span>
-                </label>
-                <label class="desabafo_field" style="margin-bottom: -1.3em">
-                    <input type="email" required placeholder=" " name="useremail">
-                    <span class="placeholder">seuemail@mail.com</span>
+                    <span class="placeholder">Seu nome/apelido (opcional e limite de 50 caracteres)</span>
                 </label>
                 <span id="word_counter">Caracteres: <span id="word_num">0</span></span>
                 <label class="desabafo_field">
@@ -91,49 +90,48 @@
             </form>
             <?php
                 $username = isset($_POST["username"])?$_POST["username"]:NULL;
-                $useremail = isset($_POST["useremail"])?$_POST["useremail"]:NULL;
                 $vent = isset($_POST["vent"])?$_POST["vent"]:NULL;
 
                 if ($username == "") {
                     $username = "Anônimo";
                 };
 
-                if ($useremail & $vent) {
-                    $stmt = $database->prepare("INSERT INTO $database VALUE (AUTO, :username, :useremail, :vent)";)
-
-                    $stmt->bindParam(':username', $username)
-                    $stmt->bindParam(':useremail', $useremail)
-                    $stmt->bindParam(':vent', $vent)
-
-                    $stmt->execute();
-
-                    if (!$conn->query($sqlAddToDatabase)) {
-                        throw new Exception("Desculpe mais um erro ocorreu ao enviar os dados ao banco de dados");
-                    };
-                };
+                if ($vent) {
+                    $sqlInsert = "INSERT INTO vents (username, vent) VALUES (?, ?)";
+                    $insertIntoDatabase = $conn->prepare($sqlInsert);   
+                    $insertIntoDatabase->bind_param('ss', $username, $vent);
+                    $insertIntoDatabase->execute();
+                    $insertIntoDatabase->close();
+                };  
             ?>
         </article>
         <article id="desabafos">
         <?php
-            $index = isset($_GET["index"])?$_GET["index"]:1
-            $sqlGetVents = 'SELECT * FROM VENTS'
-            $ventComments = $sqlGetVents.execute()
-            for ($i=($index - 1) * 10; $i <= $index * 10; $i++) {
-                if ($i == count($ventComments) - 1) {
-                    break
-                }
+            $index = isset($_GET["index"])?$_GET["index"]:1;
+            $sqlGetVents = "SELECT * FROM vents WHERE id > (($index - 1) * 10)";
+            $ventComments = mysqli_query($conn, $sqlGetVents);
+            for ($i=($index - 1) * 10; $i < $index * 10; $i++) {
+                $row = $ventComments->fetch_assoc();
+                if (!$row) {
+                    break;
+                };
                 print(
                     "<div class='vent'>" . 
-                    "<h3>" . $ventComments[$i]["name"] . " #" . $ventComments[$i]["id"] . "</h3>" . 
-                    "<p>" . $ventComments[$i]["vent"] . "</p>" .
+                    "<h3>" . $row["username"] . " #" . $row["id"] . "</h3>" . 
+                    "<p>" . $row["vent"] . "</p>" .
                     "</div>"
                 );
-            }
+            };
         ?>
             <form id="buttons" action="desabafos.php" method="get">
-                <input type="text" name="theme" style="display: none;" readonly value="light">
-                <button name="index">Próxima Página</button>
-                <button name="index">Voltar</button>
+                <?php
+                    $theme = isset($_GET["theme"])?$_GET["theme"]:"None";
+                    $nextIndex = $index + 1;    
+                    $priorIndex = $index==1?1:$index - 1;
+                    print("<input type='text' name='theme' style='display: none;' readonly value=$theme>");   
+                    print("<button name='index' value=$nextIndex>Próxima Página</button>");
+                    print("<button name='index' value=$priorIndex>Voltar</button>")
+                ?>
             </form>
         </article>
     </main>
