@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt- br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" href="_css/style.css">
+    <link rel="icon" type="image/x-icon" href="https:\\www.cep.pr.gov.br/sites/cep/themes/custom/cep_2022/favicon.ico">
     <script src="_javascript/global_scripts.js" defer></script>
     <script src="_javascript/scripts_index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <title>Pre-conceito contra Superdotação</title>
 </head>
 <body>
-    <header>
-        <h1>Pre-Conceito contra Altas Habilidades/Superdotação (AH/SD)</h1>
+    <header style="position: sticky; top: 0;">
+        <h1><div id="logo-image"></div>Pre-Conceito contra Altas Habilidades/Superdotação (AH/SD)</h1> 
         <nav id="menu-principal">
             <div class="menu-item">
                 <a href="index.html" class="menu-link">
@@ -25,21 +27,22 @@
                     Fale Conosco
                 </a>
             </div>
+            <div class="menu-item">
+                <button style="height: 100%;" title="clique aqui para muder o tema do site" id="botao_de_tema"><i data-feather="sun"></i></button>
+            </div>
+            <div class="menu-item">
+                <button id="botao_seguir" style="height: 100%;">Parar de seguir</button>
+            </div>
         </nav>
-        <div style="grid-column: 1;grid-row: 3;display: flex;align-items: center;gap: 0.5em;">
-            <button style="height: 100%;" title="clique aqui para muder o tema do site" id="botao_de_tema"><i data-feather="sun"></i></button>
-            <button id="botao_seguir" style="height: 100%;">Parar de seguir</button>
-        </div>
+        <h2>A Invisibilidade Sendo Vísivel</h2>
     </header>
 
     <main>
-        <h2>A Invisibilidade Sendo Vísivel</h2>
-
         <article class="texto" id="texto-introdutorio">
             <p>Aqui você pode contar todos os seus problemas e sua experiência como superdotado, e suas dificuldades de socializar com pessoas, as expectativas colocadas em cima de você, toda a pressão, mental que você sente como portador de Altas Habilidades. Também nós tentaremos combater o preconceito contra Altas Habilidades/Superdotação. Aqui apresentaremos alguns fatos e mitos sobre alunos superdotados, também mostraremos a visão e o preconceito dos professores alunos, por fim, diremos com realmente é ter Altas Habilidades. Para você que não tem AH/SD(Altas Habilidades/Superdotação), poderá aprender mais sobre isso.</p>
         </article>  
 
-        <img id="foto" src="_media/Foto.jpg"> 
+        <img id="foto" src="_media/smart_kid.png"> 
 
         <article class="texto" id="texto-principal">
             <p>Boa parte do preconceito contra quem tem AH/SD vem do fato das pessoas pensarem que nós somos bons em tudo ou que somos superiores, mesmo que haja mais motivos para esse preconceito esses acabam sendo os principais. Esse preconceito e a pressão psicológica que é colocada sobre nós pode acabar fazendo com que alguns de nós desensolvam depressão, ansiedade, etc. Como o Dr. Alok fala no vídeo abaixo (ele tá em inglês, mas eu legendei em português, se você fala inglês por favor apoie o canal do criador do vídeo, o <a href="https://www.youtube.com/c/HealthyGamerGG" target="_blank">HealthyGamerGG</a>), as pessoas às vezes acabam fazendo com que quem tem AH/SD tenham um futuro mediano ou lastimável, elas acabam se tornando perfectionitas ao extremo, na visão delas tudo que elas fazem tem que ser perfeito, se tiver algum errinho sequer, a pessoa vai tentar resolver esse erro, mesmo que seja algo pareça banal a maioria das pessas. </p>
@@ -50,41 +53,9 @@
             <p>Não se deve tratar alguém que tenha AH/SD como se fosse superior ou inferior, mas sim como uma pessoa normal que simplesmente tem uma facilidade maior em algumas áreas que também precisa de ajuda às vezes, se essa pessoa receber alguns tipos de tratamento problemáticos ela pode acabar tendo um futuro mediano ou lastimável.</p> 
         </article>      
         <div id="video-fatos_mitos">        
-            <iframe src="fatos_mitos.html" frameborder="0" class="Verdades"></iframe>
-            <figure>
-                <video controls poster="_media/video_thumbnail.jpg" preload="metadata">
-                    <source type="video/mp4" src="_media/Why Gifted Kids Are Actually Special Needs.mp4">
-                    <track label="Português" kind="subtitles" srclang="pt-BR" src="_media/legenda.vtt">
-                </video>
-                <ul id="video-controls" class="controls" style="list-style: none;">
-                    <li><button id="play-pause" type="button">
-                        <i data-feather="play"></i>
-                    </button></li>
-                    <li><button id="reset_video" type="button">
-                        <i data-feather="repeat"></i>
-                    </button></li>
-                    <li><button id="mute_video" type="button">
-                        <i data-feather="volume-2"></i>
-                    </button></li>
-                    <li><button id="volume_increase" type="button">
-                        <i data-feather="plus"></i>
-                    </button></li>
-                    <li><button id="volume_decrease" type="button">
-                        <i data-feather="minus"></i>
-                    </button></li>
-                    <li><button id="subtitles" type="button">Legendas</button></li>
-                    <li><button id="fullscreen" type="button">
-                        <i data-feather="maximize"></i>
-                    </button></li>
-                    <script>
-                        feather.replace()
-                    </script>
-                </ul>
-                <progress id="video_progress_bar" value="0" min="0" style="width: 100%;height: 1em;"></progress>
-                <figcaption>
-                    <a href="https://www.youtube.com/watch?v=QUjYy4Ksy1E" class="stylized-link" >Link para o vídeo original. Por favor suporte o canal do criador do vídeo</a>
-                </figcaption>
-            </figure>
+            <iframe src="fatos_mitos.html" frameborder="0" class="Verdades" style="grid-column: 1; grid-row: 1;"></iframe>
+            <iframe id="video" style="grid-column: 3; grid-row: 1;" width="560" height="315" src="https://www.youtube.com/embed/QUjYy4Ksy1E" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button id="mudar_audio" style="grid-column: 3; grid-row: 3;">Mudar idioma do áudio</button>
         </div>
 
         <article class="texto" id="texto-secundario">

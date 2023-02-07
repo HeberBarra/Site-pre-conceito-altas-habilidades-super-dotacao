@@ -3,37 +3,17 @@
 
 const cssVariables = [
     {
-        "variableName": "--border_color", 
-        "values": ["white", "gray"]
+        "variableName": "--background_primary_color", 
+        "values": ["#1f1b1b", "#ffffff"]
     },
     {
-        "variableName": "--item_background_color", 
-        "values": ["rgb(80, 80, 87)", "white"]
-    },
-    {
-        "variableName": "--alternative_background_color",
-        "values": ["lightgray", "lightgray"]
-    },
-    {
-        "variableName": "--body_color",
-        "values": ["rgb(53, 52, 52)", "lightblue"]
-    },
-    {
-        "variableName": "--shadow_color",
-        "values": ["rgba(199, 193, 193, 0.4)", "rgba(0, 0, 0, 0.4)"]
+        "variableName": "--font_color", 
+        "values": ["#ffffff", "#000000"]
     },
     {
         "variableName": "--link_color",
-        "values": ["aquamarine", "lightblue"]
+        "values": ["#68f3c5", "#06724e"]
     },
-    {
-        "variableName": "--alternative_link_color",
-        "values": ["cyan", "blue"]
-    },
-    {
-        "variableName": "--global_font_color",
-        "values": ["white", "black"]
-    }
 ]
 
 const menuAnchors = document.getElementsByClassName("menu-link");

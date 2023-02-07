@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +8,37 @@
     <title>Fatos e Mitos sobre AH/SD</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+        
+        /*Light theme colors*/
         :root {
-            --body_color: white;
-            --global_font_color: black;
+            --body_color: #ffffff;
+            --global_font_color: #000000;
         }
-    
 
+        /*Dark theme colors*/
         @media (prefers-color-scheme: dark) {
             :root {
-                --body_color: rgb(80, 80, 87);
-                --global_font_color: white;
+                --body_color: #1f1b1b;
+                --global_font_color: #ffffff
             }
         }
-        
+
+        .fato {
+            color: #0072bb;
+        }
+
+        .mito {
+            color: #eb3358;
+        }
+
         p, h3 {
-            padding: 0 1% 0 1%;
+            padding: 0 .3em;
             text-indent: 5%;
             text-align: justify;
         }
 
         h4 {
-            padding: 0 1% 0 1%;
+            padding: 0 .3em;
         }
 
         body{
@@ -39,14 +49,6 @@
             width: 100%;
             min-height: 100%;
             font-size: 13pt;
-        }
-
-        .fato {
-            color: rgb(77, 218, 77);
-        }
-
-        .mito {
-            color: rgb(235, 50, 87);
         }
 
     </style>

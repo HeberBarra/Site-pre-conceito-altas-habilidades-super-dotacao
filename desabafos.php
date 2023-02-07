@@ -1,52 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desabafos</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
-
-        
-        /*Light theme*/ 
-
-        :root {
-            --border_color: gray;
-            --item_background_color: white;
-            --alternative_background_color: lightgray;
-            --shadow_color: rgba(0, 0, 0, 0.4);
-            --body_color: lightblue;
-            --link_color: lightblue;
-            --alternative_link_color: blue;
-            --global_font_color: black;
-        }
-
-        /*Dark theme*/
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --border_color: white;
-                --item_background_color: rgb(80, 80, 87);
-                --alternative_background_color: lightgray;
-                --body_color: rgb(53, 52, 52);
-                --shadow_color: rgba(199, 193, 193, 0.4);
-                --link_color: aquamarine;
-                --alternative_link_color: cyan;
-                --global_font_color: white;
-            }
-        }
-
-        body{
-            background-color: var(--body_color);
-            color: var(--global_font_color);
-            margin: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-    </style>
     <script src="_javascript/global_scripts.js" defer></script>
     <script src="_javascript/desabafo_scripts.js" defer></script>
     <link rel="stylesheet" href="_css/desabafos.css">
@@ -116,7 +74,7 @@
                     break;
                 };
                 print(
-                    "<div class='vent'>" . 
+                    "<div class='vent' style='margin: .3em;'>" . 
                     "<h3>" . $row["username"] . " #" . $row["id"] . "</h3>" . 
                     "<p>" . $row["vent"] . "</p>" .
                     "</div>"
@@ -128,9 +86,9 @@
                     $theme = isset($_GET["theme"])?$_GET["theme"]:"None";
                     $nextIndex = $index + 1;    
                     $priorIndex = $index==1?1:$index - 1;
-                    print("<input type='text' name='theme' style='display: none;' readonly value=$theme>");   
+                    print("<input type='text' name='theme' style='display: none;' readonly value=$theme>");
+                    print("<button name='index' value=$priorIndex>Voltar</button>");   
                     print("<button name='index' value=$nextIndex>Próxima Página</button>");
-                    print("<button name='index' value=$priorIndex>Voltar</button>")
                 ?>
             </form>
         </article>

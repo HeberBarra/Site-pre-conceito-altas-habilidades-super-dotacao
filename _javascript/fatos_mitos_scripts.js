@@ -6,11 +6,11 @@ const root = document.querySelector(":root")
 const cssVariables = [
     {
         "variableName": "--body_color",
-        "values": ["rgb(80, 80, 87)", "white"]
+        "values": ["#1f1b1b", "#ffffff"]
     },
     {
         "variableName": "--global_font_color",
-        "values": ["white", "black"]
+        "values": ["#ffffff", "#000000"]
     }
 ];
 
