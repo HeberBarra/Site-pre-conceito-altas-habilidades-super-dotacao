@@ -1,7 +1,5 @@
 const followButton = document.getElementById("botao_seguir");
-const videoContainer = document.getElementsByTagName("figure")[0];
-const giftedKidsVideo = document.getElementsByTagName("video")[0];
-const videoControls = document.getElementById("video-controls");
+const giftedKidsVideo = document.getElementById("video");
 
 /*header*/
 let toggleMenuFollow = true;
