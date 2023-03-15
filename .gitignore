@@ -2,4 +2,5 @@
 *.mp4
 *.py
 *.txt
+*.css.map
 databaseConnector.php
