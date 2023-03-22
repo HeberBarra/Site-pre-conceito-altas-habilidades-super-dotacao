@@ -30,9 +30,9 @@ body {
 nav#menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
   justify-content: space-evenly;
-  align-items: center;
 }
 nav#menu div.menu-item {
   width: 100%;
@@ -100,20 +100,10 @@ article form label * {
   flex-wrap: wrap;
   width: 100%;
 }
-article form label input:not(:-moz-placeholder-shown) + span.placeholder {
-  position: relative;
-  color: var(--font_color);
-  top: -110%;
-}
 article form label input:not(:placeholder-shown) + span.placeholder {
   position: relative;
   color: var(--font_color);
   top: -110%;
-}
-article form label textarea:not(:-moz-placeholder-shown) + span.placeholder {
-  position: relative;
-  color: var(--font_color);
-  top: -1.4em;
 }
 article form label textarea:not(:placeholder-shown) + span.placeholder {
   position: relative;
@@ -130,7 +120,8 @@ article form span#word_counter {
 #buttons {
   display: flex;
   flex-direction: row;
+  align-items: unset;
   width: 100%;
   width: 90%;
   gap: 1em;
-}/*# sourceMappingURL=desabafos.css.map */
+}

@@ -1,6 +1,7 @@
-@mixin flexrow {
+@mixin flexrow($items_alignment) {
     display: flex;
     flex-direction: row;
+    align-items: $items_alignment;
     width: 100%;
 }
 

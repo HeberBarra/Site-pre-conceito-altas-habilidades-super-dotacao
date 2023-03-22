@@ -29,7 +29,7 @@
 }
 
 nav#menu {
-    @include flexrow;
+    @include flexrow(unset);
 
     div.menu-item {
         background-color: var(--background_secondary_color);
