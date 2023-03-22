@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import "flexstyles";
+@import "variables";
+
+/*Light theme colors*/
+:root {
+    --background_primary_color: #ffffff;
+    --background_secondary_color: #0072bb;
+    --background_tertiary_color: #015d98;
+    --font_color: #000000;
+    --alternative_font_color: #ffffff;
+    --alternative_background_color: #00b0e6;
+    --link_color: #06724e;
+}
+
+/*Dark theme colors*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background_primary_color: #1f1b1b;
+        --font_color: #ffffff;
+        --link_color: #68f3c5;
+    }
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+body {
+    background-color: var(--background_primary_color);
+}
+
+@media screen and (min-width: 800px) {
+    div#logo-image {
+        background: url("https://web.celepar.pr.gov.br/drupal/images/seed/logo-cep-105x105.png") no-repeat center;
+        background-size: 100% 100%;
+        width: 3em;
+        height: 3em;
+    }
+}
+
+h1 {
+    @include flexrow(center);
+    justify-content: space-evenly;
+    font-size: $bigFontSize;
+    color: var(--font_color);
+    font-weight: normal;
+    padding: .5em;
+}
+
+h2 {
+    background-color: var(--background_tertiary_color);
+    padding: .5em;
+    color: var(--alternative_font_color);
+}
+
+header {
+    background-color: var(--background_primary_color);
+    position: sticky;
+    top: 0;
+
+    nav#menu-principal {
+        @include flexrow(unset);
+        background-color: var(--background_secondary_color);
+        justify-content: space-evenly;
+    }
+
+    div.menu-item {
+        width: 100%;
+
+        * {
+            @include flexcenter;
+            text-decoration: none;
+            background-color: #00000000;
+            color: var(--alternative_font_color);
+            width: 100%;
+            font-size: $fontSize;
+
+            &:hover {
+                background-color: var(--alternative_background_color);
+            }
+        }
+        a, button {
+            height: 100%;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.texto {
+    margin: .5em;
+    border: solid var(--background_tertiary_color);
+    color: var(--font_color);
+    font-size: $fontSize;
+    text-align: justify;
+    padding: .3em;
+    text-indent: 1em;
+    width: 90%;
+
+    a {
+        color: var(--link_color);
+    }
+}
+
+img {
+    max-width: 60%;
+    border: solid var(--background_tertiary_color);
+    border-bottom: 10%;
+}
+
+@media screen and (max-width: 850px) {
+    div#video-fatos_mitos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
+
+    * {
+        width: 100%;
+        border: solid var(--background_tertiary_color);
+    }
+
+    iframe {
+        margin-bottom: .3em;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    div#video-fatos_mitos {
+        display: grid;
+        width: 90%;
+        height: 20em;
+        grid-template-columns: 49% 2% 49%;
+        grid-template-rows: 90% 2% 8%;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: solid var(--background_tertiary_color);
+        }
+
+        #player {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        button#mudar_audio {
+            grid-column: 3;
+            grid-row: 3;
+            border: solid var(--background_tertiary_color);
+        }
+
+        .verdades {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+}
+
+nav#menu-inferior {
+    @include flexrow(unset);
+    justify-content: space-evenly;
+
+    div.item-menu-inferior {
+        background-color: var(--background_tertiary_color);
+        width: 100%;
+        height: 3em;
+    }
+
+    a {
+        @include flexcenter;
+        color: #ffffff;
+        text-decoration: none;
+        height: 100%;
+        padding: .2em;
+        font-size: $fontSize;
+
+        &:hover {
+            background-color: var(--alternative_background_color);
+        }
+    }
+}
