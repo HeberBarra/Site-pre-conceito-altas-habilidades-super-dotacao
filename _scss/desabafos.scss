@@ -106,6 +106,10 @@ article {
                 width: 100%;
             }
 
+            span.placeholder {
+                color: $inputFontColor;
+            }
+
             input:not(:placeholder-shown) + span.placeholder {
                 position: relative;
                 color: var(--font_color);

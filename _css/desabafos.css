@@ -102,6 +102,9 @@ article form label * {
   flex-wrap: wrap;
   width: 100%;
 }
+article form label span.placeholder {
+  color: #4c4747;
+}
 article form label input:not(:placeholder-shown) + span.placeholder {
   position: relative;
   color: var(--font_color);
