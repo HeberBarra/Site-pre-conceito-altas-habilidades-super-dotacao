@@ -108,6 +108,15 @@ article.texto {
     a {
         color: var(--link_color);
     }
+
+    b {
+        color: var(--background_secondary_color);
+    }
+
+    span.spoiler {
+        background-color: var(--font_color);
+        color: #00000000;
+    }
 }
 
 img {

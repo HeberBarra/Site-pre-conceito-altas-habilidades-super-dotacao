@@ -107,6 +107,13 @@ article.texto {
 article.texto a {
   color: var(--link_color);
 }
+article.texto b {
+  color: var(--background_secondary_color);
+}
+article.texto span.spoiler {
+  background-color: var(--font_color);
+  color: rgba(0, 0, 0, 0);
+}
 
 img {
   max-width: 60%;
