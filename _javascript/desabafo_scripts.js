@@ -5,11 +5,11 @@ const formWithButtonsTheme = document.getElementsByName("theme")[0];
 
 sendForm.action = location.href
 
-textAreaInput.addEventListener("input", () => {
-    wordNum.innerText = textAreaInput.textLength;
-});
+if (textAreaInput && wordNum) {
+    textAreaInput.addEventListener("input", () => {wordNum.innerText = textAreaInput.textLength});
+}
 
-changeFormTheme = () => { 
+const changeFormTheme = () => { 
     if (siteTheme === "dark") {
         formWithButtonsTheme.value = "light";
     } else {
