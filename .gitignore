@@ -5,3 +5,6 @@
 *.css.map
 databaseConnector.php
 package.json
+package-lock.json
+node_modules
+_typescript/tsconfig.json
