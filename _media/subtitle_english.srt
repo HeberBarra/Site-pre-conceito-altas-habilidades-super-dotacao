@@ -756,379 +756,379 @@ minimal studying or no studying at all,
 and then seventh grade rolls around
 
 190
-00:06:01,199 --> 00:06:04,000
+00:06:01,334 --> 00:06:02,600
 eighth grade rolls around, they start to
 
 191
-00:06:02,479 --> 00:06:05,360
+00:06:02,601 --> 00:06:04,067
 struggle a little bit maybe they get Bs,
 
 192
-00:06:04,000 --> 00:06:07,280
+00:06:04,068 --> 00:06:05,100
 they're still not learning how to study
 
 193
-00:06:05,360 --> 00:06:10,639
+00:06:05,101 --> 00:06:07,965
 because they sort of skipped that part of ...
 
 194
-00:06:07,280 --> 00:06:12,400
+00:06:07,966 --> 00:06:10,133
 of the you know... the skill building
 
 195
-00:06:10,639 --> 00:06:13,919
+00:06:10,134 --> 00:06:12,167
 and we'll kind of get to that later, 
 
 196
-00:06:12,400 --> 00:06:15,360
+00:06:12,168 --> 00:06:13,967
 and then what tends to happen with gifted
 
 197
-00:06:13,919 --> 00:06:16,720
+00:06:13,968 --> 00:06:15,565
 kids is that they don't need to study,
 
 198
-00:06:15,360 --> 00:06:18,160
+00:06:15,566 --> 00:06:16,767
 don't need to study, don't need to study.
 
 199
-00:06:16,720 --> 00:06:20,000
+00:06:16,768 --> 00:06:17,767
 And then they hit a wall,
 
 200
-00:06:18,160 --> 00:06:22,639
+00:06:17,768 --> 00:06:20,265
 they finally get into some kind of
 
 201
-00:06:20,000 --> 00:06:24,240
+00:06:20,266 --> 00:06:21,233
 situation where their 
 
 202
-00:06:22,639 --> 00:06:26,319
+00:06:21,234 --> 00:06:23,709
 raw intellect cannot...
 
 203
-00:06:24,240 --> 00:06:28,000
+00:06:23,710 --> 00:06:26,532
 is no longer sufficient to handle the
 
 204
-00:06:26,319 --> 00:06:28,880
+00:06:26,533 --> 00:06:27,867
 schoolwork that they're 
 
 205
-00:06:28,000 --> 00:06:30,639
+00:06:27,868 --> 00:06:28,500
 supposed to handle,
 
 206
-00:06:28,880 --> 00:06:32,639
+00:06:28,501 --> 00:06:30,800
 but they've trained themselves at that
 
 207
-00:06:30,639 --> 00:06:35,680
+00:06:30,801 --> 00:06:33,067
 point, they've customized themselves at
 
 208
-00:06:32,639 --> 00:06:36,880
+00:06:33,068 --> 00:06:34,733
 that point to managing 
 
 209
-00:06:35,680 --> 00:06:38,479
+00:06:34,734 --> 00:06:36,300
 school with raw intellect,
 
 210
-00:06:36,880 --> 00:06:40,479
+00:06:36,301 --> 00:06:38,600
 and so when that kind of falls short
 
 211
-00:06:38,479 --> 00:06:44,000
+00:06:38,600 --> 00:06:40,765
 they like they really kind of really hit
 
 212
-00:06:40,479 --> 00:06:45,120
+00:06:40,766 --> 00:06:41,900
 a wall, it's a very very 
 
 213
-00:06:44,000 --> 00:06:46,639
+00:06:41,901 --> 00:06:44,733
 hard cliff to to overcome,
 
 214
-00:06:45,120 --> 00:06:48,400
+00:06:44,734 --> 00:06:46,800
 and so this is kind of the first thing
 
 215
-00:06:46,639 --> 00:06:50,479
+00:06:46,801 --> 00:06:48,631
 that that sort of shoots gifted kids in
 
 216
-00:06:48,400 --> 00:06:52,240
+00:06:48,632 --> 00:06:50,567
 the foot and this also leads to kind of
 
 217
-00:06:50,479 --> 00:06:53,599
+00:06:50,568 --> 00:06:52,298
 this idea of perfectionism and burnout,
 
 218
-00:06:52,240 --> 00:06:55,039
+00:06:52,299 --> 00:06:53,767
 because then they like you know then
 
 219
-00:06:53,599 --> 00:06:56,720
+00:06:53,768 --> 00:06:55,267
 they... they struggle a lot, they don't
 
 220
-00:06:55,039 --> 00:06:58,160
+00:06:55,268 --> 00:06:56,800
 understand why they can't do it, they...
 
 221
-00:06:56,720 --> 00:06:59,199
+00:06:56,801 --> 00:06:58,367
 they try, they know they're smart,
 
 222
-00:06:58,160 --> 00:07:01,120
+00:06:58,368 --> 00:06:59,367
 everyone's talking to them about
 
 223
-00:06:59,199 --> 00:07:03,120
+00:06:59,368 --> 00:07:01,167
 potential, they start to feel really bad
 
 224
-00:07:01,120 --> 00:07:04,880
+00:07:01,168 --> 00:07:03,233
 about themselves. So the first kind of
 
 225
-00:07:03,120 --> 00:07:07,199
+00:07:03,234 --> 00:07:05,133
 interesting thing that gifted kids run
 
 226
-00:07:04,880 --> 00:07:09,520
+00:07:05,134 --> 00:07:06,833
 into is the fact that they sort of don't
 
 227
-00:07:07,199 --> 00:07:10,720
+00:07:06,834 --> 00:07:09,267
 develop the proper study habits, because
 
 228
-00:07:09,520 --> 00:07:12,639
+00:07:09,268 --> 00:07:11,097
 you know as a six-year-old it's kind of
 
 229
-00:07:10,720 --> 00:07:14,080
+00:07:11,098 --> 00:07:12,700
 not your fault, because like you're not
 
 230
-00:07:12,639 --> 00:07:16,479
+00:07:12,701 --> 00:07:14,133
 mature enough as a six-year-old to
 
 231
-00:07:14,080 --> 00:07:18,720
+00:07:14,134 --> 00:07:16,767
 realize, like "Oh I need you know to have
 
 232
-00:07:16,479 --> 00:07:20,400
+00:07:16,767 --> 00:07:18,933
 good study habits. So even though the
 
 233
-00:07:18,720 --> 00:07:21,599
+00:07:18,934 --> 00:07:20,667
 teacher said this last tuesday and I
 
 234
-00:07:20,400 --> 00:07:22,800
+00:07:20,668 --> 00:07:21,733
 understand that I don't need to study,
 
 235
-00:07:21,599 --> 00:07:24,240
+00:07:21,734 --> 00:07:22,900
 I'm going to sit down and like practice
 
 236
-00:07:22,800 --> 00:07:26,639
+00:07:22,901 --> 00:07:24,233
 my study habits". It doesn't make any
 
 237
-00:07:24,240 --> 00:07:28,560
+00:07:24,234 --> 00:07:25,667
 sense, it's like completely artificial,
 
 238
-00:07:26,639 --> 00:07:30,639
+00:07:25,668 --> 00:07:28,067
 so that's the first thing that happens,
 
 239
-00:07:28,560 --> 00:07:32,720
+00:07:28,068 --> 00:07:30,833
 is that they kind of hit this wall of... of
 
 240
-00:07:30,639 --> 00:07:34,319
+00:07:30,834 --> 00:07:32,200
 you know not being able to study.
 
 241
-00:07:32,720 --> 00:07:36,720
+00:07:32,201 --> 00:07:34,333
 The second thing to consider is the
 
 242
-00:07:34,319 --> 00:07:38,800
+00:07:34,334 --> 00:07:36,500
 expectation, so another thing that really
 
 243
-00:07:36,720 --> 00:07:40,479
+00:07:36,501 --> 00:07:38,467
 leads gifted kids kind of
 
 244
-00:07:38,800 --> 00:07:42,639
+00:07:38,468 --> 00:07:41,200
 down the wrong path, is the burden 
 
 245
-00:07:40,479 --> 00:07:44,080
+00:07:41,201 --> 00:07:42,867
 of expectation that's placed
 
 246
-00:07:42,639 --> 00:07:45,440
+00:07:42,868 --> 00:07:44,100
 upon them, so from a very young age
 
 247
-00:07:44,080 --> 00:07:47,039
+00:07:44,101 --> 00:07:45,500
 they're told "Oh you're gifted", "You're
 
 248
-00:07:45,440 --> 00:07:49,199
+00:07:45,501 --> 00:07:47,033
 smart", "You're special", "You have so much
 
 249
-00:07:47,039 --> 00:07:52,720
+00:07:47,034 --> 00:07:49,233
 potential", and so what that starts to do,
 
 250
-00:07:49,199 --> 00:07:54,960
+00:07:49,234 --> 00:07:52,667
 is it constructs like a very very lofty
 
 251
-00:07:52,720 --> 00:07:56,639
+00:07:52,668 --> 00:07:55,167
 goal in their minds, right. So I'm going
 
 252
-00:07:54,960 --> 00:07:59,440
+00:07:55,168 --> 00:07:56,767
 to use kind of an analogy which is kind
 
 253
-00:07:56,639 --> 00:08:01,280
+00:07:56,768 --> 00:07:59,567
 of like... you know if I think about an
 
 254
-00:07:59,440 --> 00:08:03,440
+00:07:59,568 --> 00:08:01,333
 amazing home, like I think about a
 
 255
-00:08:01,280 --> 00:08:05,919
+00:08:01,334 --> 00:08:03,600
 mansion, it can have a beautiful
 
 256
-00:08:03,440 --> 00:08:07,680
+00:08:03,601 --> 00:08:05,967
 blueprint and I can buy a gigantic piece
 
 257
-00:08:05,919 --> 00:08:09,919
+00:08:05,968 --> 00:08:07,867
 of land, and I can look at that and I can
 
 258
-00:08:07,680 --> 00:08:12,400
+00:08:07,868 --> 00:08:09,833
 say like "Oh... like this... this home or this...
 
 259
-00:08:09,919 --> 00:08:14,240
+00:08:09,834 --> 00:08:11,900
 this blueprint has so much potential".
 
 260
-00:08:12,400 --> 00:08:15,280
+00:08:11,901 --> 00:08:13,567
 And sometimes we kind 
 
 261
-00:08:14,240 --> 00:08:16,400
+00:08:13,568 --> 00:08:15,865
 of forget that like, you can
 
 262
-00:08:15,280 --> 00:08:18,639
+00:08:15,866 --> 00:08:16,631
 have like... you can have a
 
 263
-00:08:16,400 --> 00:08:21,840
+00:08:16,632 --> 00:08:18,667
 blueprint for a mansion, but that's gonna
 
 264
-00:08:18,639 --> 00:08:24,479
+00:08:18,668 --> 00:08:21,100
 actually take way more work to achieve
 
 265
-00:08:21,840 --> 00:08:26,000
+00:08:21,101 --> 00:08:24,765
 than like building a shack. So the other
 
 266
-00:08:24,479 --> 00:08:28,000
+00:08:24,766 --> 00:08:26,400
 really interesting thing that... that we
 
 267
-00:08:26,000 --> 00:08:30,240
+00:08:26,401 --> 00:08:28,198
 sort of kind of get wrong societally, is
 
 268
-00:08:28,000 --> 00:08:31,759
+00:08:28,199 --> 00:08:29,568
 that we assume that 
 
 269
-00:08:30,240 --> 00:08:33,279
+00:08:29,569 --> 00:08:30,867
 when someone is gifted,
 
 270
-00:08:31,759 --> 00:08:35,760
+00:08:30,868 --> 00:08:33,500
 things are actually going to be easier
 
 271
-00:08:33,279 --> 00:08:37,919
+00:08:33,501 --> 00:08:36,065
 for them, that they need to work less to
 
 272
-00:08:35,760 --> 00:08:39,839
+00:08:36,066 --> 00:08:37,167
 accomplish the same amount,
 
 273
-00:08:37,919 --> 00:08:42,800
+00:08:37,168 --> 00:08:40,032
 but in my experience living up to a
 
 274
-00:08:39,839 --> 00:08:44,720
+00:08:40,033 --> 00:08:42,965
 gifted child's potential involves more
 
 275
-00:08:42,800 --> 00:08:46,080
+00:08:42,966 --> 00:08:45,098
 work, it's sort of like you know it's
 
 276
-00:08:44,720 --> 00:08:48,160
+00:08:45,099 --> 00:08:46,267
 just like building a shack versus
 
 277
-00:08:46,080 --> 00:08:50,720
+00:08:46,268 --> 00:08:48,200
 building a mansion, like sure the mansion
 
 278
-00:08:48,160 --> 00:08:53,040
+00:08:48,201 --> 00:08:50,700
 is capable of so much more than the shack
 
 279
-00:08:50,720 --> 00:08:55,040
+00:08:50,701 --> 00:08:53,265
 is capable of, but let's not forget for a
 
 280
-00:08:53,040 --> 00:08:57,760
+00:08:53,266 --> 00:08:55,167
 moment, that the amount of effort that it
 
 281
-00:08:55,040 --> 00:08:59,680
+00:08:55,168 --> 00:08:57,633
 goes into building a mansion is actually
 
 282
-00:08:57,760 --> 00:09:01,440
+00:08:57,634 --> 00:08:59,865
 way more than what's required to build a
 
 283
-00:08:59,680 --> 00:09:02,880
+00:08:59,866 --> 00:09:01,567
 shack. This is the second place that
 
 284
