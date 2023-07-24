@@ -1,6 +1,6 @@
 const noteButton:HTMLButtonElement | null = document.querySelector("#noteButton")
 const spanStatus:HTMLSpanElement | null = document.querySelectorAll("span")[1]
-const spanNotes:NodeListOf<HTMLSpanElement> | null = document.querySelectorAll("span")
+const spanNotes:NodeListOf<HTMLSpanElement> | null = document.querySelectorAll("span.nota")
 const buttonValues:string[] = ["Esconder Notas", "Mostrar Notas"]
 const statusValues:string[] = ["visíveis", "ocultas"]
 

@@ -5,28 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
+    <link rel="icon" type="image/x-icon" href="https:\\www.cep.pr.gov.br/sites/cep/themes/custom/cep_2022/favicon.ico">
     <title>Visão dos estudantes</title>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="../_javascript/global_scripts.js" defer></script>
+    <script src="../_javascript/change_theme.js" defer></script>
     <script src="../_javascript/visoes.js" defer></script>
     <link rel="stylesheet" href="../_css/visoes.css">
+    <link rel="stylesheet" href="../_css/logo_image.css">
 </head>
 <body>
-    <nav id="menu">
-        <div class="menu-item">
-            <a href="../index.html" class="menu-link">
-                Home
-            </a>
-        </div>
-        <div class="menu-item">
-            <a href="../fale_conosco.html" class="menu-link">
-                Fale Conosco
-            </a>
-        </div>
-    </nav>
+    <header>
+        <h1>
+            <div id="logo-image"></div>
+            Visão dos Estudantes
+        </h1>
+        <nav id="menu">
+            <div class="menu-item">
+                <a href="../index.html" class="menu-link">
+                    Home
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="../fale_conosco.html" class="menu-link">
+                    Fale Conosco
+                </a>
+            </div>
+            <div class="menu-item">
+                <button title="clique aqui para muder o tema do site" id="botao_de_tema">
+                    <img src="../_media/feather-icons/lightTheme/sun.svg" alt="símbolo do botão de trocar o tema">
+                </button>
+            </div>
+        </nav>
+    </header>
     <article>
-        <h1 style="display: flex;flex-direction: row;justify-content: space-between;">Está é a visão dos estudantes: <button id="noteButton">Esconder Notas</button></h1>
-        <h1>Notas do criador do site: <span class="nota">(exemplo)</span> atualmente <span id="status">visíveis</span></h1>
+        <h1 id="info_notas"><div>Notas do criador do site: <span class="nota">(exemplo)</span> atualmente <span id="status">visíveis</div><button id="noteButton">Esconder Notas</button></span></h1>
         <div class="disclaimer">
             <p>Aviso: por hora este é um texto provisóio, pois poucos alunos<span class="nota">(exatamente 9 até agora)</span> responderam a pesquisa, a maior parte dos estudantes que responderam-na são do Colégio Estadual do Paraná (CEP). <span class="nota">(Escrito no dia 14 de Outubro de 2022)</span></p>
         </div>

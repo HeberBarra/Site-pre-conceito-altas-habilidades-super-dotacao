@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
+    <link rel="icon" type="image/x-icon" href="https:\\www.cep.pr.gov.br/sites/cep/themes/custom/cep_2022/favicon.ico">
     <link rel="stylesheet" href="_css/fale_conosco.css">
-    <script src="_javascript/global_scripts.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="_css/logo_image.css">
+    <script src="_javascript/change_theme.js" defer></script>
     <title>Fale conosco</title>
 </head>
 <body>
-    <nav id="menu">
-        <div class="menu-item">
-            <a href="index.html" class="menu-link">
-                Home
-            </a>
-        </div>
-        <div class="menu-item">
-            <a href="fale_conosco.html" class="menu-link" id="essa_pagina">
-                Fale Conosco
-            </a>
-        </div>
-    </nav>
+    <header>
+        <h1>
+            <div id="logo-image"></div>
+            Fale Conosco
+        </h1>
+        <nav id="menu">
+            <div class="menu-item">
+                <a href="index.html" class="menu-link">
+                    Home
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="fale_conosco.html" class="menu-link" id="essa_pagina">
+                    Fale Conosco
+                </a>
+            </div>
+            <div class="menu-item">
+                <button title="clique aqui para muder o tema do site" id="botao_de_tema">
+                    <img src="_media/feather-icons/lightTheme/sun.svg" alt="símbolo do botão de trocar o tema">
+                </button>
+            </div>
+        </nav>
+    </header>
     <article id="contatos">
         <h1>Forma de contato: </h1>
         <p>Atualmente a única forma de contato disponível é por e-mail, por favor apenas mandem algum e-mail caso seja alguma realmente importante, por exemplo pedir a correção de alguma coisa ou pedir alguma coisa de importante relacionada ao site:</p>
         <ul>
             <li>
-                <i data-feather="mail"></i>
+                <img src="_media/feather-icons/darkTheme/mail.svg">
                 <a href="mailto:heberferrirabara@gmail.com">
                     E-Mail pessoal do criador do site
                 </a>
             </li>
             <li>
-                <i data-feather="mail"></i>
+                <img src="_media/feather-icons/darkTheme/mail.svg">
                 <a href="mailto:heber.barra@escola.pr.gov.br">
                     E-Mail @escola do criador do site
                 </a>
             </li>
-            <script>
-                feather.replace()
-            </script>   
         </ul>
     </article>
 </body>

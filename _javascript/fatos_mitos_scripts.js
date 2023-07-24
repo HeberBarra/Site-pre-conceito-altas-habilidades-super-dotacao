@@ -1,8 +1,6 @@
+"use strict";
 const url = window.location.href;
 const root = document.querySelector(":root");
-/*CSS Variables
-The first color in the values is the dark mode color and second one is the light mode color
-*/
 const cssVariables = [
     {
         "variableName": "--body_color",

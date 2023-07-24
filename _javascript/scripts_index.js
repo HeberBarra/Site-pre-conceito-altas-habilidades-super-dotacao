@@ -1,3 +1,4 @@
+"use strict";
 const followButton = document.querySelector("#botao_seguir");
 const changeAudioButton = document.querySelector("#mudar_audio");
 const giftedKidsVideo = document.querySelector("#video");

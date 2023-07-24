@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --body-color: #1f1b1b;
+        --body_color: #1f1b1b;
         --global_font_color: #ffffff;
     }
 }
@@ -34,7 +34,7 @@ h4 {
 
 body {
     color: var(--global_font_color);
-    background-color: var(--body-color);
+    background-color: var(--body_color);
     font-family: $fontFamily;
     margin: 0;
     width: 100%;
