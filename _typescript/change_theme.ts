@@ -2,6 +2,7 @@ const themeButtonSymbol: HTMLImageElement | null = document.querySelector("#bota
 const themeButton: HTMLButtonElement | null = document.querySelector("#botao_de_tema")
 const rootElement: HTMLElement | null = document.querySelector(":root")
 const iframeFactsMyths: HTMLIFrameElement | null = document.querySelector("iframe")
+const mailSymbols: NodeListOf<HTMLImageElement> | null = document.querySelectorAll(".mail_symbol")
 
 const cssVars = [
     {
@@ -17,6 +18,21 @@ const cssVars = [
         "values": ["#68f3c5", "#06724e"]
     }
 ]
+
+const changeMailSymbol = () => {
+    const mailSymbolsSrcs = [
+        "_media/feather-icons/lightTheme/mail.svg",
+        "_media/feather-icons/darkTheme/mail.svg"
+    ]
+    
+    if (!mailSymbols) { return }
+
+    if (window.localStorage.getItem("theme") == "light") {
+        mailSymbols.forEach(mail => mail.src = mailSymbolsSrcs[0])
+    } else {
+        mailSymbols.forEach(mail => mail.src = mailSymbolsSrcs[1])
+    }
+}
 
 const changeThemeButton = () => {
     const buttonIcons = [
@@ -53,6 +69,7 @@ const changeSiteTheme = () => {
     }
 
     changeThemeButton()
+    changeMailSymbol()
 
     if (iframeFactsMyths) {
         let originalSrc = iframeFactsMyths.src.split("?")[0]
