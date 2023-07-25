@@ -17,6 +17,13 @@
     --link_color: #68f3c5;
   }
 }
+button {
+  background-color: transparent;
+}
+button:hover {
+  background-color: var(--alternative_background_color);
+}
+
 article {
   width: 100%;
   border: none;
