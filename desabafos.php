@@ -42,7 +42,7 @@
         require_once "databaseConnector.php";
         ?>
         <article>
-            <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ter Altas Habilidades/Superdotação, por ter sofrido um certo grau de preconceito por ser inteligente, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Por favor, seja gentil e empático, eu apagarei qualquer desabafo que fuja do tema do site ou que seja má de índole. "Faça o mal e terá tribulação, faça o bem e terá paz."</p>
+            <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ter Altas Habilidades/Superdotação, por ter sofrido um certo grau de preconceito por ser inteligente, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Por favor, seja gentil e empático. "Faça o mal e terá tribulação, faça o bem e terá paz."</p>
         </article>
         <article id="adicionar_desabafo">
             <h2>Adicionar desabafo: </h2>
@@ -54,7 +54,7 @@
                     Seu nome/apelido (opcional)
                 </span>
                 <label class="desabafo_field" id="username_input">
-                    <input type="text" name="username" maxlength="40">
+                    <input type="text" name="username" placeholder="Seu nome/apelido (opcional)" maxlength="40">
                 </label>
                 <span class="char_counter" id="vent_counter">
                     Limite 700 caracteres ­— total: <span class="char_number">0</span>
@@ -63,7 +63,7 @@
                     Digite sua história/relato aqui
                 </span>
                 <label class="desabafo_field" id="vent_input">
-                    <textarea maxlength="700" style="height: 3em;" required name="vent"></textarea>
+                    <textarea maxlength="700" placeholder="Digite sua história/relato aqui" required name="vent"></textarea>
                 </label>
                 <button id="enviar">Enviar</button>
             </form>
