@@ -1,20 +1,25 @@
-const sendForm = document.getElementsByTagName("form")[0];
-const textAreaInput = document.getElementsByTagName("textarea")[0];
-const wordNum = document.getElementById("word_num");
-const formWithButtonsTheme = document.getElementsByName("theme")[0];
-
-sendForm.action = location.href
-
-if (textAreaInput && wordNum) {
-    textAreaInput.addEventListener("input", () => {wordNum.innerText = textAreaInput.textLength});
+"use strict";
+const placeholdersSpans = document.querySelectorAll(".placeholder");
+const desabafoInputs = document.querySelectorAll(".desabafo_field *");
+const charCounters = document.querySelectorAll(".char_number");
+for (let i = 0; i < placeholdersSpans.length; i++) {
+    if (!desabafoInputs) {
+        break;
+    }
+    let gridRowValues = ["1", "3"];
+    let gridRowDefaultValues = ["2", "4"];
+    placeholdersSpans[i].addEventListener("click", () => desabafoInputs[i].focus());
+    desabafoInputs[i].addEventListener("input", () => {
+        if (charCounters) {
+            charCounters[i].innerText = `${desabafoInputs[i].value.length}`;
+        }
+        if (desabafoInputs[i].value.length != 0) {
+            placeholdersSpans[i].style.gridRow = gridRowValues[i];
+            placeholdersSpans[i].style.color = "var(--font-color)";
+        }
+        else {
+            placeholdersSpans[i].style.gridRow = gridRowDefaultValues[i];
+            placeholdersSpans[i].style.color = "#808080";
+        }
+    });
 }
-
-const changeFormTheme = () => { 
-    if (siteTheme === "dark") {
-        formWithButtonsTheme.value = "light";
-    } else {
-        formWithButtonsTheme.value = "dark";
-    };
-};
-
-changeFormTheme()

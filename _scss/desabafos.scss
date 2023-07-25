@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import "flexstyles";
 @import "variables";
+@import "header_style";
 
 /*Light theme colors*/
 :root {
@@ -31,109 +32,120 @@
 
 body {
     background-color: var(--background_primary_color);
+    color: var(--font_color);
 }
 
-nav#menu {
-    @include flexrow(center);
-    justify-content: space-evenly;
-    
-    div.menu-item {
-        width: 100%;
-        background-color: var(--background_secondary_color);
-
-        &:hover {
-            background-color: var(--alternative_background_color)
-        }
-
-        a {
-            @include flexcenter;
-            color: var(--alternative_font_color);
-            text-decoration: none;
-            width: 100%;
-            font-size: $fontSize;
-        }
+header {
+    h1 {
+        @include commonHeaderStyle;
+        color: var(--font_color);
     }
-}
 
-h1 {
-    width: 100%;
-    padding: 0 .3em;
-    background-color: var(--background_tertiary_color);
-    margin-bottom: .3em;
-    color: var(--alternative_font_color);
+    nav {
+        @include commonNavStyle;
+    }
+
+    margin-bottom: 1.5em; 
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: .3em;
-    align-items: center;
-}
+    @include flexColumn(center);
+    gap: 1.5em;
 
-article {
-    width: 90%;
-    background-color: var(--background_primary_color);
-    color: var(--font_color);
-    border: solid var(--background_tertiary_color);
-    padding: .3em;
-    font-size: $fontSize;
-    text-align: justify;
-    text-indent: 1em;
+    article {
+        border: solid var(--background_tertiary_color);
+        border-radius: 1em;
+        width: 90%;
+        padding: .7em;
+        text-align: justify;
 
-    h2 {
-        display: flex;
-        justify-content: center;
-        padding: 2% 0;
+        &:not(#adicionar_desabafo) {
+            text-indent: 0.7em;
+        }
     }
 
-    form {
-        display: grid;
-        grid-template-columns: 100%;
-        gap: 1.3em;
+    article#adicionar_desabafo {
+        width: 90%;
 
-        label {
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        form {
             display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows:  100% 100% 100%;
-            border: solid var(--background_tertiary_color);
-            width: 96%;
-            justify-self:  center;
+            grid-template-columns: 5% 55% 40%;
+            overflow: hidden;
+            gap: .4em;
 
-            * {
-                grid-row: 1;
-                grid-column: 1;
-                flex-wrap: wrap;
-                width: 100%;
+            span.char_counter, label, label textarea, label input, button { 
+                &:not(textarea):not(input):not(.char_counter) {
+                    width: 100%;
+                    height: 100%;
+                    grid-column: 1 / 4;
+                }
+
+                &:is(textarea), &:is(input) {
+                    width: 90%;
+                }
+
+                &#username_input {
+                    grid-row: 2;
+                }
+
+                &#vent_input {
+                    grid-row: 4;
+                }
+            }    
+            
+            label {
+                @include flexrow(center);
+                justify-content: center;
+
+                * {
+                    border: solid var(--background_tertiary_color);
+                    &:focus { border-color: var(--alternative_background_color);}
+                }
             }
 
-            span.placeholder {
-                color: $inputFontColor;
+            span {
+                &.char_counter {
+                    grid-column: 3;
+
+                    &#username_counter {
+                        grid-row: 1;
+                    }
+    
+                    &#vent_counter {
+                        grid-row: 3;
+                    }
+                }
+
+                &.placeholder {
+                    z-index: 2;
+                    grid-column: 2;
+                    color: #808080;
+
+                    &#username_placeholder {
+                        grid-row: 2;
+                    }
+
+                    &#vent_placeholder {
+                        grid-row: 4;
+                    }
+                }
             }
 
-            input:not(:placeholder-shown) + span.placeholder {
-                position: relative;
-                color: var(--font_color);
-                top: -110%;
+            button {
+                grid-row: 5;
             }
-
-            textarea:not(:placeholder-shown) + span.placeholder {
-                position: relative;
-                color: var(--font_color);
-                top: -1.4em;
-            }
-        }
-
-        span#word_counter {
-            position: relative;
-            right: 2%;
-            top: 1.2em;
-            justify-self: flex-end;
         }
     }
-}
 
-#buttons {
-    @include flexrow(unset);
-    width: 90%;
-    gap: 1em;
+    article#desabafos {
+        form#buttons {
+            @include flexrow(unset);
+            justify-content: space-between;
+        }
+    }
 }

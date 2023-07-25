@@ -5,6 +5,11 @@
     width: 100%;
 }
 
+@mixin flexColumn($items_aligment) {
+    @include flexrow($items_aligment);
+    flex-direction: column;
+}
+
 @mixin flexcenter {
     display: flex;
     align-items: center;

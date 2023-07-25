@@ -27,106 +27,137 @@
 
 body {
   background-color: var(--background_primary_color);
+  color: var(--font_color);
 }
 
-nav#menu {
+header {
+  margin-bottom: 1.5em;
+}
+header h1 {
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+  text-align: center;
+  color: var(--font_color);
+}
+header h1 div#logo-image {
+  justify-self: center;
+  grid-column: 1;
+}
+header nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: unset;
   width: 100%;
-  justify-content: space-evenly;
 }
-nav#menu div.menu-item {
+header nav div.menu-item {
   width: 100%;
-  background-color: var(--background_secondary_color);
 }
-nav#menu div.menu-item:hover {
-  background-color: var(--alternative_background_color);
-}
-nav#menu div.menu-item a {
+header nav div.menu-item * {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--alternative_font_color);
   text-decoration: none;
+  background-color: var(--background_tertiary_color);
   width: 100%;
+  height: 100%;
+  border: none;
   font-size: 1.2em;
 }
-
-h1 {
-  width: 100%;
-  padding: 0 0.3em;
-  background-color: var(--background_tertiary_color);
-  margin-bottom: 0.3em;
-  color: var(--alternative_font_color);
+header nav div.menu-item *:hover, header nav div.menu-item *:hover * {
+  background-color: var(--alternative_background_color);
+}
+header nav div.menu-item img {
+  width: 1em;
 }
 
 main {
   display: flex;
-  flex-direction: column;
-  gap: 0.3em;
+  flex-direction: row;
   align-items: center;
-}
-
-article {
-  width: 90%;
-  background-color: var(--background_primary_color);
-  color: var(--font_color);
-  border: solid var(--background_tertiary_color);
-  padding: 0.3em;
-  font-size: 1.2em;
-  text-align: justify;
-  text-indent: 1em;
-}
-article h2 {
-  display: flex;
-  justify-content: center;
-  padding: 2% 0;
-}
-article form {
-  display: grid;
-  grid-template-columns: 100%;
-  gap: 1.3em;
-}
-article form label {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100% 100% 100%;
-  border: solid var(--background_tertiary_color);
-  width: 96%;
-  justify-self: center;
-}
-article form label * {
-  grid-row: 1;
-  grid-column: 1;
-  flex-wrap: wrap;
   width: 100%;
+  flex-direction: column;
+  gap: 1.5em;
 }
-article form label span.placeholder {
-  color: #4c4747;
+main article {
+  border: solid var(--background_tertiary_color);
+  border-radius: 1em;
+  width: 90%;
+  padding: 0.7em;
+  text-align: justify;
 }
-article form label input:not(:placeholder-shown) + span.placeholder {
-  position: relative;
-  color: var(--font_color);
-  top: -110%;
+main article:not(#adicionar_desabafo) {
+  text-indent: 0.7em;
 }
-article form label textarea:not(:placeholder-shown) + span.placeholder {
-  position: relative;
-  color: var(--font_color);
-  top: -1.4em;
+main article#adicionar_desabafo {
+  width: 90%;
 }
-article form span#word_counter {
-  position: relative;
-  right: 2%;
-  top: 1.2em;
-  justify-self: flex-end;
+main article#adicionar_desabafo h2 {
+  width: 100%;
+  text-align: center;
 }
-
-#buttons {
+main article#adicionar_desabafo form {
+  display: grid;
+  grid-template-columns: 5% 55% 40%;
+  overflow: hidden;
+  gap: 0.4em;
+}
+main article#adicionar_desabafo form span.char_counter:not(textarea):not(input):not(.char_counter), main article#adicionar_desabafo form label:not(textarea):not(input):not(.char_counter), main article#adicionar_desabafo form label textarea:not(textarea):not(input):not(.char_counter), main article#adicionar_desabafo form label input:not(textarea):not(input):not(.char_counter), main article#adicionar_desabafo form button:not(textarea):not(input):not(.char_counter) {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/4;
+}
+main article#adicionar_desabafo form span.char_counter:is(textarea), main article#adicionar_desabafo form span.char_counter:is(input), main article#adicionar_desabafo form label:is(textarea), main article#adicionar_desabafo form label:is(input), main article#adicionar_desabafo form label textarea:is(textarea), main article#adicionar_desabafo form label textarea:is(input), main article#adicionar_desabafo form label input:is(textarea), main article#adicionar_desabafo form label input:is(input), main article#adicionar_desabafo form button:is(textarea), main article#adicionar_desabafo form button:is(input) {
+  width: 90%;
+}
+main article#adicionar_desabafo form span.char_counter#username_input, main article#adicionar_desabafo form label#username_input, main article#adicionar_desabafo form label textarea#username_input, main article#adicionar_desabafo form label input#username_input, main article#adicionar_desabafo form button#username_input {
+  grid-row: 2;
+}
+main article#adicionar_desabafo form span.char_counter#vent_input, main article#adicionar_desabafo form label#vent_input, main article#adicionar_desabafo form label textarea#vent_input, main article#adicionar_desabafo form label input#vent_input, main article#adicionar_desabafo form button#vent_input {
+  grid-row: 4;
+}
+main article#adicionar_desabafo form label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+main article#adicionar_desabafo form label * {
+  border: solid var(--background_tertiary_color);
+}
+main article#adicionar_desabafo form label *:focus {
+  border-color: var(--alternative_background_color);
+}
+main article#adicionar_desabafo form span.char_counter {
+  grid-column: 3;
+}
+main article#adicionar_desabafo form span.char_counter#username_counter {
+  grid-row: 1;
+}
+main article#adicionar_desabafo form span.char_counter#vent_counter {
+  grid-row: 3;
+}
+main article#adicionar_desabafo form span.placeholder {
+  z-index: 2;
+  grid-column: 2;
+  color: #808080;
+}
+main article#adicionar_desabafo form span.placeholder#username_placeholder {
+  grid-row: 2;
+}
+main article#adicionar_desabafo form span.placeholder#vent_placeholder {
+  grid-row: 4;
+}
+main article#adicionar_desabafo form button {
+  grid-row: 5;
+}
+main article#desabafos form#buttons {
   display: flex;
   flex-direction: row;
   align-items: unset;
   width: 100%;
-  width: 90%;
-  gap: 1em;
+  justify-content: space-between;
 }
