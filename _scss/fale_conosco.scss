@@ -1,54 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import "flexstyles";
 @import "variables";
-@import "header_style";
-
-/*Light theme colors*/
-:root {
-    --background_primary_color: #ffffff;
-    --background_secondary_color: #0072bb;
-    --background_tertiary_color: #015d98;
-    --alternative_background_color: #00b0e6;
-    --font_color: #000000;
-    --alternative_font_color: #ffffff;
-    --link-color: #06724e;
-}
-
-/*Dark theme colors*/
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background_primary_color: #1f1b1b;
-        --font_color: #ffffff;
-        --link_color: #68f3c5;
-    }
-}
-
-* {
-    border: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $fontFamily;
-}
-
-body {
-    background-color: var(--background_primary_color);
-}
-
-header {
-    background-color: var(--background_primary_color);
-
-    h1 {
-        @include commonHeaderStyle;
-        color: var(--font_color);
-    }
-
-
-    nav#menu {
-        @include commonNavStyle;
-    }
-}
+@import "root_variables";
 
 article {
+    width: 100%;
+    border: none;
+
     h1 {
         width: 100%;
         background-color: var(--background_tertiary_color);
@@ -68,8 +25,7 @@ article {
         list-style: none;
 
         li {
-            display: flex;
-            align-items: center;
+            @include flexRow(center);
             color: var(--link_color);
 
             * {

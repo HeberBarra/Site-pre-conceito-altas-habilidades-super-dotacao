@@ -9,8 +9,8 @@
     <title>Desabafos</title>
     <script src="_javascript/change_theme.js" defer></script>
     <script src="_javascript/desabafo_scripts.js" defer></script>
+    <link rel="stylesheet" href="_css/commonStyle.css">
     <link rel="stylesheet" href="_css/desabafos.css">
-    <link rel="stylesheet" href="_css/logo_image.css">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
                     Seu nome/apelido (opcional)
                 </span>
                 <label class="desabafo_field" id="username_input">
-                    <input type="text" placeholder=" " name="username">
+                    <input type="text" name="username" maxlength="40">
                 </label>
                 <span class="char_counter" id="vent_counter">
                     Limite 700 caracteres ­— total: <span class="char_number">0</span>
@@ -63,7 +63,7 @@
                     Digite sua história/relato aqui
                 </span>
                 <label class="desabafo_field" id="vent_input">
-                    <textarea maxlength="700" placeholder=" " style="height: 3em;" required name="vent"></textarea>
+                    <textarea maxlength="700" style="height: 3em;" required name="vent"></textarea>
                 </label>
                 <button id="enviar">Enviar</button>
             </form>
