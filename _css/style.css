@@ -22,7 +22,7 @@ a:hover {
 }
 
 h1, h2 {
-    font-family: 'Lobster', 'Times new Roman', Roboto, Arial, serif;
+    font-family: Roboto, 'Times new Roman', Arial, serif;
 }
 
 button {
@@ -69,7 +69,7 @@ header div nav div.menu-item {
 }
 
 header div#logo {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     border: solid var(--border_color);
@@ -119,14 +119,14 @@ h3 {
     font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
 }
 
-div#foto {
+img#foto {
     display: inherit;
     align-items: center;
     justify-content: center;
     border: solid var(--border_color);
     background-color: var(--item_background_color);
-    width: 20%;
-    aspect-ratio: 1 / 1;
+    width: 50%;
+    aspect-ratio: 16 / 9;
     box-shadow: 5px 5px 5px var(--shadow_color);
     border-radius: 5%;
 }
@@ -146,7 +146,6 @@ div#video-fatos_mitos > *{
     aspect-ratio: 16 / 9;
     border: solid var(--border_color);
     box-shadow: 5px 5px 5px var(--shadow_color);
-    border-radius: 5%;
     color: var(--global_font_color);
 }
 

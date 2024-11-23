@@ -17,7 +17,7 @@ a {
 }
 
 h1, h2 {
-    font-family: 'Lobster', 'Times new Roman', Roboto, Arial, serif;
+    font-family: Roboto, 'Times new Roman', Arial, serif;
 }
 
 button {
@@ -94,13 +94,13 @@ article > * {
     text-align: justify;
 }
 
-div#foto {
+img#foto {
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid var(--border_color);
-    width: 40%;
-    aspect-ratio: 1 / 1;
+    width: 90%;
+    aspect-ratio: 2 / 1;
     box-shadow: 5px 5px 5px var(--shadow_color);
     background-color: var(--item_background_color);
 }
@@ -113,7 +113,6 @@ div#video-fatos_mitos {
 }
 
 div#video-fatos_mitos > * {
-    border-radius: 5%;
     box-shadow: 5px 5px 5px var(--shadow_color);
 }
 

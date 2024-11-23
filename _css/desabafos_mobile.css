@@ -120,11 +120,16 @@ article#desabafos {
     border-top: 20px solid transparent;
 }
 
-.desabafo_field input {
+.desabafo_field input, textarea {
     border: none;
     appearance: none;
     padding: 12px;
     border-radius: 3px;
     width: 90%;
     font-size: 13pt;
+}
+
+textarea {
+    width: 95%;
+    margin-left: 0.5%;
 }

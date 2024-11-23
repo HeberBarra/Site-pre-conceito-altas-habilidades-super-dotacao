@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desabafos</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
 
@@ -71,7 +70,7 @@
     <main>
         <h1>Desabafos</h1>
         <article>
-            <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ele ter Altas Habillidades/Super Dotação, mesmo que eu, o criador deste site, não tenha sofrido preconceito até ao dia de hoje por ter Altas Habilidades/Superdotação, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Há também a opção de responder essas histórias, num sistema similar ao da seção de comentários do Youtube. Por favor, seja gentil e empático, faça o mal e terá tribulação, faça o bem e terá paz.</p>
+            <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ele ter Altas Habillidades/Super Dotação, mesmo que eu, o criador deste site, não tenha sofrido preconceito até ao dia de hoje por ter Altas Habilidades/Superdotação, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Por favor, seja gentil e empático, eu apagarei qualquer desabafo que fuja do tema do site ou que seja má de índole, faça o mal e terá tribulação, faça o bem e terá paz.</p>
         </article>
         <article id="adicionar_desabafo">
             <h2>Adicionar desabafo: </h2>
@@ -86,8 +85,8 @@
                     <span class="ErrorMessage"></span>
                 </label>
                 <label class="desabafo_field">
-                    <input type="text"  placeholder="Digite sua história de preconceito" required>
-                    <span class="placeholder">Digite sua história de preconceito</span>
+                    <textarea placeholder="Digite sua história/relato aqui (Limite de 700 caracteres)" maxlength="700"></textarea>
+                    <span class="placeholder">Digite sua história/relato aqui (Limite de 700 caracteres)</span>
                 </label>
                 <button id="enviar">Enviar</button>
             </form> 
