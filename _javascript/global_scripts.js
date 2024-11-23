@@ -79,13 +79,23 @@ function changeTheme() {
 
 }
 
-function decideTheme() {
-    if (window.matchMedia("prefers-color-scheme: dark")) {
-        theme = "light";
-    } else {
-        theme = "dark";
-    }
+let firstTime = true;
 
+function decideTheme() {
+    if(firstTime) {
+        if (window.matchMedia("prefers-color-scheme:dark")) {
+            theme = "dark"; 
+        } else {
+            theme = "light"
+        }
+        console.log('first time!')
+    } else {
+        if (window.matchMedia("prefers-color-scheme: dark")) {
+            theme = "light";
+        } else {
+            theme = "dark";
+        }
+    }
     const parameters = url.split("?");
 
     if (parameters.length == 1) {
@@ -108,10 +118,14 @@ let truetheme = null
 
 themeButton.addEventListener("click", function() {
     changeTheme();
+
     if (theme === "dark") {
         truetheme = "light";
     } else {
         truetheme = "dark";
     }
+
     changeIframe(truetheme);
 })
+
+console.log(theme);

@@ -10,27 +10,55 @@
         @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
 
+        /*Dark theme*/
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --border_color: white;
+                --item_background_color: rgb(80, 80, 87);
+                --alternative_background_color: lightgray;
+                --body_color: rgb(53, 52, 52);
+                --shadow_color: rgba(199, 193, 193, 0.4);
+                --link_color: aquamarine;
+                --alternative_link_color: cyan;
+                --global_font_color: white;
+            }
+        }
+
+        /*Light theme*/ 
+
+        @media (prefers-color-scheme: light) {  
+            :root {
+                --border_color: gray;
+                --item_background_color: white;
+                --alternative_background_color: lightgray;
+                --shadow_color: rgba(0, 0, 0, 0.4);
+                --body_color: lightblue;
+                --link_color: lightblue;
+                --alternative_link_color: blue;
+                --global_font_color: black;
+            }
+        }
+
         :root {
-            --border_color: white;
-            --item_background_color: rgb(80, 80, 87);
-            --global_font_color: white;
             --font_size_mobile: 13pt;
             --font_size_pc: 14pt;
         }
 
-        body {
+        body{
             display: flex;
             flex-direction: column;
+            background-color: var(--body_color);
+            color: var(--global_font_color);
+            margin: 0;
+            width: 100%;
+            height: 100%;
             justify-content: center;
             align-items: center;
-            background-color: rgb(132, 163, 250);
-            color: var(--global_font_color);
-            font-size: var(--font_size_mobile);
         }
 
     </style>
-    <link rel="stylesheet" href="_css/desabafos.css" media="screen and (min-width: 800px)">
-    <link rel="stylesheet" href="_css/desabafos_mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="_css/desabafos_mobile.css">
 </head>
 <body>
     <header>
