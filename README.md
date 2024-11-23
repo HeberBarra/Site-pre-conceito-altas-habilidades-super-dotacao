@@ -5,4 +5,5 @@
 ***
  Esse projeto não inteiramente idealizado por mim. Eu, dois outros estudantes e a professora da SRM - AH/SD fizemos um _brainstorm_ e chegamos na ideia de fazer esse site. 
 ***
-O design do site foi uma criação cojunta minha e dos outros estudantes que estão participando do projeto
+O primeiro design do site foi uma criação cojunta minha e dos outros estudantes que estão participando do projeto
+O design atual foi baseado no design do site ofical do Colégio Estadual do Paraná
