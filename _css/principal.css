@@ -45,7 +45,7 @@ header div#foto_fundo {
     border: solid white;
     width: 775px;
     height: 100px;
-    background: url("../_imagens/fundo.jpg");
+    background: url("../_imagens/fundo_titulo.jpg");
 }
 
 header div#foto_fundo h1 {
@@ -55,6 +55,7 @@ header div#foto_fundo h1 {
     font-family: 'Lobster', cursive;
     font-weight: normal;
     font-size: 27pt;
+    color: rgb(255, 255, 255);
 }
 
 /*Formatação do menu*/
