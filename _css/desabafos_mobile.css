@@ -1,0 +1,135 @@
+@charset "UFT8";
+
+span.placeholder {
+    display: none;
+    width: 0%;
+    height: 0%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--item_background_color);
+    width: 100%;
+    border-bottom: solid var(--border_color);
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 3%;
+}
+
+header nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 120%;
+    border: solid var(--border_color);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--link_color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--alternative_link_color);
+    background-color: var(--alternative_background_color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--global_font_color);
+}
+
+article {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 90%;
+    align-self: center;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px var(--shadow_color);
+    font-size: var(--font_size);
+}
+
+article h2 {
+    padding-left: 2%;
+}
+
+article p {
+    padding: 5%;
+    text-indent: 5%;
+    text-align: justify;
+    font-size: var(--font_size);
+}
+
+article form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article form input {
+    width: 90%;
+    align-self: flex-start;
+    margin-left: 3%;
+}
+
+article form input#id_desabafo {
+    aspect-ratio: 8 / 1;
+}
+
+article#desabafos {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 90%;
+    align-self: center;
+    border-radius: 3%;
+}
+
+
+.desabafo_field {
+    font-size: 13pt;
+    position: relative;
+    color: #222;
+    border-top: 20px solid transparent;
+}
+
+.desabafo_field input, textarea {
+    border: none;
+    appearance: none;
+    padding: 12px;
+    border-radius: 3px;
+    width: 90%;
+    font-size: 13pt;
+}
+
+textarea {
+    width: 95%;
+    margin-left: 0.5%;
+}
