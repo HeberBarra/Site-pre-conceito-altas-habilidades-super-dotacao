@@ -1,19 +1,17 @@
-const followButton = document.getElementById("botao_seguir");
-const giftedKidsVideo = document.getElementById("video");
-
-/*header*/
+const followButton = document.querySelector("#botao_seguir");
+const giftedKidsVideo = document.querySelector("#video");
+const header = document.querySelector("header");
 let toggleMenuFollow = true;
-
-followButton.addEventListener("click", () => {
-    let header = document.getElementsByTagName("header")[0];
-    if (toggleMenuFollow) {
-        header.style.position = "relative";
-        followButton.innerText = "Voltar a seguir";
-        toggleMenuFollow = false;
-    } else {
+if (followButton && header) {
+    followButton.addEventListener("click", () => {
+        if (toggleMenuFollow) {
+            header.style.position = "relative";
+            followButton.innerHTML = "Voltar a seguir";
+            toggleMenuFollow = false;
+            return;
+        }
         header.style.position = "sticky";
-        followButton.innerText = "Parar de seguir";
+        followButton.innerHTML = "Parar de seguir";
         toggleMenuFollow = true;
-    }
+    });
 }
-)
