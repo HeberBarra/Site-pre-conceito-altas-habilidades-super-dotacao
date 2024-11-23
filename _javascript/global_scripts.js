@@ -43,89 +43,113 @@ const menuAnchors = document.getElementsByClassName("menu-link");
 const originalHrefs = []
 const url = window.location.href
 
+/*Variables*/ 
+
 let themeButton = document.getElementById('botao_de_tema');
 let root = document.querySelector(':root');
-let theme = null;
+let siteTheme = null;
+let iframe = document.getElementsByTagName("iframe")[0];
 
-function getOriginalHrefs() {
-    let c = 0
-    for (anchor of menuAnchors) {
-        console.log(anchor)
-        originalHrefs.push(anchor.href)
-        console.log(originalHrefs[c])
-        c++
+/*Functions*/
+
+getOriginalHrefs = function() {
+    for (let i = 0; i < menuAnchors.length; i++) {
+        console.log(menuAnchors[i])
+        originalHrefs.push(menuAnchors[i].href)
+        console.log(originalHrefs[i])
     }
-    console.log(originalHrefs)
+    console.table(originalHrefs)
 }
 
-function changeTheme() {
-    for (let anchorIndex = 0; anchorIndex < menuAnchors.length;anchorIndex++) {
-        menuAnchors[anchorIndex].href = originalHrefs[anchorIndex] + `?theme=${theme}`;
-    }
-
-    if (theme === "dark") {
-        for (index in cssVariables) {
-                root.style.setProperty(cssVariables[index], darkColors[index]);
-                console.log(`${cssVariables[index]}: ${darkColors[index]}`);
-        }
-        theme = "light";
-    } else {
-        for (index in cssVariables) {
-        root.style.setProperty(cssVariables[index], lightColors[index]);
-        console.log(`${cssVariables[index]}: ${lightColors[index]}`);
-        theme = "dark";
-    }
-    }
-
-}
-
-let firstTime = true;
-
-function decideTheme() {
-    if(firstTime) {
-        if (window.matchMedia("prefers-color-scheme:dark")) {
-            theme = "dark"; 
-        } else {
-            theme = "light"
-        }
-        console.log('first time!')
-    } else {
-        if (window.matchMedia("prefers-color-scheme: dark")) {
-            theme = "light";
-        } else {
-            theme = "dark";
-        }
-    }
-    const parameters = url.split("?");
-
-    if (parameters.length == 1) {
+getOriginalIframeSrc = function () {
+    if (!(iframe)) {
         return;
     }
-    console.log("Has parameters!");
-    if (parameters[1] === 'theme=dark') {
-        theme = "dark";
-    } else {
-        theme = "light";
+
+    return iframe.src.split('?')[0]
+}
+
+getCurrentTheme = function() {
+    if (getComputedStyle(root).getPropertyValue('--body_color') === 'white') {
+        return 'light';
     }
 
-    changeTheme()
+    return 'dark'
+}
+
+getUrlTheme = function() {
+    let urlParameters = url.split('?');
+    if (urlParameters.length === 1) {
+        return;
+    }
+
+    if (urlParameters[1] === "theme=dark") {
+        return 'dark';
+    }
+
+    return 'light';
+}
+
+changeAnchorsherfs = function(theme) {
+    for (let i = 0; i < menuAnchors.length; i++) {
+        menuAnchors[i].href = `${originalHrefs[i]}?theme=${theme}`;
+    } 
+}
+
+changeTheme = function(colorList) {
+    for (let i = 0; i < cssVariables.length; i++) {
+        root.style.setProperty(cssVariables[i], colorList[i]);
+    }
+}
+
+changeIframe = function(theme) {
+    iframeSrc = getOriginalIframeSrc()
+    if (!(iframeSrc)) {
+        return;
+    }
+
+    iframe.src = `${iframeSrc}?theme=${theme}`;
 }
 
 getOriginalHrefs()
-decideTheme()
+getOriginalIframeSrc()
+siteTheme = getUrlTheme()
 
-let truetheme = null
+console.log(siteTheme)
 
-themeButton.addEventListener("click", function() {
-    changeTheme();
-
-    if (theme === "dark") {
-        truetheme = "light";
+if (!(siteTheme)) {
+    siteTheme = getCurrentTheme()
+    if (siteTheme == "light") {
+        siteTheme = "dark";
     } else {
-        truetheme = "dark";
+        siteTheme = "light";
     }
+} else {
+    changeIframe(siteTheme)
+    changeAnchorsherfs(siteTheme)
+    if (siteTheme == "light") {
+        changeTheme(lightColors)
+        siteTheme = "dark"
+    } else {
+        changeTheme(darkColors)
+        siteTheme = "light"
+    }
+}
 
-    changeIframe(truetheme);
+console.log(siteTheme)
+
+themeButton.addEventListener('click', function () {
+
+    changeAnchorsherfs(siteTheme)
+    changeIframe(siteTheme)
+
+    if (siteTheme == "light") {
+        changeTheme(lightColors);
+        console.log('changed to light theme');
+        siteTheme = "dark";
+    } else {
+        changeTheme(darkColors);
+        console.log('changed to dark theme');
+        siteTheme = "light";
+    }
 })
-
-console.log(theme);
