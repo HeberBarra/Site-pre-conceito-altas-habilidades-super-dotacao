@@ -3,10 +3,9 @@
   --background_primary_color: #ffffff;
   --background_secondary_color: #0072bb;
   --background_tertiary_color: #015d98;
+  --alternative_background_color: #00b0e6;
   --font_color: #000000;
   --alternative_font_color: #ffffff;
-  --alternative_background_color: #00b0e6;
-  --link_color: #06724e;
 }
 
 /*Dark theme colors*/
@@ -23,48 +22,56 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background_primary_color);
+}
+
 nav#menu {
   display: flex;
   flex-direction: row;
   width: 100%;
+  text-align: center;
+  justify-content: space-evenly;
 }
 nav#menu div.menu-item {
   background-color: var(--background_secondary_color);
   width: 100%;
 }
+nav#menu div.menu-item:hover {
+  background-color: var(--alternative_background_color);
+}
 nav#menu div.menu-item a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-nav#menu div.menu-item a:hover {
-  background-color: var(--alternative_background_color);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: var(--alternative_font_color);
+  font-size: 1.2em;
 }
 
-article {
-  color: var(--font_color);
-}
 article h1 {
   width: 100%;
   background-color: var(--background_tertiary_color);
   color: var(--alternative_font_color);
   padding-left: 0.5em;
 }
-article p, article ul li {
-  font-size: 1.2em;
-  text-align: justify;
+article p {
   padding: 0.5em;
+  font-size: 1.2em;
   text-indent: 0.5em;
+  text-align: justify;
+  color: var(--font_color);
 }
-
-.nota {
-  text-decoration: underline;
-  color: var(--alternative_background_color);
+article ul {
+  list-style: none;
 }
-
-.disclaimer {
-  background-color: var(--background_tertiary_color);
-  padding: 0.5em;
-  font-size: 1.2em;
-  color: var(--alternative_font_color);
-}/*# sourceMappingURL=visoes.css.map */
+article ul li {
+  display: flex;
+  align-items: center;
+  color: var(--link_color);
+}
+article ul li * {
+  color: var(--link_color);
+}/*# sourceMappingURL=fale_conosco.css.map */
