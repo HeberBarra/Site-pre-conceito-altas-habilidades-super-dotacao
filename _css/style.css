@@ -77,67 +77,35 @@ h1, h2 {
 button {
     font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
     font-size: calc(var(--font_size) - 4pt);
+    width: fit-content;
+    height: fit-content;
 }
 
 header {
-    display: flex;
     width: 100%;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
     background-color: var(--item_background_color);
     border-bottom: solid var(--border_color);
     position: sticky;
-    top: 0%;
-}
-
-header div#menu-botao {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 70%;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-}
-
-header div button#botao_seguir {
-    align-self: center;
-}
-
-header div nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 90%;
-}
-
-header div nav div.menu-item {
-    border: solid var(--border_color);
-    background-color: var(--item_background_color);
-    width: 50%;
-    height: 20%;
-}
-
-header div#logo {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    border: solid var(--border_color);
-    width: 15%;
-    aspect-ratio: 1 / 1;
+    top: 0;
 }
 
 header h1 {
-    font-size: 20pt;
-    align-self: center;
-    width: 93%;
-    margin-left: 3%;
+    grid-row: 2;
+    width: 100%;
 }
 
-header button {
-    width: 50%;
-    height: 10%;
-    align-self: flex-end;
-    position: relative;
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav div.menu-item {
+    border: solid var(--border_color);
+    width: 100%;
+    height: 100%;
 }
 
 main {
