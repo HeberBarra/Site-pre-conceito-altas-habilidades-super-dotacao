@@ -20,3 +20,7 @@ for (let i = 0; i < placeholdersSpans.length; i++) {
         }
     })
 }
+
+if (matchMedia("screen and (min-width: 551px)").matches) {
+    desabafoInputs.forEach(input => input.placeholder = "")
+}

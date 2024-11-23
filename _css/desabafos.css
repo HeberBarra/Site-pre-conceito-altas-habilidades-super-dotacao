@@ -76,6 +76,15 @@ main article#adicionar_desabafo form label * {
 main article#adicionar_desabafo form label *:focus {
   border-color: var(--alternative_background_color);
 }
+main article#adicionar_desabafo form label * ::placeholder, main article#adicionar_desabafo form label *::-moz-placeholder, main article#adicionar_desabafo form label *::-webkit-input-placeholder, main article#adicionar_desabafo form label * :-moz-placeholder, main article#adicionar_desabafo form label * :-ms-input-placeholder {
+  color: transparent;
+}
+main article#adicionar_desabafo form label textarea {
+  height: 3em;
+}
+main article#adicionar_desabafo form span {
+  text-align: left;
+}
 main article#adicionar_desabafo form span.char_counter {
   grid-column: 3;
 }
@@ -87,8 +96,15 @@ main article#adicionar_desabafo form span.char_counter#vent_counter {
 }
 main article#adicionar_desabafo form span.placeholder {
   z-index: 2;
-  grid-column: 2;
+  grid-column: 2/4;
   color: #808080;
+  transition: all 1s linear;
+  width: 100%;
+}
+@media screen and (max-width: 550px) {
+  main article#adicionar_desabafo form span.placeholder {
+    display: none;
+  }
 }
 main article#adicionar_desabafo form span.placeholder#username_placeholder {
   grid-row: 2;

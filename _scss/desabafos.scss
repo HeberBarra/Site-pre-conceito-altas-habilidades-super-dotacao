@@ -56,10 +56,15 @@ main {
                 * {
                     border: solid var(--background_tertiary_color);
                     &:focus { border-color: var(--alternative_background_color);}
+
+                    ::placeholder, &::-moz-placeholder, &::-webkit-input-placeholder, :-moz-placeholder, :-ms-input-placeholder { color: transparent; }
                 }
+
+                textarea { height: 3em; }
             }
 
             span {
+                text-align: left;
                 &.char_counter {
                     grid-column: 3;
 
@@ -74,16 +79,16 @@ main {
 
                 &.placeholder {
                     z-index: 2;
-                    grid-column: 2;
+                    grid-column: 2 / 4;
                     color: #808080;
+                    transition: all 1s linear;
+                    width: 100%;
 
-                    &#username_placeholder {
-                        grid-row: 2;
-                    }
+                    @media screen and (max-width: 550px) { display: none; }
 
-                    &#vent_placeholder {
-                        grid-row: 4;
-                    }
+                    &#username_placeholder { grid-row: 2; }
+
+                    &#vent_placeholder { grid-row: 4; }
                 }
             }
 
