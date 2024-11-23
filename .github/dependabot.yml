@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    rebase-strategy: auto
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: monthly
+    rebase-strategy: auto
