@@ -152,7 +152,9 @@ article#desabafos div {
     border: solid var(--border_color);
 }
 
-div#buttons {
+#buttons {
     display: flex;
     flex-direction: row;
+    width: 90%;
+    gap: 1em;
 }
