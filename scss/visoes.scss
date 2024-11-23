@@ -1,6 +1,5 @@
-@import "flexstyles";
-@import "root_variables";
-@import "variables";
+@use "flexstyles";
+@use "root_variables";
 
 button {
     background-color: transparent;
@@ -20,12 +19,12 @@ article {
     }
 
     h1#info_notas {
-        @include flexRow(unset);
+        @include flexstyles.flexRow(unset);
         justify-content: space-between;
     }
 
     p, ul li {
-        font-size: $fontSize;
+        font-size: var(--font-size);
         text-align: justify;
         padding: .5em;
         text-indent: .5em;
@@ -40,6 +39,6 @@ article {
 .disclaimer {
     background-color: var(--background_tertiary_color);
     padding: .5em;
-    font-size: $fontSize;
+    font-size: var(--font-size);
     color: var(--alternative_font_color);
 }

@@ -1,11 +1,10 @@
-@import "flexstyles";
-@import "variables";
-@import "root_variables";
+@use "flexstyles";
+@use "root_variables";
 
 h1 {
-    @include flexRow(center);
+    @include flexstyles.flexRow(center);
     justify-content: space-evenly;
-    font-size: $bigFontSize;
+    font-size: var(--big-font-size);
     color: var(--font_color);
     font-weight: normal;
     padding: .5em;
@@ -22,7 +21,7 @@ header {
     top: 0;
 }
 
-main { @include flexColumn(center); }
+main { @include flexstyles.flexColumn(center); }
 
 article.texto {
     margin: .5em;
@@ -40,12 +39,11 @@ article.texto {
 img {
     max-width: 60%;
     border: solid var(--background_tertiary_color);
-    border-bottom: 10%;
 }
 
 @media screen and (max-width: 850px) {
     div#video-fatos_mitos {
-        @include flexColumn(center);
+        @include flexstyles.flexColumn(center);
         width: 90%;
         height: 100%;
     }
@@ -76,7 +74,7 @@ img {
 }
 
 nav#menu-inferior {
-    @include flexRow(unset);
+    @include flexstyles.flexRow(unset);
     justify-content: space-evenly;
 
     div.item-menu-inferior {
@@ -86,12 +84,12 @@ nav#menu-inferior {
     }
 
     a {
-        @include flexCenter;
+        @include flexstyles.flexCenter;
         color: var(--alternative_font_color);
         text-decoration: none;
         height: 100%;
         padding: .2em;
-        font-size: $fontSize;
+        font-size: var(--font-size);
 
         &:hover { background-color: var(--alternative_background_color); }
     }

@@ -1,10 +1,10 @@
-@import "flexstyles";
-@import "root_variables";
+@use "flexstyles";
+@use "root_variables";
 
 header { margin-bottom: 1.5em; }
 
 main {
-    @include flexColumn(center);
+    @include flexstyles.flexColumn(center);
     gap: 1.5em;
 
     button {
@@ -50,7 +50,7 @@ main {
             }    
             
             label {
-                @include flexRow(center);
+                @include flexstyles.flexRow(center);
                 justify-content: center;
 
                 * {
@@ -100,7 +100,7 @@ main {
 
     article#desabafos {
         form#buttons {
-            @include flexRow(unset);
+            @include flexstyles.flexRow(unset);
             justify-content: space-between;
         }
     }

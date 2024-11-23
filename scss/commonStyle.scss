@@ -1,14 +1,13 @@
+@use "root_variables";
+@use "header_style";
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-@import "variables";
-@import "root_variables";
-@import "header_style";
 
 * {
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
-    font-family: $fontFamily;
+    font-family: var(--font-family), serif;
 }
 
 body {
@@ -17,9 +16,9 @@ body {
 }
 
 header {
-    h1 { @include commonHeaderStyle; }
+    h1 { @include header_style.commonHeaderStyle; }
 
-    nav { @include commonNavStyle; }
+    nav { @include header_style.commonNavStyle; }
 }
 
 @media screen and (min-width: 800px) {
@@ -34,7 +33,7 @@ header {
 article {
     border: solid var(--background_tertiary_color);
     border-radius: 1em;
-    font-size: $fontSize;
+    font-size: var(--font-size);
     text-align: justify;
     text-indent: 1em;
     width: 90%;

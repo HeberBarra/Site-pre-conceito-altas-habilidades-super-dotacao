@@ -1,5 +1,5 @@
-@import "root_variables";
-@import "flexstyles";
+@use "root_variables";
+@use "flexstyles";
 
 @mixin commonHeaderStyle {
     padding: .5em;
@@ -17,20 +17,20 @@
 }
 
 @mixin commonNavStyle {
-    @include flexRow(unset);
+    @include flexstyles.flexRow(unset);
 
     div.menu-item {
         width: 100%;
         
         * {
-            @include flexCenter;
+            @include flexstyles.flexCenter;
             color: var(--alternative_font_color);
             text-decoration: none;
             background-color: var(--background_tertiary_color);
             width: 100%;
             height: 100%;
             border: none;
-            font-size: $fontSize;
+            font-size: var(--font-size);
 
             &:hover {
                 &, *{

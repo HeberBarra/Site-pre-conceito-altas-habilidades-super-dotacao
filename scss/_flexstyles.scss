@@ -5,8 +5,8 @@
     width: 100%;
 }
 
-@mixin flexColumn($items_aligment) {
-    @include flexRow($items_aligment);
+@mixin flexColumn($items_alignment) {
+    @include flexRow($items_alignment);
     flex-direction: column;
 }
 

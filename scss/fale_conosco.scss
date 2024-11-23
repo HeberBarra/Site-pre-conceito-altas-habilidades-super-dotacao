@@ -1,6 +1,5 @@
-@import "flexstyles";
-@import "variables";
-@import "root_variables";
+@use "flexstyles";
+@use "root_variables";
 
 article {
     width: 100%;
@@ -15,7 +14,7 @@ article {
 
     p {
         padding: .5em;
-        font-size: $fontSize;
+        font-size: var(--font-size);
         text-indent: .5em;
         text-align: justify;
         color: var(--font_color);
@@ -25,7 +24,7 @@ article {
         list-style: none;
 
         li {
-            @include flexRow(center);
+            @include flexstyles.flexRow(center);
             color: var(--link_color);
 
             * {

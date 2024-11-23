@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-@import "variables";
 
 /*Light theme colors*/
 :root {
@@ -35,9 +34,9 @@ h4 {
 body {
     color: var(--global_font_color);
     background-color: var(--body_color);
-    font-family: $fontFamily;
+    font-family: var(--font-family), serif;
     margin: 0;
     width: 100%;
     min-height: 100%;
-    font-size: $fontSize;
+    font-size: var(--font-size);
 }   
