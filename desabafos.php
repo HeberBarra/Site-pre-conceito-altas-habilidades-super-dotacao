@@ -9,8 +9,8 @@
     <title>Desabafos</title>
     <script src="javascript/change_theme.js" defer></script>
     <script src="javascript/desabafo_scripts.js" defer></script>
-    <link rel="stylesheet" href="_css/commonStyle.css">
-    <link rel="stylesheet" href="_css/desabafos.css">
+    <link rel="stylesheet" href="css/commonStyle.css">
+    <link rel="stylesheet" href="css/desabafos.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
     </header>
     <main>
         <?php
-        require_once "databaseConnector.php";
+					include "databaseConnector.php";
         ?>
         <article>
             <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ter Altas Habilidades/Superdotação, por ter sofrido um certo grau de preconceito por ser inteligente, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Por favor, seja gentil e empático. "Faça o mal e terá tribulação, faça o bem e terá paz."</p>
@@ -68,6 +68,10 @@
                 <button id="enviar">Enviar</button>
             </form>
             <?php
+						if (!$conn) {
+							return;
+						}
+
             $username = isset($_POST["username"]) ? $_POST["username"] : NULL;
             $vent = isset($_POST["vent"]) ? $_POST["vent"] : NULL;
 
@@ -98,7 +102,11 @@
         </article>
         <article id="desabafos" style="margin-bottom: 1.3em;">
             <?php
-            $index = isset($_GET["index"]) ? $_GET["index"] : 1;
+						if (!$conn) {
+							return;
+						}
+				
+						$index = isset($_GET["index"]) ? $_GET["index"] : 1;
 						$sqlGetVents = "SELECT * FROM vents WHERE id > ((?) * 10)";
 						$getVentsStatment = $conn->prepare($sqlGetVents);
 						$getVentsStatment->bind_param("s", $index);
