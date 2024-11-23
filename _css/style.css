@@ -1,7 +1,56 @@
 @charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+/*Light theme*/ 
 
 :root {
+    --border_color: gray;
+    --item_background_color: white;
+    --alternative_background_color: lightgray;
+    --shadow_color: rgba(0, 0, 0, 0.4);
+    --body_color: lightblue;
+    --link_color: lightblue;
+    --alternative_link_color: blue;
+    --global_font_color: black;
     --font_size: 14pt;
+}
+
+/*Dark theme*/
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --border_color: white;
+        --item_background_color: rgb(80, 80, 87);
+        --alternative_background_color: lightgray;
+        --body_color: rgb(53, 52, 52);
+        --shadow_color: rgba(199, 193, 193, 0.4);
+        --link_color: aquamarine;
+        --alternative_link_color: cyan;
+        --global_font_color: white;
+    }
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body_color);
+    color: var(--global_font_color);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe > *{
+    color: var(--global_font_color);
 }
 
 a {
@@ -65,7 +114,7 @@ header div nav div.menu-item {
     border: solid var(--border_color);
     background-color: var(--item_background_color);
     width: 50%;
-    aspect-ratio: 10 / 1;
+    height: 20%;
 }
 
 header div#logo {
@@ -137,16 +186,48 @@ div#video-fatos_mitos {
     width: 90%;
 }
 
-div#video-fatos_mitos > *{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    aspect-ratio: 16 / 9;
+div#video-fatos_mitos > * { 
+    margin: 0;
+    width: 100%;
     border: solid var(--border_color);
     box-shadow: 5px 5px 5px var(--shadow_color);
-    color: var(--global_font_color);
+    background-color: var(--item_background_color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    div#video-fatos_mitos{
+        flex-direction: column;
+    }
+}
+
+
+div#video-fatos_mitos figure ul {
+    width: 100%;
+    display: grid;
+    grid-auto-rows: minmax(100%, 100%);
+    gap: 0.3em;
+    padding: 0.3em 0.3em 0 0.3em;
+}
+
+div#video-fatos_mitos figure ul li {
+    grid-row: 1;
+    width: 100%;
+}
+
+div#video-fatos_mitos figure ul li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+div#video-fatos_mitos figure video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
 
 nav {

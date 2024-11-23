@@ -5,61 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
-
-        /*Dark theme*/
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --border_color: white;
-                --item_background_color: rgb(80, 80, 87);
-                --alternative_background_color: lightgray;
-                --body_color: rgb(53, 52, 52);
-                --shadow_color: rgba(199, 193, 193, 0.4);
-                --link_color: aquamarine;
-                --alternative_link_color: cyan;
-                --global_font_color: white;
-            }
-        }
-
-        /*Light theme*/ 
-
-        @media (prefers-color-scheme: light) {  
-            :root {
-                --border_color: gray;
-                --item_background_color: white;
-                --alternative_background_color: lightgray;
-                --shadow_color: rgba(0, 0, 0, 0.4);
-                --body_color: lightblue;
-                --link_color: lightblue;
-                --alternative_link_color: blue;
-                --global_font_color: black;
-            }
-        }
-
-        body{
-            display: flex;
-            flex-direction: column;
-            background-color: var(--body_color);
-            color: var(--global_font_color);
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-        }
-
-        iframe > *{
-            color: var(--global_font_color);
-        }
-
-    </style>
-    <link rel="stylesheet" href="_css/style_mobile.css" media="screen and (max-width: 800px)">
-    <link rel="stylesheet" href="_css/style.css" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="_css/style.css">
     <script src="_javascript/global_scripts.js" defer></script>
     <script src="_javascript/scripts_index.js" defer></script>
+    <script src="_javascript/feather.js"></script>
     <title>Pre-conceito contra Super Dotação</title>
 </head>
 <body>
@@ -67,7 +16,7 @@
         <div id="logo">
             [logo]
         </div>
-        <h1><span class="one">Pre-Conceito</span> <span class="two">contra Altas Habilidades</span> / <span class="three">Super Dotação</span></h1>
+        <h1>Pre-Conceito contra Altas Habilidades/Super Dotação (AH/SD)</h1>
         <div id="menu-botao">
             <button id="botao_seguir">Parar de seguir</button>
             <nav #menu-principal>
@@ -82,28 +31,64 @@
                     </a>
                 </div>
             </nav>
-            <button id="botao_de_tema">Alternar tema</button>
+            <button id="botao_de_tema" style="width: 15%;height: 15%;"><i data-feather="sun"></i></button>
+            <script>
+                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.getElementById('botao_de_tema').innerHTML = '<i data-feather="moon"></i>'
+                }
+            </script>
         </div>
     </header>
 
     <main>
-        <h2><span class="one">A Invisibilidade</span> <span class="two">Sendo</span> <span class="three">Vísivel</span></h2>
+        <h2>A Invisibilidade Sendo Vísivel</h2>
 
         <article class="texto" id="texto-introdutorio">
-            <p>Aqui você pode contar todos os seus problemas e sua experiência como superdotado, e suas dificuldades de socializar com pessoas, as expectativas colocadas em cima de você, toda a pressão, mental que você sente como portador de Altas Habilidades. Também nós tentaremos combater o preconceito contra Altas Habilidades/Superdotação.</p>
+            <p>Aqui você pode contar todos os seus problemas e sua experiência como superdotado, e suas dificuldades de socializar com pessoas, as expectativas colocadas em cima de você, toda a pressão, mental que você sente como portador de Altas Habilidades. Também nós tentaremos combater o preconceito contra Altas Habilidades/Superdotação. Aqui apresentaremos alguns fatos e mitos sobre alunos superdotados, também mostraremos a visão e o preconceito dos professores alunos, por fim, diremos com realmente é ter Altas Habilidades.</p>
         </article>
 
         <img id="foto" src="_media/Foto.jpg">
 
         <article class="texto" id="texto-principal">
-            <p>Temos uma página para que você possa desabafar, contar o preconceito que você sofreu ou vive, e como você acha que as pessoas podem tratar aqueles que são superdotados. Aqui apresentaremos alguns fatos e mitos sobre alunos superdotados, também mostraremos a visão e o preconceito dos professores alunos, por fim, diremos com realmente é ter Altas Habilidades.</p>
+            <p></p>
         </article>
 
         <div id="video-fatos_mitos">
             <iframe src="fatos_mitos.html" frameborder="0" class="Verdades"></iframe>
-            <iframe src="_media/Why Gifted Kids Are Actually Special Needs (legendar  pro site).mp4" frameborder="0" autoplay="0">
-                Se você está lendo por causa de um erro do site por favor reporte esse problema a <a>href="mailto:heberferrirabarra@gmail.com">mim</a>>
-            </iframe>
+            <figure>
+                <video controls poster="_media/video_thumbnail.jpg" preload="metadata">
+                    <source type="video/mp4" src="_media/Why Gifted Kids Are Actually Special Needs.mp4">
+                    <track label="English" kind="subtitles" srclang="en" src="_subtitles/cc--aen (a.en).en.vtt">
+                </video>
+                <ul id="video-controls" class="controls" style="list-style: none;">
+                    <li><button id="play-pause" type="button">
+                        <i data-feather="play"></i>
+                    </button></li>
+                    <li><button id="reset_video" type="button">
+                        <i data-feather="repeat"></i>
+                    </button></li>
+                    <li><button id="mute_video" type="button">
+                        <i data-feather="volume-2"></i>
+                    </button></li>
+                    <li><button id="volume_increase" type="button">
+                        <i data-feather="plus"></i>
+                    </button></li>
+                    <li><button id="volume_decrease" type="button">
+                        <i data-feather="minus"></i>
+                    </button></li>
+                    <li><button id="subtitles" type="button">Legendas</button></li>
+                    <li><button id="fullscreen" type="button">
+                        <i data-feather="maximize"></i>
+                    </button></li>
+                    <script>
+                        feather.replace()
+                    </script>
+                </ul>
+                <progress id="video_progress_bar" value="0" min="0" style="width: 100%;height: 1em;"></progress>
+                <figcaption>
+                    <a href="https://www.youtube.com/watch?v=QUjYy4Ksy1E">Link para o vídeo original. Por favor suporte o canal do criador do vídeo</a>
+                </figcaption>
+            </figure>
         </div>
 
         <article class="texto" id="texto-secundario">
