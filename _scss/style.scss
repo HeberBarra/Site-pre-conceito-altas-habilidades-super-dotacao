@@ -50,13 +50,10 @@ img {
         height: 100%;
     }
 
-    * {
-        width: 100%;
-        border: solid var(--background_tertiary_color);
-    }
-
     iframe {
         margin-bottom: .3em;
+        width: 100%;
+        border: solid var(--background_tertiary_color);
     }
 }
 
@@ -85,7 +82,7 @@ nav#menu-inferior {
     div.item-menu-inferior {
         background-color: var(--background_tertiary_color);
         width: 100%;
-        height: 3em;
+        min-height: 100%;
     }
 
     a {
