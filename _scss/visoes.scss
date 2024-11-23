@@ -1,0 +1,76 @@
+@import "flexstyles";
+@import "variables"; 
+
+
+/*Light theme colors*/
+:root {
+    --background_primary_color: #ffffff;
+    --background_secondary_color: #0072bb;
+    --background_tertiary_color: #015d98;
+    --font_color: #000000;
+    --alternative_font_color: #ffffff;
+    --alternative_background_color: #00b0e6;
+    --link_color: #06724e;
+}
+
+/*Dark theme colors*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background_primary_color: #1f1b1b;
+        --font_color: #ffffff;
+        --link_color: #68f3c5;
+    }
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav#menu {
+    @include flexrow;
+
+    div.menu-item {
+        background-color: var(--background_secondary_color);
+        width: 100%;
+    
+        a {
+            @include flexcenter;
+
+            &:hover {
+                background-color: var(--alternative_background_color);
+            }
+        }
+    }
+}
+
+article {
+    color: var(--font_color);
+
+    h1 {
+        width: 100%;
+        background-color: var(--background_tertiary_color);
+        color: var(--alternative_font_color);
+        padding-left: .5em;
+    }
+
+    p, ul li {
+        font-size: $fontSize;
+        text-align: justify;
+        padding: .5em;
+        text-indent: .5em;
+    }
+}
+
+.nota {
+    text-decoration: underline;
+    color: var(--alternative_background_color);
+}
+
+.disclaimer {
+    background-color: var(--background_tertiary_color);
+    padding: .5em;
+    font-size: $fontSize;
+    color: var(--alternative_font_color);
+}
