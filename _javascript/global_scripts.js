@@ -104,22 +104,14 @@ function decideTheme() {
 getOriginalHrefs()
 decideTheme()
 
-themeButton.addEventListener("click", function () {
-    for (let a = 0; a < menuAnchors.length;a++) {
-        menuAnchors[a].href = originalHrefs[a] + `?theme=${theme}`;
-    }
+let truetheme = null
 
-    if (theme === 'dark') {
-        for (index in cssVariables) {
-            root.style.setProperty(`${cssVariables[index]}`, `${darkColors[index]}`);
-            console.log(`${cssVariables[index]}:`, `${darkColors[index]}`)
-        }
-        theme = 'light';
+themeButton.addEventListener("click", function() {
+    changeTheme();
+    if (theme === "dark") {
+        truetheme = "light";
     } else {
-        for (index in cssVariables) {
-            root.style.setProperty(`${cssVariables[index]}`, `${lightColors[index]}`);
-            console.log(`${cssVariables[index]}:`, `${lightColors[index]}`)
-            theme = 'dark';
-        }
+        truetheme = "dark";
     }
+    changeIframe(truetheme);
 })

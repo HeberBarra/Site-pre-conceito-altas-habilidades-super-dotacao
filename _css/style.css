@@ -111,7 +111,7 @@ div#video-fatos_mitos {
     width: 90%;
 }
 
-div#video-fatos_mitos > * {
+div#video-fatos_mitos > *{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,10 +119,13 @@ div#video-fatos_mitos > * {
     width: 50%;
     aspect-ratio: 16 / 9;
     border: solid var(--border_color);
-    background-color: var(--item_background_color);
     box-shadow: 5px 5px 5px var(--shadow_color);
     border-radius: 5%;
     color: var(--global_font_color);
+}
+
+div#video-fatos_mitos div#video {
+    background-color: var(--item_background_color);
 }
 
 nav {
