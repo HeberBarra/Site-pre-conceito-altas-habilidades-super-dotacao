@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+
+/*Formatação Menu*/
+
 nav#menu {
     display: flex;
     flex-direction: row;
@@ -33,6 +36,8 @@ nav#menu div.menu-item a span:hover {
     color: lightblue;
     text-decoration: underline;
 }
+
+/*Formatação article*/
 
 article {
     border: solid var(--border_color);
