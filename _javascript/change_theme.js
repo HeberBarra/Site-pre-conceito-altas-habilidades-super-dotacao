@@ -3,6 +3,7 @@ const themeButtonSymbol = document.querySelector("#botao_de_tema img");
 const themeButton = document.querySelector("#botao_de_tema");
 const rootElement = document.querySelector(":root");
 const iframeFactsMyths = document.querySelector("iframe");
+const mailSymbols = document.querySelectorAll(".mail_symbol");
 const cssVars = [
     {
         "name": "--background_primary_color",
@@ -17,6 +18,21 @@ const cssVars = [
         "values": ["#68f3c5", "#06724e"]
     }
 ];
+const changeMailSymbol = () => {
+    const mailSymbolsSrcs = [
+        "_media/feather-icons/lightTheme/mail.svg",
+        "_media/feather-icons/darkTheme/mail.svg"
+    ];
+    if (!mailSymbols) {
+        return;
+    }
+    if (window.localStorage.getItem("theme") == "light") {
+        mailSymbols.forEach(mail => mail.src = mailSymbolsSrcs[0]);
+    }
+    else {
+        mailSymbols.forEach(mail => mail.src = mailSymbolsSrcs[1]);
+    }
+};
 const changeThemeButton = () => {
     const buttonIcons = [
         "_media/feather-icons/lightTheme/sun.svg",
@@ -46,6 +62,7 @@ const changeSiteTheme = () => {
         colorIndex = 1;
     }
     changeThemeButton();
+    changeMailSymbol();
     if (iframeFactsMyths) {
         let originalSrc = iframeFactsMyths.src.split("?")[0];
         let currentTheme = window.localStorage.getItem("theme");
