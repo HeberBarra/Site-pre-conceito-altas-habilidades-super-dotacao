@@ -32,9 +32,8 @@ body {
 }
 
 nav#menu {
-    @include flexrow;
+    @include flexrow(center);
     justify-content: space-evenly;
-    align-items: center;
     
     div.menu-item {
         width: 100%;
@@ -128,7 +127,7 @@ article {
 }
 
 #buttons {
-    @include flexrow;
+    @include flexrow(unset);
     width: 90%;
     gap: 1em;
 }

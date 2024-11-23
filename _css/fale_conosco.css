@@ -6,6 +6,7 @@
   --alternative_background_color: #00b0e6;
   --font_color: #000000;
   --alternative_font_color: #ffffff;
+  --link-color: #06724e;
 }
 
 /*Dark theme colors*/
@@ -29,6 +30,7 @@ body {
 nav#menu {
   display: flex;
   flex-direction: row;
+  align-items: unset;
   width: 100%;
   text-align: center;
   justify-content: space-evenly;
@@ -74,4 +76,4 @@ article ul li {
 }
 article ul li * {
   color: var(--link_color);
-}/*# sourceMappingURL=fale_conosco.css.map */
+}

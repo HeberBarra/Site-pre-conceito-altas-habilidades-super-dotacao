@@ -26,6 +26,7 @@
 nav#menu {
   display: flex;
   flex-direction: row;
+  align-items: unset;
   width: 100%;
 }
 nav#menu div.menu-item {
@@ -67,4 +68,4 @@ article p, article ul li {
   padding: 0.5em;
   font-size: 1.2em;
   color: var(--alternative_font_color);
-}/*# sourceMappingURL=visoes.css.map */
+}

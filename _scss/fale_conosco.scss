@@ -9,6 +9,7 @@
     --alternative_background_color: #00b0e6;
     --font_color: #000000;
     --alternative_font_color: #ffffff;
+    --link-color: #06724e;
 }
 
 /*Dark theme colors*/
@@ -31,7 +32,7 @@ body {
 }
 
 nav#menu {
-    @include flexrow;
+    @include flexrow(unset);
     text-align: center;
     justify-content: space-evenly;
 
