@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão dos professores</title>
+    <style>
+            body {
+                background-color: lightgray;
+            }
+
+            div#menu {
+                display: flex;
+                position: absolute;
+                flex-direction: row;
+                left: 1028px;
+            }
+
+            div#menu div.menu-item {
+                border: solid white;
+                background-color: rgb(80, 80, 87);
+                width: 150px;
+                height: 75px;
+                text-align: center;
+                font-size: 15pt;
+            }
+
+            div#menu div.menu-item:hover {
+                background-color: gray;
+            }
+
+            div#menu div.menu-item a{
+                display: block;
+                position: relative;
+                top: 20px;
+                color: lightblue;
+                text-decoration: none;
+            }
+
+            div#menu div.menu-item a:hover {
+                color: white;
+                font-weight: bolder;
+            }
+            h1 {
+                display: block;
+                position: absolute;
+                left: 100px;
+                font-size: 27pt;
+                font-family: 'Times New Roman', sans-serif;
+            }
+
+            div#texto-visao {
+                display: block;
+                position: absolute;
+                top: 125px;
+                left: 100px;
+                border: solid white;
+                width: 1100px;
+                height: 700px;
+                background-color: rgb(80, 80, 87);
+                color: white;
+                font-size: 30pt;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+     <div id="menu">
+        <div class="menu-item">
+            <a href="../index.html">
+                Home
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="../fale_conosco.html">
+                Fale Conosco
+            </a>
+        </div>
+    </div>
+    <h1>Está é a visão dos professores: </h1>
+    <div id="texto-visao">
+         [visão dos professores]
+    </div>
+</body>
+</html>
