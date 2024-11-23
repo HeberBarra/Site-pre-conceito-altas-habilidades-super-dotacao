@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https:\\www.cep.pr.gov.br/sites/cep/themes/custom/cep_2022/favicon.ico">
     <title>Desabafos</title>
-    <script src="_javascript/change_theme.js" defer></script>
-    <script src="_javascript/desabafo_scripts.js" defer></script>
+    <script src="javascript/change_theme.js" defer></script>
+    <script src="javascript/desabafo_scripts.js" defer></script>
     <link rel="stylesheet" href="_css/commonStyle.css">
     <link rel="stylesheet" href="_css/desabafos.css">
 </head>
@@ -31,8 +31,8 @@
                 </a>
             </div>
             <div class="menu-item">
-                <button title="clique aqui para muder o tema do site" id="botao_de_tema">
-                    <img src="_media/feather-icons/lightTheme/sun.svg" alt="símbolo do botão de trocar o tema">
+                <button title="clique aqui para mudar o tema do site" id="botao_de_tema">
+                    <img src="img/feather-icons/light-theme/sun.svg" alt="símbolo do botão de trocar o tema">
                 </button>
             </div>
         </nav>

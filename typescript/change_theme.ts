@@ -21,8 +21,8 @@ const cssVars = [
 
 const changeMailSymbol = () => {
     const mailSymbolsSrcs = [
-        "_media/feather-icons/lightTheme/mail.svg",
-        "_media/feather-icons/darkTheme/mail.svg"
+        "img/feather-icons/light-theme/mail.svg",
+        "img/feather-icons/dark-theme/mail.svg"
     ]
     
     if (!mailSymbols) { return }
@@ -36,8 +36,8 @@ const changeMailSymbol = () => {
 
 const changeThemeButton = () => {
     const buttonIcons = [
-        "_media/feather-icons/lightTheme/sun.svg",
-        "_media/feather-icons/darkTheme/moon.svg"
+        "img/feather-icons/light-theme/sun.svg",
+        "img/feather-icons/dark-theme/moon.svg"
     ]
 
     if (!themeButtonSymbol) { return }
