@@ -3,7 +3,7 @@ const header:HTMLElement | null = document.querySelector("header")
 const spoilerParagraph:HTMLParagraphElement | null = document.querySelector("#spoiler-wrapper")
 const spoiler:HTMLSpanElement | null = document.querySelector(".spoiler")
 
-let toggleMenuFollow = true
+let toggleMenuFollow: boolean = true
 
 if (followButton && header) {
     followButton.addEventListener("click", () => {

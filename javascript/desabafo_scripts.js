@@ -13,7 +13,7 @@ for (let i = 0; i < placeholdersSpans.length; i++) {
         if (charCounters) {
             charCounters[i].innerText = `${desabafoInputs[i].value.length}`;
         }
-        if (desabafoInputs[i].value.length != 0) {
+        if (desabafoInputs[i].value.length !== 0) {
             placeholdersSpans[i].style.gridRow = gridRowValues[i];
             placeholdersSpans[i].style.color = "var(--font-color)";
         }
