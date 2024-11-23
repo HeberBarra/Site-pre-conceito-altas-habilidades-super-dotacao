@@ -7,6 +7,57 @@
     <title>Visão dos professores</title>
     <style>
             body {
+            background-color: rgb(139, 139, 145);
+        }
+
+        div#menu {
+            display: flex;
+            position: absolute;
+            flex-direction: row;
+            right: 1px;
+        }
+
+        div#menu div.menu-item {
+            border: 1px solid white;
+            background-color: rgb(80, 80, 87);
+            width: 145px;
+            height: 30px;
+            text-align: center;
+            font-size: 12pt;
+        }
+
+        div#menu div.menu-item a{
+            display: block;
+            position: relative;
+            top: 5px;
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        h1 {
+            display: block;
+            position: absolute;
+            top: 40px;
+            font-size: 13pt;
+        }
+
+        div#texto-visao {
+            display: block;
+            position: absolute;
+            background-color: rgb(80, 80, 87);
+            border: 1px solid white;
+            font-size: 11pt;
+            text-align: center;
+            color: white;
+            width: 99%;
+            height: 300px;
+            left: 1px;
+            top: 75px;
+        }
+
+        @media screen and (min-width: 900px) {
+            
+            body {
                 background-color: lightgray;
             }
 
@@ -42,6 +93,7 @@
                 color: white;
                 font-weight: bolder;
             }
+
             h1 {
                 display: block;
                 position: absolute;
@@ -63,6 +115,8 @@
                 font-size: 30pt;
                 text-align: center;
             }
+        }
+
     </style>
 </head>
 <body>
