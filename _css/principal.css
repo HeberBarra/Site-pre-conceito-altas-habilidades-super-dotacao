@@ -1,5 +1,6 @@
 @charset "UTF8";
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 body {
     background-color: lightgray;
@@ -96,7 +97,7 @@ article#texto_introdutorio h2 {
     position: absolute;
     top: -75px;
     left: 200px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 20pt;
     font-weight: bold;
 }
