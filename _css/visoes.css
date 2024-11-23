@@ -24,8 +24,8 @@ nav div.menu-item a {
 }
 
 nav div.menu-item a:hover {
-    background-color: var(alternative_background_color);
-    color: var(alternative_link_color);
+    background-color: var(--alternative_background_color);
+    color: var(--alternative_link_color);
 }
 
 article {
