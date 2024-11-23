@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="_css/style_mobile.css" media="screen and (max-width: 800px)">
     <link rel="stylesheet" href="_css/style.css" media="screen and (min-width: 800px)">
     <script src="_javascript/scripts_index.js" defer></script>
+    <script src="_javascript/global_scripts.js" defer></script>
     <title>Pre-conceito contra Super Dotação</title>
 </head>
 <body>
@@ -77,17 +78,17 @@
             <button id="botao_seguir">Parar de seguir</button>
             <nav #menu-principal>
                 <div class="menu-item">
-                    <a href=".\index.html" class="menu-link">
+                    <a href="index.html" class="menu-link" id="essa_pagina">
                         Home
                     </a>
                 </div>
                 <div class="menu-item">
-                    <a href=".\fale_conosco.html" class="menu-link">
+                    <a href="fale_conosco.html" class="menu-link">
                         Fale Conosco
                     </a>
                 </div>
             </nav>
-            <button>Alternar tema</button>
+            <button id="botao_de_tema">Alternar tema</button>
         </div>
     </header>
 
@@ -113,15 +114,7 @@
                 [video]
             </div>
         
-            <iframe src="" frameborder="0">
-                <p>Fatos e mitos sobre as Altas Habilidades e Super Dotação:</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nihil, dicta nesciunt magnam voluptatem architecto aliquid rem at saepe culpa enim nam ut debitis consectetur alias autem delectus perspiciatis voluptas.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere obcaecati architecto laboriosam amet quam consectetur, consequuntur eaque voluptatibus odio ipsum, recusandae dolore voluptatem quod doloribus in veniam quasi? Nisi!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nihil, dicta nesciunt magnam voluptatem architecto aliquid rem at saepe culpa enim nam ut debitis consectetur alias autem delectus perspiciatis voluptas.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere obcaecati architecto laboriosam amet quam consectetur, consequuntur eaque voluptatibus odio ipsum, recusandae dolore voluptatem quod doloribus in veniam quasi? Nisi!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nihil, dicta nesciunt magnam voluptatem architecto aliquid rem at saepe culpa enim nam ut debitis consectetur alias autem delectus perspiciatis voluptas.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere obcaecati architecto laboriosam amet quam consectetur, consequuntur eaque voluptatibus odio ipsum, recusandae dolore voluptatem quod doloribus in veniam quasi? Nisi!</p>
-            </iframe>
+            <iframe src="fatos_mitos.html?theme=dark" frameborder="0"></iframe>
         </div>
 
         <article class="texto" id="texto-secundario">
@@ -132,17 +125,17 @@
 
     <nav id="menu-inferior">
         <div class="item-menu-inferior">
-            <a href=".\esabafos.php" class="menu-link">
+            <a href="desabafos.php" class="menu-link">
                 Desabafe sobre alguma história de preconceito
             </a>
         </div>
         <div class="item-menu-inferior">
-            <a href=".\_visoes/estudantes.html" class="menu-link">
+            <a href="_visoes/estudantes.html" class="menu-link">
                 Conheça a visão dos estudantes
             </a>
         </div>
         <div class="item-menu-inferior">
-            <a href=".\_visoes/professores.html" class="menu-link">
+            <a href="_visoes/professores.html" class="menu-link">
                 Conheça a visão dos professores
             </a>
         </div>
