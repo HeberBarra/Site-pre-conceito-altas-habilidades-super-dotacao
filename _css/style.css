@@ -146,6 +146,11 @@ img#foto {
         height: 100%;
         border: solid var(--background_tertiary_color);
     }
+
+    #player {
+        grid-column: 3; 
+        grid-row: 1;
+    }
 }
 
 nav#menu-inferior {
