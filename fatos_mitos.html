@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <title>Fatos e Mitos sobre AH/SD</title>
     <style>
-        body {
-            background-color: rgb(80, 80, 87);
+        @media (prefers-color-scheme: light) {
+            body {
+                color: black;
+                background-color: white;
+            }
         }
-        p {
-            color: white;
-            font-size: 13pt;
-            text-align: justify;
-            text-indent: 20px;
-            padding: 2%;
+
+        @media (prefers-color-schme: dark) {
+            body {
+                color: white;
+                background-color: rgb( 80, 80, 87);
+            }
+        }
+
+        body{
+            margin: 0;
+            width: 100%;
+            min-height: 100%;
         }
     </style>
 </head>
