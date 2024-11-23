@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import "variables";
+@import "root_variables";
+@import "header_style";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+body {
+    background-color: var(--background_primary_color);
+    color: var(--font_color);
+}
+
+header {
+    h1 { @include commonHeaderStyle; }
+
+    nav { @include commonNavStyle; }
+}
+
+@media screen and (min-width: 800px) {
+    div#logo-image {
+        background: url("https://web.celepar.pr.gov.br/drupal/images/seed/logo-cep-105x105.png") no-repeat center;
+        background-size: 100% 100%;
+        width: 3em;
+        height: 3em;
+    }
+}
+
+article {
+    border: solid var(--background_tertiary_color);
+    border-radius: 1em;
+    font-size: $fontSize;
+    text-align: justify;
+    text-indent: 1em;
+    width: 90%;
+    padding: .3em;
+
+    a {
+        color: var(--link_color);
+    }
+}

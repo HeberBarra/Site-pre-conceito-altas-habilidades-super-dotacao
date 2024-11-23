@@ -1,4 +1,4 @@
-@mixin flexrow($items_alignment) {
+@mixin flexRow($items_alignment) {
     display: flex;
     flex-direction: row;
     align-items: $items_alignment;
@@ -6,11 +6,11 @@
 }
 
 @mixin flexColumn($items_aligment) {
-    @include flexrow($items_aligment);
+    @include flexRow($items_aligment);
     flex-direction: column;
 }
 
-@mixin flexcenter {
+@mixin flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;

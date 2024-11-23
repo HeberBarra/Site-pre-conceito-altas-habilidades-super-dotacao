@@ -1,9 +1,14 @@
+@import "root_variables";
+@import "flexstyles";
+
 @mixin commonHeaderStyle {
     padding: .5em;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     align-items: center;
     text-align: center;
+    color: var(--font_color);
+    background-color: var(--background_primary_color);
 
     div#logo-image {
         justify-self: center;
@@ -12,13 +17,13 @@
 }
 
 @mixin commonNavStyle {
-    @include flexrow(unset);
+    @include flexRow(unset);
 
     div.menu-item {
         width: 100%;
         
         * {
-            @include flexcenter;
+            @include flexCenter;
             color: var(--alternative_font_color);
             text-decoration: none;
             background-color: var(--background_tertiary_color);

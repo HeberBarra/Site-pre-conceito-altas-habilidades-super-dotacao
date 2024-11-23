@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 /*Light theme colors*/
 :root {
   --background_primary_color: #ffffff;
   --background_secondary_color: #0072bb;
   --background_tertiary_color: #015d98;
+  --alternative_background_color: #00b0e6;
   --font_color: #000000;
   --alternative_font_color: #ffffff;
-  --alternative_background_color: #00b0e6;
-  --link_color: #06724e;
+  --link-color: #06724e;
 }
 
 /*Dark theme colors*/
@@ -16,25 +15,6 @@
     --background_primary_color: #1f1b1b;
     --font_color: #ffffff;
     --link_color: #68f3c5;
-  }
-}
-* {
-  border: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Kdam Thmor Pro", "Times new Roman", Arial, serif;
-}
-
-body {
-  background-color: var(--background_primary_color);
-}
-
-@media screen and (min-width: 800px) {
-  div#logo-image {
-    background: url("https://web.celepar.pr.gov.br/drupal/images/seed/logo-cep-105x105.png") no-repeat center;
-    background-size: 100% 100%;
-    width: 3em;
-    height: 3em;
   }
 }
 h1 {
@@ -56,56 +36,20 @@ h2 {
 }
 
 header {
-  background-color: var(--background_primary_color);
   position: sticky;
   top: 0;
-}
-header nav {
-  display: flex;
-  flex-direction: row;
-  align-items: unset;
-  width: 100%;
-}
-header nav div.menu-item {
-  width: 100%;
-}
-header nav div.menu-item * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--alternative_font_color);
-  text-decoration: none;
-  background-color: var(--background_tertiary_color);
-  width: 100%;
-  height: 100%;
-  border: none;
-  font-size: 1.2em;
-}
-header nav div.menu-item *:hover, header nav div.menu-item *:hover * {
-  background-color: var(--alternative_background_color);
-}
-header nav div.menu-item img {
-  width: 1em;
 }
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  width: 100%;
+  flex-direction: column;
 }
 
 article.texto {
   margin: 0.5em;
-  border: solid var(--background_tertiary_color);
-  color: var(--font_color);
-  font-size: 1.2em;
-  text-align: justify;
-  padding: 0.3em;
-  text-indent: 1em;
-  width: 90%;
-}
-article.texto a {
-  color: var(--link_color);
 }
 article.texto b {
   color: var(--background_secondary_color);
@@ -124,8 +68,10 @@ img {
 @media screen and (max-width: 850px) {
   div#video-fatos_mitos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: 100%;
+    flex-direction: column;
     width: 90%;
     height: 100%;
   }
@@ -143,7 +89,7 @@ img {
     width: 90%;
     height: 20em;
     grid-template-columns: 49% 2% 49%;
-    grid-template-rows: 90% 2% 8%;
+    grid-template-rows: 100%;
   }
   div#video-fatos_mitos iframe {
     width: 100%;
@@ -152,16 +98,6 @@ img {
   }
   div#video-fatos_mitos #player {
     grid-column: 3;
-    grid-row: 1;
-  }
-  div#video-fatos_mitos button#mudar_audio {
-    grid-column: 3;
-    grid-row: 3;
-    border: solid var(--background_tertiary_color);
-  }
-  div#video-fatos_mitos .verdades {
-    grid-column: 1;
-    grid-row: 1;
   }
 }
 nav#menu-inferior {
@@ -180,7 +116,7 @@ nav#menu-inferior a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--alternative_font_color);
   text-decoration: none;
   height: 100%;
   padding: 0.2em;

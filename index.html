@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/commonStyle.css">
     <link rel="icon" type="image/x-icon" href="https:\\www.cep.pr.gov.br/sites/cep/themes/custom/cep_2022/favicon.ico">
     <script src="_javascript/change_theme.js" defer></script>
     <script src="_javascript/scripts_index.js" defer></script>
-    <script src="https://youtube.com/iframe_api"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <title>Pre-conceito contra Superdotação</title>
 </head>
 <body>
@@ -57,23 +56,7 @@
         </article>      
         <div id="video-fatos_mitos">        
             <iframe src="fatos_mitos.html" frameborder="0" class="Verdades"></iframe>
-            <div id="player"></div>
-            <script>
-                var player;
-                window.YT.ready( function onYoutubeIframeAPIReady() {
-                    player = new YT.Player('player', {
-                        height: '315',
-                        width: '560',
-                        videoId: 'QUjYy4Ksy1E',
-                        events: {
-                            'onStateChange': onPlayerStateChange
-                        }
-                    });
-                }
-                )
-            </script>
-           <audio src="_media/Why Gifted Kids Are Actually Special Needs.mp3" preload="auto" style="display: none;"></audio>
-            <button id="mudar_audio">Mudar idioma do áudio</button> 
+            <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/QUjYy4Ksy1E" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <article class="texto" id="texto-secundario">

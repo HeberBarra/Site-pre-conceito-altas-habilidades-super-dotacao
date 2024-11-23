@@ -1,0 +1,19 @@
+/*Light theme colors*/
+:root {
+    --background_primary_color: #ffffff;
+    --background_secondary_color: #0072bb;
+    --background_tertiary_color: #015d98;
+    --alternative_background_color: #00b0e6;
+    --font_color: #000000;
+    --alternative_font_color: #ffffff;
+    --link-color: #06724e;
+}
+
+/*Dark theme colors*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background_primary_color: #1f1b1b;
+        --font_color: #ffffff;
+        --link_color: #68f3c5;
+    }
+}
