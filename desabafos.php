@@ -55,6 +55,18 @@
                 };
 
                 if ($vent) {
+                    // replaces "script>" and "?php" with "code>" to prevent script injections
+                    $vent = str_ireplace(["script>", "?php"], "code>", $vent);
+                    
+                    // replaces <? with <code>
+                    $vent = str_ireplace("<?", "<code>", $vent);
+
+                    // replaces ? > with </code> to form a complete code tag
+                    $vent = str_ireplace("?>", "</code>", $vent);
+
+                    // removes whitespace, new lines (\n) and tabs from the start and end of `$vent`
+                    $vent = trim($vent, "\t\v\n ");
+
                     $sqlInsert = "INSERT INTO vents (username, vent) VALUES (?, ?)";
                     $insertIntoDatabase = $conn->prepare($sqlInsert);   
                     $insertIntoDatabase->bind_param('ss', $username, $vent);
@@ -63,7 +75,7 @@
                 };  
             ?>
         </article>
-        <article id="desabafos">
+        <article id="desabafos" style="margin-bottom: 1.3em;">
         <?php
             $index = isset($_GET["index"])?$_GET["index"]:1;
             $sqlGetVents = "SELECT * FROM vents WHERE id > (($index - 1) * 10)";
