@@ -1,7 +1,16 @@
 let btns = document.getElementsByTagName("button");
 let root = document.querySelector(":root");
 let toggleMenuFollow = true;
-let darkTheme = false
+let darkTheme = true;
+let anchors = document.getElementsByClassName("menu-link");
+let anchorsHref = [];
+
+function addOriginalHerfs() {
+    for (times = 0; times < 5; times++) {
+        anchorsHref.push(anchors[times].href);
+    }
+    console.log(anchorsHref);
+}
 
 btns[0].addEventListener("click", function() {
     let header = document.getElementsByTagName("header")[0];
@@ -40,4 +49,20 @@ btns[1].addEventListener("click", function() {
         darkTheme = true;
     }
 }
-)
+)   
+
+addOriginalHerfs()
+
+changeAnchors = function(theme) {
+    for (let times = 0; times < 5; times++) {
+        console.log(times)
+        console.log(anchors[times].href)
+        anchors[times].href = anchorsHref[times] + `\\?theme=${theme}`;
+        console.log(anchors[times].href)
+    }
+}
+
+let header = document.getElementsByTagName("header")[0];
+header.addEventListener("click", function() {
+    changeAnchors("dark")
+})
