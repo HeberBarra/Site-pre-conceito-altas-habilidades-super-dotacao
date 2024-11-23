@@ -19,14 +19,15 @@
             position: absolute;
             flex-direction: row;
             top:5px;
-            right: 1px;
+            left: 5%;
+            width: 90%;
         }   
 
         nav#menu div.menu-item {
             display: flex;
             border: 1px solid white;
             background-color: rgb(80, 80, 87);
-            width: 145px;
+            width: 300%;
             height: 30px;
             text-align: center;
             font-size: 12pt;
@@ -40,6 +41,10 @@
             text-decoration: none;
         }
 
+        header {
+            margin-bottom: 5%;
+        }
+
         header h1 {
             font-family: 'Lobster', cursive;
             font-size: 12pt;
@@ -48,9 +53,11 @@
         header div#foto_fundo {
             background: url("_imagens/Fundo_titulo_mobile.png");
             display: flex;
-            position: relative;
+            position: absolute;
             border: solid white;
-            top: 30px;
+            top: 4.5%;
+            left: 3%;
+            width: 94%;
             justify-content: center;
             align-items: center;
         }
@@ -75,12 +82,18 @@
 
         article {
             display: block;
+            position: fixed;
+            background-color: rgb(80, 80, 87);
+            border: solid white;
+            display: block;
             position: absolute;
             color: white;
-            right: 5px;
-            left: 5px;
-            padding-right: 5px;
-            padding-left: 5px;
+            width: 90%;
+            height: fit-content;
+            left: 3%;
+            right: 3%;
+            padding-right: 2%;
+            padding-left: 2%;   
         }
 
         article p.article_content {
@@ -88,42 +101,107 @@
         }
 
         article#texto_introdutorio {
-            border: solid white;
-            background-color: rgb(80, 80, 87);
-            width: fit-content;
-            height: fit-content;
-            top: 150px;
-            color: white;
+            top: 12%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: 35%;
         }
 
         article#texto_introdutorio h2 {
             position: absolute;
-            top: -70px;
+            top: -65px;
             font-family: 'Kdam Thmor Pro', sans-serif;
+            height: 50%;
+        }
+
+        div#foto {
+            display: flex;
+            position: absolute;
+            border: solid blue;
+            background-color: black;
+            aspect-ratio: 1/1;
+            top: 52%;
+            left: 5%;
+            right: 5%;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30pt;
         }
 
         article#texto_principal {
-            top: 490px;
-            border: solid white;
-            background-color: rgb(80, 80, 87);
-            width: fit-content;
-            height: fit-content; 
+            top: 92%;
+            height: 35%;
+            margin-top: 5%;
+            margin-bottom: 5%;
         }
 
         article#texto_secundario {
-            top: 815px;
-            border: solid white;
-            background-color: rgb(80, 80, 87);
+            top: 128%;
+            margin-top: 5%;
+            margin-bottom: 5%;
         }
 
         iframe {
             display: block;
             position: absolute;
-            top: 1000px; 
             border: solid white;
-            width: 95%;
-            right: 5px;
-            left: 5px; 
+            top: 148%;
+            width: 94%;
+            right: 3%;
+            left: 3%;
+            margin-top: 5%;
+            margin-bottom: 5%; 
+        }
+
+        div#video1 {
+            display: flex;
+            position: absolute;
+            background-color: black;
+            border: solid blue;
+            color: white;
+            left: 5%;
+            right: 5%;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 1 / 1;
+            top: 169%;
+            font-size: 30pt;
+        }
+
+        nav#menu_inferior {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            top: 212%;
+            margin-bottom: 5%;
+            width: 90%;
+            height: 45%;
+        }
+
+        nav#menu_inferior div.box_m2 {
+            display: flex;
+            position: relative;
+            width: 90%;
+            height: 15%;
+            left: 5%;
+            right: 5%;
+            background-color: rgb(80, 80, 87);
+            border: solid white;
+        }
+
+        nav#menu_inferior div.box_m2 a {
+            display: flex;
+            text-decoration: none;
+            color: lightblue;
+            width: inherit;
+            height: inherit;
+        }
+
+        nav#menu_inferior div.box_m2 p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
     </style>
@@ -157,6 +235,7 @@
         </div>
     </nav>
 
+
     <!--Texto introdutório-->
 
     <article id="texto_introdutorio">
@@ -169,7 +248,7 @@
         </p>
     </article>
 
-    <!--Texto principal-->
+        <!--Texto principal-->
 
     <article id="texto_principal">
         <h3 class="titulo_provisorio">[texto principal]</h3>
@@ -180,13 +259,13 @@
         </p>
     </article>
 
-    <!--Foto-->
+        <!--Foto-->
 
     <div id="foto">
         <p>[Foto]</p>
     </div>
 
-    <!--Texto secundário-->
+        <!--Texto secundário-->
 
     <article id="texto_secundario">
         <h3 class="titulo_provisorio">[texto secundário]</h3>
@@ -197,17 +276,16 @@
     <div id="video1">
         <p>[video]</p>
     </div>
-
-    <!--HTML do iframe para colocar a página de fatos e mitos na página principal-->
+        <!--HTML do iframe para colocar a página de fatos e mitos na página principal-->
 
     <iframe id="fatos_mitos" src="fatos_mitos.html" frameborder="0" ></iframe>
 
-    <!--HTML do menu inferior-->
+        <!--HTML do menu inferior-->
 
     <nav id="menu_inferior">
         <div class="box_m2">
             <a href="desabafos.html">
-               <p> Desabafe sobre alguma história de preconceito</p>
+                <p>Desabafe sobre alguma história de preconceito</p>
             </a>
         </div>
         <div class="box_m2">
