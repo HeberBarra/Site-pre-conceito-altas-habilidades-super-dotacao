@@ -1,49 +1,36 @@
 const url = window.location.href
-let root = document.querySelector(":root")
+const root = document.querySelector(":root")
 
-/*CSS Variables Names*/
+/*CSS Variables*/
+/*The first color in values is the dark mode color and second one is light mode color */
+const cssVariables = [
+    {
+        "variableName": "--body_color",
+        "values": ["rgb(80, 80, 87)", "white"]
+    },
+    {
+        "variableName": "--global_font_color",
+        "values": ["white", "black"]
+    }
+];
 
-cssVariables = [
-    "--body_color",
-    "--global_font_color"
-]
+const changeTheme = () => {
+    const parameters = url.split("?");
+    let colorIndex = 0
 
-/*Dark Theme Colors*/
-
-darkColors = [
-    "rgb(80, 80, 87)",
-    "white"
-]
-
-/*Light Theme Colors*/
-
-lightColors = [
-    "white",
-    "black"
-]
-
-changeTheme = function() {
-    const parameters = url.split("?")
     if (parameters.length === 1) {
         return;
-    }
+    };
 
     if (parameters[1] === "theme=dark") {
-        theme = "dark";
+        colorIndex = 0;
     } else {
-        theme = "light";
-    }
+        colorIndex = 1;
+    };
 
+    for (variable of cssVariables) {
+        root.style.setProperty(variable.variableName, variable.values[colorIndex]);
+    };
+};
 
-    if (theme === "dark") {
-        for (index in cssVariables) {
-            root.style.setProperty(cssVariables[index], darkColors[index]);
-        }
-    } else {
-        for (index in cssVariables) {
-            root.style.setProperty(cssVariables[index], lightColors[index]);
-        }
-    }
-
-}
-changeTheme()
+changeTheme();
