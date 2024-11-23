@@ -5,123 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+        :root {
+            --border_color: white;
+            --item_background_color: rgb(80, 80, 87);
+            --global_font_color: white;
+            --font_size_mobile: 13pt;
+            --font_size_pc: 14pt;
+        }
+
+
         body {
-            background-color: lightgray;
-        }
-
-        /*Formatação do menu*/
-        
-        div#menu {
             display: flex;
-            position: absolute;
-            flex-direction: row;
-            right: 1px;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(132, 163, 250);
+            color: var(--global_font_color);
         }
 
-        div#menu div.menu-item {
-            border: 1px solid white;
-            background-color: rgb(80, 80, 87);
-            width: 145px;
-            height: 30px;
-            text-align: center;
-            font-size: 12pt;
-        }
-
-        div#menu div.menu-item a {
-            display: block;
-            position: relative;
-            top: 5px;
-            color: lightblue;
-            text-decoration: none;
-        }
-
-        /*Formatação da área de contatos*/
-        div#contatos {
-            display: block;
-            position: absolute;
-            top: 45px;
-            left: 0px;
-            background-color: rgb(80, 80, 87);
-            width: 99%;
-            height: 270px;
-            border: 1px solid white;
-        }
-
-        div#contatos ul {
-            list-style: inside;
-        }
-
-        div#contatos li a {
-            color: lightblue;
-            padding-left: 4px;
-            padding-right: 4px;
-        }
-
-        h1 {
-            color: white;
-            font-size: 13pt;
-            padding-left: 5px;
-        }
-
-        p {
-            color: white;
-            text-indent: 20px;
-            text-align: justify;
-            padding-left: 2px;
-            padding-right: 2px;
-        }
-
-        @media screen and (min-width: 900px) {
-            
-            div#menu {
+        @media screen and (max-width: 800px) {
+            nav#menu {
                 display: flex;
-                position: absolute;
                 flex-direction: row;
-                left: 1028px;
+                width: 90%;
             }
 
-            div#menu div.menu-item {
-                border: solid white;
-                background-color: rgb(80, 80, 87);
-                width: 150px;
-                height: 75px;
-                text-align: center;
-                font-size: 15pt;
+            nav#menu div.menu-item {
+                border: solid var(--border_color);
+                background-color: var(--item_background_color);
+                width: 50%;
             }
 
-            div#menu div.menu-item:hover {
-                background-color: gray;
-            }
-
-            div#menu div.menu-item a{
-                display: block;
-                position: relative;
-                top: 20px;
-                color: lightblue;
+            nav#menu div.menu-item a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--global_font_color);
                 text-decoration: none;
+                width: 100%;
+                height: 100%;
             }
 
-            div#menu div.menu-item a:hover {
-                color: white;
-                font-weight: bolder;
+            article#contatos {
+                border: solid var(--border_color);
+                background-color: var(--item_background_color);
+                margin-top: 3%;
             }
 
-            /*Formatação área de contatos*/
-
-            div#contatos {
-                display: block;
-                position: absolute;
-                top: 100px;
-                left: 38px;
-                width: 1300px;
+            article#contatos h1 {
+                padding-left: 2%;
+                font-family: 'Times New Roman', Times, serif;
             }
 
-            h1 {
-                font-size: 17pt;
+            article#contatos p {
+                padding: 0 2% 0 2%;
+                text-align: justify;
+                text-indent: 5%;
             }
 
-            p {
-                font-size: 13pt;
+            article#contatos ul{
+                list-style: square;
+            }
+
+            article#contatos ul li a {
+                color: lightblue;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            nav#menu {
+                display: flex;
+                flex-direction: row;
+                width: 90%;
+            }
+
+            nav#menu div.menu-item {
+                border: solid var(--border_color);
+                width: 50%;
+                height: 50px;
+                background-color: var(--item_background_color);
+            }
+
+            nav#menu div.menu-item a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--global_font_color);
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                font-family: 'Kdam Thmor Pro', Arial;
+            }
+
+            nav#menu div.menu-item a:hover {
+                background-color: lightgray;
+            }
+
+            nav#menu div.menu-item a span:hover {
+                color: lightblue;
+                text-decoration: underline;
+            }
+
+            article#contatos {
+                background-color: var(--item_background_color);
+                border: solid var(--border_color);
+                margin-top: 1%;
+                width: 90%;
+            }
+
+            article#contatos h1 {
+                padding-left: 1%;
+            }
+
+            article#contatos p {
+                padding: 0 1% 0 1%;
+                text-align: justify;
+            }
+
+            article#contatos ul {
+                list-style: square;
+            }
+
+            article#contatos ul li a {
+                color: lightblue;
             }
         }
 
@@ -129,19 +136,19 @@
     <title>Fale conosco</title>
 </head>
 <body>
-    <div id="menu">
+    <nav id="menu">
         <div class="menu-item">
             <a href="index.html">
-                Home
+                <span>Home</span>
             </a>
         </div>
         <div class="menu-item">
             <a href="fale_conosco.html">
-                Fale Conosco
+                <span>Fale Conosco</span>
             </a>
         </div>
-    </div>
-    <div id="contatos">
+    </nav>
+    <article id="contatos">
         <h1>Forma de contato: </h1>
         <p>Atualmente a única forma de contato disponível é por e-mail, por favor apenas mandem algum e-mail caso realmente, por exemplo pedir a correção de alguma coisa ou pedir alguma coisa de importante relacionada ao site:</p>
         <ul>
@@ -156,6 +163,6 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </article>
 </body>
 </html>

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/*Formatação Header*/
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+header div#logo {
+    display: none;
+}
+
+header h1 {
+    font-size: var(--font_size_mobile);
+    font-family: 'Lobster', cursive, Arial;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+header nav div.menu-item {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 100%;   
+}
+
+header nav div.menu-item a {
+    display: flex;
+    color: var(--global_font_color);
+    text-decoration: none;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Formatação Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    font-size: var(--font_size_mobile);
+}
+
+main article h3, main div#video, main div#foto {
+    font-size: calc(var(--font_size_mobile) - 2pt);
+}
+
+/*Formatação Articles*/
+
+main article.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 90%;
+    height: fit-content;
+}
+
+main article.texto p {
+    text-align: justify;
+    padding: 0 2% 0 2%;
+    font-size: calc(var(--font_size_mobile) - 2pt);
+    text-indent: 5%;
+}
+
+/*Formatação foto*/
+
+main div#foto {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    display: flex;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0 3% 0;
+}
+
+/*Fatos e mitos + video*/
+
+main div#video-fatos_mitos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main div#video-fatos_mitos div#video{
+    display: flex;
+    width: 90%;
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    aspect-ratio: 16 / 9;
+    margin: 3% 0 3% 0;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#video-fatos_mitos iframe {
+    width: 90%;
+    border: solid var(--border_color);
+    margin: 3% 0 3% 0;
+}
+
+/*Formatação menu inferior*/
+
+footer nav#menu-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+footer nav#menu-inferior div.item-menu-inferior {
+    border: solid var(--border_color);
+    background-color: var(--item_background_color);
+    width: 90%;
+}
+
+footer nav#menu-inferior div.item-menu-inferior a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--global_font_color);
+    text-decoration: none;
+    font-size: calc(var(--font_size_mobile) - 2pt);
+    padding: 0 11% 0 11%;
+}
