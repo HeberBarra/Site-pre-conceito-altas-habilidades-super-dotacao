@@ -4,4 +4,4 @@
 *.txt
 *.css.map
 databaseConnector.php
-package.js
+package.json
