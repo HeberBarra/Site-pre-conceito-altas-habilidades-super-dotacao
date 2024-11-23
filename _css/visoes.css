@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 /*Light theme colors*/
 :root {
   --background_primary_color: #ffffff;
@@ -21,6 +22,7 @@
   border: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Kdam Thmor Pro", "Times new Roman", Arial, serif;
 }
 
 nav#menu {
@@ -37,6 +39,8 @@ nav#menu div.menu-item a {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--alternative_font_color);
+  text-decoration: none;
 }
 nav#menu div.menu-item a:hover {
   background-color: var(--alternative_background_color);

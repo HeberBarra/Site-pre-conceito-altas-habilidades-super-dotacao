@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import "flexstyles";
 @import "variables";
 
@@ -25,6 +26,7 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: $fontFamily;
 }
 
 body {
