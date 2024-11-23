@@ -11,14 +11,14 @@
 
         /*Formatação menu*/
 
-        div#menu {
+        nav#menu {
             display: flex;
             position: absolute;
             flex-direction: row;
             right: 1px;
         }
 
-        div#menu div.menu-item {
+        nav#menu div.menu-item {
             border: 1px solid white;
             background-color: rgb(80, 80, 87);
             width: 145px;
@@ -27,7 +27,7 @@
             font-size: 12pt;
         }
 
-        div#menu div.menu-item a {
+        nav#menu div.menu-item a {
             display: block;
             position: relative;
             top: 5px;
@@ -40,59 +40,87 @@
     <title>Super Dotação na Sociedade</title>
 </head>
 <body>
-    <div id="menu">
+    <header>
+
+        <!--Título principal-->
+        <h1>Pre-Conceito contra Altas Habilidades / Super Dotação</h1>
+
+        <!--Logo SRM AH/SD-->
+        <div id="logo">
+            [logo]
+        </div>
+    </header>
+
+     <!--HTML do menu principal-->
+    <nav id="menu">
         <div class="menu-item">
             <a href="index.html">
-                Home
-            </a>
+                <p>Home</p>
+            </a>  
         </div>
         <div class="menu-item">
             <a href="fale_conosco.html">
-                Fale Conosco
+                <p>Fale Conosco</p>
             </a>
         </div>
-    </div>
-    <h1>Pre-Conceito em Altas Habilidades</h1>
-    <div id="sub-titulo1">
+    </nav>
+
+    <!--Texto introdutório-->
+
+    <article id="texto_introdutorio">
         <h2>A invisibilidade sendo vísivel</h2>
-    </div>
-    <div id="texto_introdutorio">
-        [texto introdutório]
-    </div>
-    <div id="texto_principal">
-        [texto principal]
-    </div>
-    <div id="logo-foto">
+        <p>
+            [texto introdutório]
+        </p>
+    </article>
+
+    <!--Texto principal-->
+
+    <article id="texto_principal">
+        <p>
+            [texto principal]
+        </p>
+    </article>
+
+    <!--Foto-->
+
+    <div id="foto">
         <p>[Foto]</p>
     </div>
+
+    <!--Texto secundário-->
+
+    <article id="texto_secundario">
+        <p>
+            [texto secundário]
+        </p>
+    </article>
     <div id="video1">
         <p>[video]</p>
     </div>
-    <div id="texto_secundario">
-        <p>[texto2]</p>
-    </div>
-    <div id="fatos-mitos">
-        <iframe src="fatos_mitos.html" frameborder="0" ></iframe>
-    </div>
-    <div id="menu_inferior">
+
+    <!--HTML do iframe para colocar a página de fatos e mitos na página principal-->
+
+    <iframe id="fatos_mitos" src="fatos_mitos.html" frameborder="0" ></iframe>
+
+    <!--HTML do menu inferior-->
+
+    <nav id="menu_inferior">
         <div class="box_m2">
             <a href="desabafos.html">
-                Desabafe sobre alguma história de preconceito
+               <p> Desabafe sobre alguma história de preconceito</p>
             </a>
         </div>
         <div class="box_m2">
             <a href="visoes/estudantes.html">
-                Conheça a visão dos estudantes
+                <p>Conheça a visão dos estudantes</p>
             </a>
         </div>
         <div class="box_m2">
             <a href="visoes/professores.html">
-                Conheça a visão dos professores
+                <p>Conheça a visão dos professores</p>
             </a>
         </div>
-    </div>
-    <script id="__bs_script__">//<![CDATA[
-        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.10'><\/script>".replace("HOST", location.hostname));
-    //]]></script>
+    </nav>
 </body>
 </html>
