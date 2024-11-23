@@ -64,14 +64,9 @@ const getUnpreferredTheme = () => {
 };
 
 const getUrlTheme = () => {
-    const urlParameters = url.split("?");
-    if (urlParameters.length === 1) {
-        return;
-    };
-
-    if (urlParameters[1] === "theme=dark") {
+    if (url.includes("theme=dark")) {
         return "dark";
-    } else if (urlParameters[1] === "theme=light") {
+    } else if (url.includes("theme=light")) {
         return "light";
     } 
     
@@ -158,7 +153,7 @@ if (themeButton) {
         changeIframe(siteTheme)
         changeTheme(siteTheme)
 
-        if (siteTheme == "light") {
+        if (siteTheme === "light") {
             siteTheme = "dark";
         } else {
             siteTheme = "light";

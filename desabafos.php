@@ -137,9 +137,11 @@
                 );
             };
         ?>
-            <div id="buttons">
-                <button>Próxima Página</button><button>Voltar</button>
-            </div>
+            <form id="buttons" action="desabafos.php" method="get">
+                <input type="text" name="theme" style="display: none;" readonly value="light">
+                <button name="index">Próxima Página</button>
+                <button name="index">Voltar</button>
+            </form>
         </article>
     </main>
 </body>
