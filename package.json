@@ -1,0 +1,15 @@
+{
+  "name": "site-pre-conceito-altas-habilidades-super-dotacao",
+  "version": "2.0.0",
+  "description": "Site feito como projeto da sala de recursos multifuncionais de AH/SD.",
+  "scripts": {
+    "compile-scss": "sass --no-source-map scss:css --style compressed",
+    "compile-ts": "tsc"
+  },
+  "author": "Heber Ferreira Barra",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.81.0",
+    "typescript": "^5.7.2"
+  }
+}
