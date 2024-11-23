@@ -1,0 +1,69 @@
+@charset "UTF8";
+
+body {
+    background-color: lightgray;
+}
+
+body h2 {
+    font-family: 'Times new Roman' sans-serif;
+    font-size: 20pt;
+    font-weight: normal;
+    background-color: rgb(83, 83, 78);
+    color: white;
+    width: 400px;
+    border: solid white;
+    padding-left: 10px;
+}
+
+body p {
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+}
+
+div#menu ul{
+    background-color: rgb(83, 83, 78);
+    border: solid white;
+    height: 60px;
+    width: 500px;
+}
+
+div#texto_principal {
+    background-color: rgb(80, 80, 87);
+    width: 1325px;
+    height: 400px;
+    text-align: center;
+    font-size: 30pt;
+    color: white;
+    border: solid white;
+}
+
+div#logo-foto {
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    left: 1033px;
+    top: 280px;
+    border: solid blue;
+}
+
+div#texto_secundario {
+    background-color: rgb(21, 21, 163);
+    width: 1350px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: 1000px;
+}
+
+div#video1 {
+    width: 600px;
+    height: 400px;
+    background-color: rgb(80, 80, 87);
+    display: block;
+    position: absolute;
+    top: 570px;
+    left: 420px;
+}
