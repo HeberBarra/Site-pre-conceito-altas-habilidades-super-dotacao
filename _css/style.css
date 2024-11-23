@@ -53,7 +53,7 @@ iframe > *{
     color: var(--global_font_color);
 }
 
-a {
+a.menu-link, a.stylized-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +65,7 @@ a {
     font-size: calc(var(--font_size) - 2pt);
 }
 
-a:hover {
+a.menu-link:hover, a.stylized-link:hover {
     background-color: var(--alternative_background_color);
     color: var(--alternative_link_color);
 }
@@ -119,9 +119,20 @@ article {
     border: solid var(--border_color);
     background-color: var(--item_background_color);
     width: 90%;
+    height: 100%;
     border-radius: 5%;
     box-shadow: 5px 5px 5px var(--shadow_color);
     font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+}   
+
+article a {
+    color: var(--link_color);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: var(--alternative_link_color);
+    text-decoration: underline;
 }
 
 article p, h3 {
