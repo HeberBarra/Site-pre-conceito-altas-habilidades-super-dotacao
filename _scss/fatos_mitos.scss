@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import "variables";
+
+/*Light theme colors*/
+:root {
+    --body_color: #ffffff;
+    --global_font_color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-color: #1f1b1b;
+        --global_font_color: #ffffff;
+    }
+}
+
+.fato {
+    color: #0072bb;
+}
+
+.mito {
+    color: #eb3358;
+}
+
+p, h3 {
+    padding: 0 .3em;
+    text-indent: 5%;
+    text-align: justify;
+}
+
+h4 {
+    padding: 0 .3em;
+}
+
+body {
+    color: var(--global_font_color);
+    background-color: var(--body-color);
+    font-family: $fontFamily;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    font-size: $fontSize;
+}   
