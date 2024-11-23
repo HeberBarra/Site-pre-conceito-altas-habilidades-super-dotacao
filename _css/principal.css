@@ -4,31 +4,40 @@ body {
     background-color: lightgray;
 }
 
-body h2 {
-    font-family: 'Times new Roman' sans-serif;
-    font-size: 20pt;
-    font-weight: normal;
-    background-color: rgb(83, 83, 78);
-    color: white;
-    width: 400px;
-    border: solid white;
-    padding-left: 10px;
-}
-
 body p {
     font-size: 20pt;
     color: white;
     text-align: center;
 }
 
-div#menu ul{
-    background-color: rgb(83, 83, 78);
+div#sub-titulo1 h2{
+    display: block;
+    position: absolute;
+    top: 120px;
+    font-family: 'Times new Roman' sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+    width: 400px;
+    padding-left: 10px;
+}
+
+div#texto_introdutorio {
+    display: block;
+    position: absolute;
+    top: 200px;
+    background-color: rgb(80, 80, 87);
     border: solid white;
-    height: 60px;
-    width: 500px;
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+    width: 1325px;
+    height: 400px;
 }
 
 div#texto_principal {
+    display: block;
+    position: absolute;
+    top: 650px;
     background-color: rgb(80, 80, 87);
     width: 1325px;
     height: 400px;
@@ -45,25 +54,42 @@ div#logo-foto {
     display: block;
     position: absolute;
     left: 1033px;
-    top: 280px;
+    top: 540px;
     border: solid blue;
 }
 
 div#texto_secundario {
-    background-color: rgb(21, 21, 163);
-    width: 1350px;
+    border: solid white;
+    background-color: rgb(80, 80, 87);
+    width: 1325px;
     height: 200px;
     display: block;
     position: absolute;
-    top: 1000px;
+    top: 1080px;
 }
 
+
 div#video1 {
-    width: 600px;
+    border: solid white;
+    width: 650px;
     height: 400px;
-    background-color: rgb(80, 80, 87);
+    background-color: rgb(72, 72, 121);
     display: block;
     position: absolute;
-    top: 570px;
-    left: 420px;
+    top: 1300px;
+    left: 27px;
+}
+
+div#fatos-mitos {
+    border: solid white;
+    display: block;
+    position: absolute;
+    background-color: rgb(80, 80, 87);
+    width: 630px;
+    height: 401px;
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+    top: 1300px;
+    left: 700px;
 }
