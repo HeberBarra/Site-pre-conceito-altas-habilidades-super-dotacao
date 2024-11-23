@@ -1,228 +1,176 @@
 @charset "UTF8";
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
 
-/*Light theme*/ 
-
+/*Light theme colors*/
 :root {
-    --border_color: gray;
-    --item_background_color: white;
-    --alternative_background_color: lightgray;
-    --shadow_color: rgba(0, 0, 0, 0.4);
-    --body_color: lightblue;
-    --link_color: lightblue;
-    --alternative_link_color: blue;
-    --global_font_color: black;
-    --font_size: 14pt;
+    --background_primary_color: #ffffff;
+    --background_secondary_color: #0072bb;
+    --background_tertiary_color: #015d98;
+    --font_color: #000000;
+    --alternative_font_color: #ffffff;
+    --alternative_background_color: #00b0e6;
+    --link_color: #06724e;
 }
 
-/*Dark theme*/
-
+/*Dark theme colors*/
 @media (prefers-color-scheme: dark) {
     :root {
-        --border_color: white;
-        --item_background_color: rgb(80, 80, 87);
-        --alternative_background_color: lightgray;
-        --body_color: rgb(53, 52, 52);
-        --shadow_color: rgba(199, 193, 193, 0.4);
-        --link_color: aquamarine;
-        --alternative_link_color: cyan;
-        --global_font_color: white;
+        --background_primary_color: #1f1b1b;
+        --font_color: #ffffff;
+        --link_color: #68f3c5;
     }
 }
-    
+
 * {
+    border: 0;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
+    background-color: var(--background_primary_color);
+}
+
+@media screen and (min-width: 800px) {
+    div#logo-image {
+        background: url("https://web.celepar.pr.gov.br/drupal/images/seed/logo-cep-105x105.png") no-repeat center;
+        background-size: 100% 100%;
+        width: 3em;
+        height: 3em;
+    }
+}
+
+h1 {
     display: flex;
-    flex-direction: column;
-    background-color: var(--body_color);
-    color: var(--global_font_color);
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-}
-
-iframe > *{
-    color: var(--global_font_color);
-}
-
-a.menu-link, a.stylized-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--link_color);
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
-    font-size: calc(var(--font_size) - 2pt);
-}
-
-a.menu-link:hover, a.stylized-link:hover {
-    background-color: var(--alternative_background_color);
-    color: var(--alternative_link_color);
-}
-
-h1, h2 {
-    font-family: Roboto, 'Times new Roman', Arial, serif;
-}
-
-button {
-    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
-    font-size: calc(var(--font_size) - 4pt);
-    width: fit-content;
-    height: fit-content;
+    justify-content: space-evenly;
+    font-size: 2em;
+    color: var(--font_color);
+    font-weight: normal;
+    padding: .5em;
 }
 
 header {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    background-color: var(--item_background_color);
-    border-bottom: solid var(--border_color);
-    position: sticky;
-    top: 0;
+    background-color: var(--background_primary_color);
 }
 
-header h1 {
-    grid-row: 2;
-    width: 100%;
-}
-
-header nav {
-    width: 100%;
+nav#menu-principal {
+    background-color: var(--background_secondary_color);
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
-header nav div.menu-item {
-    border: solid var(--border_color);
+div.menu-item {
+   width: 100%;
+}
+
+div.menu-item > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     width: 100%;
     height: 100%;
+    background-color: #00000000;
+    color: var(--alternative_font_color);
+    font-size: 1.2em;
+}
+
+div.menu-item > *:hover {
+    background-color: var(--alternative_background_color);
+}
+
+h2 {
+    background: var(--background_tertiary_color); 
+    padding: .5em;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 
-article {
-    border: solid var(--border_color);
-    background-color: var(--item_background_color);
-    width: 90%;
-    height: 100%;
-    border-radius: 5%;
-    padding: 1.5%;
-    box-shadow: 5px 5px 5px var(--shadow_color);
-    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
-}   
-
-article a {
-    color: var(--link_color);
-    text-decoration: none;
-}
-
-article a:hover {
-    color: var(--alternative_link_color);
-    text-decoration: underline;
-}
-
-article p, h3 {
-    padding: 0 1% 0 1%;
-    text-indent: 5%;
-    font-size: var(--font_size);
+article.texto {
+    margin: .5em;
+    border: solid var(--background_tertiary_color);
+    color: var(--font_color);
+    font-size: 1.2em;
     text-align: justify;
-}
-
-h3 {
-    font-size: calc(var(--font_size) + 3pt);
-    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
-}
-
-img#foto {
-    display: inherit;
-    align-items: center;
-    justify-content: center;
-    border: solid var(--border_color);
-    background-color: var(--item_background_color);
-    width: 50%;
-    aspect-ratio: 16 / 9;
-    box-shadow: 5px 5px 5px var(--shadow_color);
-    border-radius: 5%;
-}
-
-div#video-fatos_mitos {
-    display: flex;
-    gap: 1em;
+    padding: .3em;
+    text-indent: 1em;
     width: 90%;
 }
 
-div#video-fatos_mitos > * { 
-    margin: 0;
-    width: 100%;
-    border: solid var(--border_color);
-    box-shadow: 5px 5px 5px var(--shadow_color);
-    background-color: var(--item_background_color);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+article.texto a {
+    color: var(--link_color);
 }
 
-@media screen and (max-width: 800px) {
-    div#video-fatos_mitos{
+img#foto {  
+    max-width: 60%;
+    border: solid var(--background_tertiary_color);
+    border-bottom: 10%;
+}
+
+@media screen and (max-width: 850px) {
+    div#video-fatos_mitos {
+        display: flex;
         flex-direction: column;
+        width: 90%;
+        height: 100%;
+        align-items: center;
+    }
+
+    div#video-fatos_mitos > * {
+        width: 100%;
+        border: solid var(--background_tertiary_color);
+    }
+
+    div#video-fatos_mitos iframe {
+        margin-bottom: 0.3em;
     }
 }
 
+@media screen and (min-width: 850px) {
+    div#video-fatos_mitos {
+        display: grid;
+        width: 90%;
+        height: 20em;
+        grid-template-columns: 49% 2% 49%;
+        grid-template-rows: 90% 2% 8%;
+    }
 
-div#video-fatos_mitos figure ul {
-    width: 100%;
-    display: grid;
-    grid-auto-rows: minmax(100%, 100%);
-    gap: 0.3em;
-    padding: 0.3em 0.3em 0 0.3em;
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: solid var(--background_tertiary_color);
+    }
 }
 
-div#video-fatos_mitos figure ul li {
-    grid-row: 1;
-    width: 100%;
+nav#menu-inferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-div#video-fatos_mitos figure ul li button {
+div.item-menu-inferior {
+    background-color: var(--background_tertiary_color);
+    width: 100%;
+    height: 3em;
+}
+
+div.item-menu-inferior a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    color: white;
+    text-decoration: none;
     height: 100%;
+    padding: .2em;
+    font-size: 1em;
 }
 
-div#video-fatos_mitos figure video {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-nav#menu-inferior div {
-    width: 100%;
-    border: solid var(--border_color);
-    background-color: var(--item_background_color);
-    box-shadow: 5px 5px 5px var(--shadow_color);
+div.item-menu-inferior a:hover {
+    background-color: var(--alternative_background_color);
 }
