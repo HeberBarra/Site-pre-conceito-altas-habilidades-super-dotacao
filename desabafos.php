@@ -99,8 +99,10 @@
         <article id="desabafos" style="margin-bottom: 1.3em;">
             <?php
             $index = isset($_GET["index"]) ? $_GET["index"] : 1;
-            $sqlGetVents = "SELECT * FROM vents WHERE id > (($index - 1) * 10)";
-            $ventComments = mysqli_query($conn, $sqlGetVents);
+						$sqlGetVents = "SELECT * FROM vents WHERE id > ((?) * 10)";
+						$getVentsStatment = $conn->prepare($sqlGetVents);
+						$getVentsStatment->bind_param("s", $index);
+            $ventComments = $getVentsStatment->execute();
             for ($i = ($index - 1) * 10; $i < $index * 10; $i++) {
                 $row = $ventComments->fetch_assoc();
                 if (!$row) {
