@@ -1912,371 +1912,371 @@ struggle, and so then the question
 becomes "Okay, like what do we do about it?"
 
 479
-00:15:01,360 --> 00:15:04,480
+00:15:00,734 --> 00:15:02,767
 So the first thing you should do if
 
 480
-00:15:02,480 --> 00:15:07,440
+00:15:02,768 --> 00:15:04,567
 you're a gifted kid is to stop
 
 481
-00:15:04,480 --> 00:15:09,199
+00:15:04,568 --> 00:15:07,367
 comparison, right? Like comparison is... is
 
 482
-00:15:07,440 --> 00:15:10,240
+00:15:07,368 --> 00:15:08,867
 the foundation of getting 
 
 483
-00:15:09,199 --> 00:15:11,920
+00:15:08,868 --> 00:15:09,700
 out of this problem,
 
 484
-00:15:10,240 --> 00:15:13,680
+00:15:09,701 --> 00:15:12,033
 because as long as you are comparing
 
 485
-00:15:11,920 --> 00:15:15,120
+00:15:12,034 --> 00:15:13,767
 yourself and this is part of the issue
 
 486
-00:15:13,680 --> 00:15:16,320
+00:15:13,768 --> 00:15:14,566
 is that if you think 
 
 487
-00:15:15,120 --> 00:15:18,399
+00:15:15,567 --> 00:15:15,633
 about the word gifted,
 
 488
-00:15:16,320 --> 00:15:20,800
+00:15:15,634 --> 00:15:18,598
 what does the word gifted imply, it is a
 
 489
-00:15:18,399 --> 00:15:23,199
+00:15:18,599 --> 00:15:20,033
 word that has no meaning
 
 490
-00:15:20,800 --> 00:15:25,199
+00:15:20,034 --> 00:15:23,432
 outside of a comparative framework, you
 
 491
-00:15:23,199 --> 00:15:27,040
+00:15:23,433 --> 00:15:25,366
 guys get that? The only way you can be
 
 492
-00:15:25,199 --> 00:15:28,639
+00:15:25,367 --> 00:15:26,767
 gifted is if there are other 
 
 493
-00:15:27,040 --> 00:15:30,560
+00:15:26,768 --> 00:15:28,867
 people who are not gifted,
 
 494
-00:15:28,639 --> 00:15:33,920
+00:15:28,868 --> 00:15:30,300
 and so essentially what happens is like
 
 495
-00:15:30,560 --> 00:15:36,800
+00:15:30,301 --> 00:15:33,567
 the whole idea of a gifted kid only
 
 496
-00:15:33,920 --> 00:15:38,639
+00:15:33,568 --> 00:15:36,400
 exists in relationship to another kid,
 
 497
-00:15:36,800 --> 00:15:40,720
+00:15:36,401 --> 00:15:38,867
 and so what we find in the minds of
 
 498
-00:15:38,639 --> 00:15:42,399
+00:15:38,868 --> 00:15:40,867
 gifted kids is that they're comparing
 
 499
-00:15:40,720 --> 00:15:43,759
+00:15:40,868 --> 00:15:42,765
 themselves all the time "Oh I don't want
 
 500
-00:15:42,399 --> 00:15:45,600
+00:15:42,766 --> 00:15:44,000
 to go to community college that's where
 
 501
-00:15:43,759 --> 00:15:47,040
+00:15:44,001 --> 00:15:45,667
 the stupid people go", "Oh I don't know
 
 502
-00:15:45,600 --> 00:15:49,199
+00:15:45,668 --> 00:15:47,100
 like why I can't do what my friend is
 
 503
-00:15:47,040 --> 00:15:51,040
-capable of like, he's able to do so much
+00:15:47,101 --> 00:15:49,033
+capable of, like, he's able to do so much
 
 504
-00:15:49,199 --> 00:15:53,759
+00:15:49,034 --> 00:15:51,267
 why am I not able to do so much?" "I have
 
 505
-00:15:51,040 --> 00:15:56,079
+00:15:51,268 --> 00:15:53,100
 an older sibling who did fantastic
 
 506
-00:15:53,759 --> 00:15:58,079
+00:15:53,101 --> 00:15:56,300
 and now I have big shoes to fill", right?
 
 507
-00:15:56,079 --> 00:16:01,040
+00:15:56,301 --> 00:15:58,067
 There's so much comparison, all of the
 
 508
-00:15:58,079 --> 00:16:02,720
+00:15:58,068 --> 00:16:01,167
 expectations that gifted kids have don't
 
 509
-00:16:01,040 --> 00:16:04,560
+00:16:01,168 --> 00:16:03,267
 come from themselves, right?
 
 510
-00:16:02,720 --> 00:16:06,880
+00:16:03,268 --> 00:16:04,700
 Because if you actually based your
 
 511
-00:16:04,560 --> 00:16:10,800
+00:16:04,700 --> 00:16:06,600
 expectations on what you're capable of,
 
 512
-00:16:06,880 --> 00:16:12,240
+00:16:06,601 --> 00:16:09,667
 you'd be capable of A, B, C, D, or an F,
 
 513
-00:16:10,800 --> 00:16:14,480
+00:16:09,668 --> 00:16:12,433
 that's what that would be a realistic
 
 514
-00:16:12,240 --> 00:16:16,320
+00:16:12,434 --> 00:16:14,567
 expectation, but instead you create these
 
 515
-00:16:14,480 --> 00:16:18,399
+00:16:14,568 --> 00:16:16,300
 artificial expectations that are based
 
 516
-00:16:16,320 --> 00:16:19,360
+00:16:16,301 --> 00:16:18,500
 on comparison and why do gifted kids do
 
 517
-00:16:18,399 --> 00:16:21,600
+00:16:18,501 --> 00:16:19,567
 that? Because it starts with their
 
 518
-00:16:19,360 --> 00:16:23,839
+00:16:19,568 --> 00:16:21,400
 parents, it starts with their teachers.
 
 519
-00:16:21,600 --> 00:16:26,079
+00:16:21,401 --> 00:16:24,033
 We're all told that we're gifted, which
 
 520
-00:16:23,839 --> 00:16:27,680
+00:16:24,034 --> 00:16:25,800
 is by definition a comparison 
 
 521
-00:16:26,079 --> 00:16:28,800
+00:16:25,801 --> 00:16:27,000
 to all of the other kids,
 
 522
-00:16:27,680 --> 00:16:30,720
+00:16:27,001 --> 00:16:29,133
 and so then what happens is you're
 
 523
-00:16:28,800 --> 00:16:32,560
+00:16:29,134 --> 00:16:30,800
 looking over at the shack, and you've got
 
 524
-00:16:30,720 --> 00:16:34,160
+00:16:30,801 --> 00:16:32,767
 this blueprint for a mansion and they
 
 525
-00:16:32,560 --> 00:16:35,519
+00:16:32,768 --> 00:16:34,333
 give you some wood and then you try to
 
 526
-00:16:34,160 --> 00:16:37,440
+00:16:34,334 --> 00:16:35,867
 build the mansion and like you don't
 
 527
-00:16:35,519 --> 00:16:39,120
+00:16:35,868 --> 00:16:37,500
 even have a roof, when this person has a
 
 528
-00:16:37,440 --> 00:16:40,800
+00:16:37,501 --> 00:16:39,367
 completely built shack, and then you kind
 
 529
-00:16:39,120 --> 00:16:42,880
+00:16:39,368 --> 00:16:40,900
 of look at yourself well like "Man I must
 
 530
-00:16:40,800 --> 00:16:44,800
+00:16:40,901 --> 00:16:43,167
 be like a super idiot", right like and
 
 531
-00:16:42,880 --> 00:16:46,240
+00:16:43,168 --> 00:16:44,867
 it's just it's so bizarre that when we
 
 532
-00:16:44,800 --> 00:16:48,320
+00:16:44,868 --> 00:16:46,466
 set up this kind of... when we start with
 
 533
-00:16:46,240 --> 00:16:50,240
+00:16:46,467 --> 00:16:47,767
 this framework of a comparison,
 
 534
-00:16:48,320 --> 00:16:52,000
+00:16:47,768 --> 00:16:50,300
 we sort of doom ourselves to failure,
 
 535
-00:16:50,240 --> 00:16:53,759
+00:16:50,301 --> 00:16:51,733
 because there's like... we're just...
 
 536
-00:16:52,000 --> 00:16:55,920
+00:16:51,734 --> 00:16:53,867
 it's just it's never going to work,
 
 537
-00:16:53,759 --> 00:16:58,240
+00:16:53,868 --> 00:16:54,967
 because you can't ever
 
 538
-00:16:55,920 --> 00:16:59,920
+00:16:54,968 --> 00:16:58,467
 base the expectations of your life and
 
 539
-00:16:58,240 --> 00:17:01,600
+00:16:58,468 --> 00:17:00,066
 what you're capable of based on what
 
 540
-00:16:59,920 --> 00:17:00,000
+00:17:00,067 --> 00:17:02,033
 someone else is doing, right?
 
 541
-00:17:01,600 --> 00:17:05,520
+00:17:02,034 --> 00:17:03,734
 If someone else is happy studying
 
 542
-00:17:03,759 --> 00:17:06,799
+00:17:03,735 --> 00:17:05,700
 chemical engineering it doesn't mean
 
 543
-00:17:05,520 --> 00:17:09,039
+00:17:05,701 --> 00:17:07,032
 that you're going to be happy studying
 
 544
-00:17:06,799 --> 00:17:10,799
+00:17:07,033 --> 00:17:09,167
 chemical engineering. If somebody else is
 
 545
-00:17:09,039 --> 00:17:11,839
+00:17:09,168 --> 00:17:10,867
 happy dating someone of the opposite sex
 
 546
-00:17:10,799 --> 00:17:14,160
+00:17:10,868 --> 00:17:12,067
 it doesn't mean that you're going to be
 
 547
-00:17:11,839 --> 00:17:16,000
+00:17:12,068 --> 00:17:13,800
 happy dating someone of the opposite sex.
 
 548
-00:17:14,160 --> 00:17:18,240
+00:17:13,801 --> 00:17:16,398
 The whole point is as individuals, as
 
 549
-00:17:16,000 --> 00:17:19,520
+00:17:16,399 --> 00:17:18,500
 humans we're individuals and if you're a
 
 550
-00:17:18,240 --> 00:17:23,360
+00:17:18,501 --> 00:17:19,732
 gifted kid the first thing you've got to
 
 551
-00:17:19,520 --> 00:17:25,839
+00:17:19,733 --> 00:17:21,767
 do is let go of all comparison.
 
 552
-00:17:23,360 --> 00:17:28,079
+00:17:21,768 --> 00:17:25,467
 So next thing is to
 
 553
-00:17:25,839 --> 00:17:29,919
+00:17:25,468 --> 00:17:28,399
 recognize that your road is going to be
 
 554
-00:17:28,079 --> 00:17:32,559
+00:17:28,400 --> 00:17:29,900
 a rough one, right? So like when someone
 
 555
-00:17:29,919 --> 00:17:34,400
+00:17:29,901 --> 00:17:32,800
 sets out to build a mansion, they know in
 
 556
-00:17:32,559 --> 00:17:35,840
+00:17:32,801 --> 00:17:34,033
 their mind that like: "This is 
 
 557
-00:17:34,400 --> 00:17:38,480
+00:17:34,034 --> 00:17:35,367
 gonna take a while", right?
 
 558
-00:17:35,840 --> 00:17:39,919
+00:17:35,368 --> 00:17:38,667
 You can't expect to build a mansion in
 
 559
-00:17:38,480 --> 00:17:41,520
+00:17:38,668 --> 00:17:40,300
 the same amount of time it would take
 
 560
-00:17:39,919 --> 00:17:43,120
+00:17:40,301 --> 00:17:41,033
 someone to build a shack,
 
 561
-00:17:41,520 --> 00:17:45,520
+00:17:41,034 --> 00:17:43,133
 and so if you're a gifted kid and you
 
 562
-00:17:43,120 --> 00:17:46,640
+00:17:43,134 --> 00:17:44,000
 expect a lot 
 
 563
-00:17:45,520 --> 00:17:48,240
+00:17:44,001 --> 00:17:45,967
 from yourself, okay?
 
 564
-00:17:46,640 --> 00:17:50,799
+00:17:45,968 --> 00:17:48,300
 Recognize that this is going to be a
 
 565
-00:17:48,240 --> 00:17:52,960
+00:17:48,301 --> 00:17:50,667
 long road and the greater your potential
 
 566
-00:17:50,799 --> 00:17:54,640
+00:17:50,668 --> 00:17:53,067
 is the longer it's going to take for you
 
 567
-00:17:52,960 --> 00:17:56,720
+00:17:53,068 --> 00:17:54,900
 to get there, and this is something that
 
 568
-00:17:54,640 --> 00:17:59,360
+00:17:54,901 --> 00:17:56,767
 I can understand in hindsight, like so I
 
 569
-00:17:56,720 --> 00:18:01,840
+00:17:56,768 --> 00:17:59,433
 grew up as a gifted kid and was like in
 
 570
-00:17:59,360 --> 00:18:03,600
+00:17:59,434 --> 00:18:01,367
 you know the special classes or whatever,
 
 571
