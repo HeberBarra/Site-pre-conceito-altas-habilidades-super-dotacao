@@ -24,6 +24,7 @@ header div#logo {
     display: flex;
     position: absolute;
     top: 8px;
+    left: 7px;
     width: 175px; 
     height: 175px;
     background-color: black;

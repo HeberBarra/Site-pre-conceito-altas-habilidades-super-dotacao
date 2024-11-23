@@ -18,22 +18,24 @@
             display: flex;
             position: absolute;
             flex-direction: row;
+            top:5px;
             right: 1px;
-        }
+        }   
 
         nav#menu div.menu-item {
+            display: flex;
             border: 1px solid white;
             background-color: rgb(80, 80, 87);
             width: 145px;
             height: 30px;
             text-align: center;
             font-size: 12pt;
+            justify-content: center;
+            align-items: center;
         }
 
         nav#menu div.menu-item a {
-            display: block;
             position: relative;
-            top: 5px;
             color: lightblue;
             text-decoration: none;
         }
@@ -41,6 +43,27 @@
         header h1 {
             font-family: 'Lobster', cursive;
             font-size: 12pt;
+        }
+
+        header div#foto_fundo {
+            display: flex;
+            position: relative;
+            border: solid white;
+            top: 30px;
+        }
+
+        header div#logo {
+            display: flex;
+            position: absolute;
+            border: 1px solid blue;
+            background-color: black;
+            width: 60px;
+            height: 60px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            right: 165px;
+            top: 130px;                                                                                 0px;
         }
 
         article#texto_introdutorio h2 {
