@@ -16,6 +16,8 @@ header div#logo {
 header h1 {
     font-size: var(--font_size_mobile);
     font-family: 'Lobster', cursive, Arial;
+    border: solid var(--border_color);
+    background-image: url("../_imagens/fundo_titulo.jpg");
 }
 
 header nav {

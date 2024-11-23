@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /*Formatação header*/
 
 header {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
 }
 
 header div#logo {
@@ -13,7 +20,7 @@ header div#logo {
     align-items: center;
     justify-content: center;
     border: solid var(--border_color);
-    width: 10%;
+    width: 15%;
     background-color: var(--item_background_color);
     aspect-ratio: 1 / 1;
     margin-right: 1%;
@@ -21,7 +28,11 @@ header div#logo {
 
 header h1 {
     margin-top: 5%;
+    width: 80%;
     font-family: 'Lobster', cursive, Arial;
+    padding: 1%;
+    border: solid var(--border_color);
+    background-image: url("../_imagens/fundo_titulo.jpg");
 }
 
 header nav {
@@ -79,6 +90,7 @@ main article.texto {
     border: solid var(--border_color);
     background-color: var(--item_background_color);
     padding-left: 1%;
+    width: 90%;
 }
 
 main article.texto p {
@@ -89,7 +101,7 @@ main article.texto p {
 }
 
 main article#texto-introdutorio p, main article#texto-principal p{
-    width: 86%;
+    width: 84%;
 }
 
 main div#foto {
@@ -99,8 +111,8 @@ main div#foto {
     background-color: var(--item_background_color);
     width: 12%;
     aspect-ratio: 1 / 1;
-    top: 35%;
-    left: 87%;
+    top: 40%;
+    left: 82.8%;
     justify-content: center;
     align-items: center;
 }
@@ -134,7 +146,12 @@ main div#video-fatos_mitos div#video {
 
 /*Formatação footer*/
 
+footer {
+    width: 90%;
+}
+
 footer nav#menu-inferior {
+    width: 100%;
     margin-top: 1%;
 }
 
