@@ -99,7 +99,14 @@
                 };
 
                 if ($useremail & $vent) {
-                    $sqlAddToDatabase = "INSERT INTO $database VALUE (AUTO, $username, $useremail, $vent)";
+                    $stmt = $database->prepare("INSERT INTO $database VALUE (AUTO, :username, :useremail, :vent)";)
+
+                    $stmt->bindParam(':username', $username)
+                    $stmt->bindParam(':useremail', $useremail)
+                    $stmt->bindParam(':vent', $vent)
+
+                    $stmt->execute();
+
                     if (!$conn->query($sqlAddToDatabase)) {
                         throw new Exception("Desculpe mais um erro ocorreu ao enviar os dados ao banco de dados");
                     };
@@ -108,26 +115,8 @@
         </article>
         <article id="desabafos">
         <?php
-            $ventComments = [
-                [
-                    "id" => 1,
-                    "name" => "Fulano",
-                    "email" => "Fulano@hotmail.com",
-                    "vent" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id laudantium nobis illum excepturi esse, sequi quia non consequuntur soluta. Assumenda nemo consequuntur sint obcaecati aspernatur officiis vel quas debitis."
-                ],
-                [
-                    "id" => 2,
-                    "name" => "Anônimo",
-                    "email" => "maria@outlook.com",
-                    "vent" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid, itaque incidunt laudantium nobis error illo corrupti esse cumque nam in sunt pariatur placeat optio dignissimos possimus eligendi. Temporibus, perspiciatis."
-                ],
-                [
-                    "id" => 3,
-                    "name" => "Ciclano",
-                    "email" => "Ciclano@gmail.com",
-                    "vent" => "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ipsum hic veritatis. Hic ullam, quaerat veniam minus ex repellendus quia sunt doloribus unde illum, sit pariatur corporis nam libero nulla?"
-                ]
-            ];
+            $sqlGetVents = 'SELECT * FROM VENTS'
+            $ventComments = $sqlGetVents.execute()
             foreach ($ventComments as $comment) {
                 print(
                     "<div class='vent'>" . 
