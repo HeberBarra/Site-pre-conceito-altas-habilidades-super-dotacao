@@ -30,6 +30,11 @@
     }
 }
 
+* {
+    border: 0;
+    margin: 0;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -79,14 +84,23 @@ article {
     border-radius: 5%;
     box-shadow: 5px 5px 5px var(--shadow-color);
     font-size: var(--font-size);
+    padding: 1.5% 0;
 }
 
 article > * {
     padding: 0 1% 0 1%;
-    text-indent: 4%;
     font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    text-align: justify;
+}
+
+article p {
+    text-indent: 4%;
 }
 
 article h1 {
     font-size: calc(var(--font_size) + 4pt);
+}
+
+span.nota {
+    background-color:  rgba(87, 175, 146, 0.692);
 }
