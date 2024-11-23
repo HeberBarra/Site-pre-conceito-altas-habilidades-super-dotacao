@@ -30,14 +30,14 @@
             require_once "databaseConnector.php";
         ?>
         <article>
-            <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ter Altas Habillidades/Superdotação, por ter certo sofrido um certo grau de preconceito por ser inteligente, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Por favor, seja gentil e empático, eu apagarei qualquer desabafo que fuja do tema do site ou que seja má de índole, faça o mal e terá tribulação, faça o bem e terá paz.</p>
+            <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ter Altas Habilidades/Superdotação, por ter sofrido um certo grau de preconceito por ser inteligente, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Por favor, seja gentil e empático, eu apagarei qualquer desabafo que fuja do tema do site ou que seja má de índole. "Faça o mal e terá tribulação, faça o bem e terá paz."</p>
         </article>
         <article id="adicionar_desabafo">
             <h2>Adicionar desabafo: </h2>
             <form action="desabafos.php" method="post">
                 <label class="desabafo_field">
                     <input type="text" placeholder=" " name="username">
-                    <span class="placeholder">Seu nome/apelido (opcional e limite de 50 caracteres)</span>
+                    <span class="placeholder">Seu nome/apelido (opcional e limite de 40 caracteres)</span>
                 </label>
                 <span id="word_counter">Caracteres: <span id="word_num">0</span></span>
                 <label class="desabafo_field">
