@@ -113,16 +113,13 @@ div#video1 {
     left: 27px;
 }
 
-div#fatos-mitos {
+div#fatos-mitos iframe{
     border: solid white;
     display: block;
     position: absolute;
     background-color: rgb(80, 80, 87);
     width: 630px;
     height: 401px;
-    color: white;
-    font-size: 30pt;
-    text-align: center;
     top: 1300px;
     left: 700px;
 }
