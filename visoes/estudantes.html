@@ -8,7 +8,31 @@
     <style>
 
         body {
-            background-color: aquamarine;
+            background-color: rgb(80, 80, 87);
+        }
+
+        div#menu {
+            display: flex;
+            position: absolute;
+            flex-direction: row;
+            right: 5px;
+        }
+
+        div#menu div.menu-item {
+            border: 1px solid white;
+            background-color: rgb(80, 80, 87);
+            width: 10px;
+            height: auto;
+            text-align: center;
+            font-size: 12pt;
+        }
+
+        div#menu div.menu-item a{
+            display: block;
+            position: relative;
+            top: 20px;
+            color: lightblue;
+            text-decoration: none;
         }
 
         @media screen and (min-width: 900px) {
