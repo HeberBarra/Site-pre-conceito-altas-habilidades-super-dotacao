@@ -1,141 +1,158 @@
-@charset "UFT8";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-:root {
-    --font_size: 14pt;
+/*Header formating*/
+
+header, header h1, header nav, nav div.menu-item, div.menu-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
     border-bottom: solid var(--border_color);
+    background-color: var(--item_background_color);
+    height: 20%;
+}
+
+header h1 {
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+}
+
+nav div.menu-item {
+    width: 100%;
+    height: 100%;
+    border: solid var(--border_color);
     background-color: var(--item_background_color);
 }
 
-nav {
-    display: inherit;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 40%;
-}
-
-nav div {
-    border: solid var(--border_color);
-    width: 50%;
-    margin: 2% 0 2% 0;
-}
-
-nav div a {
-    display: flex;
-    color: var(--link_color);
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
-    font-size: calc(var(--font_size) - 2pt);
-}
-
-nav div a:hover {
-    color: var(--alternative_link_color);
+nav div.menu-item:hover {
     background-color: var(--alternative_background_color);
 }
 
-button {
-    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
-    font-size: calc(var(--font_size) - 4pt);
+nav div.menu-item a {
+    color: var(--link_color);
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+nav div.menu-item a:hover {
+    color: var(--alternative_link_color);
+}
+
+/*Main formating*/
+
+article h2 {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
 }
 
 main {
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 1em;
 }
 
 article {
+    width: 90%;
+    border-radius: 5%;
+    height: fit-content;
     border: solid var(--border_color);
     background-color: var(--item_background_color);
-    border-radius: 5%;
-    width: 90%;
-    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
 }
 
 article p {
-    padding: 0 2% 0 2%;
-    text-indent: 3%;
-    text-align: justify;
-    font-size: var(--font_size);
-}
-
-h1 {
-    font-size: calc(var(--font_size) + 3pt);
-    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
-}
-
-
-article#adicionar_desabafo form {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2%;
-}
-
-article form, h2 {
-    padding: 0 2% 0 2%;
-}
-
-.desabafo_field {
-    font-size: 13pt;
-    position: relative;
-    color: #222;
-    border-top: 20px solid transparent;
-}
-
-.desabafo_field input {
-    border: solid var(--border_color);
-    appearance: none;
-    padding: 12px;
-    border-radius: 3px;
-    width: 90%;
-    font-size: 13pt;
-}
-
-.desabafo_field .placeholder {
-    position: absolute;
-    left: 12px;
-    top: 22px;
-    transform: translateY(-50%);
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    transition: 
-        top 0.3s ease,
-        color 0.3s ease,
-        font-size 0.3s ease;
-}
-
-input:placeholder-shown + .placeholder, textarea:placeholder-shown + .placeholder{
-    display: none;   
-}
-
-input:not(:placeholder-shown) + .placeholder, textarea:not(:placeholder-shown) + .placeholder {
-    display: initial;
-    top: -10px;
-    font-size: 13pt;
     color: var(--global_font_color);
+    text-align: justify;
+    text-indent: 5%;
+    padding: 1%;
 }
 
-textarea {
-    width: 92.1%;
-    aspect-ratio: 4 / 1;
-    font-size: var(--font_size);
+article form {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.3em;
+}
+
+article form label {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100% 100%;
+    border: solid var(--border_color);
+    width: 96%;
+    justify-self: center;
+}
+
+article form label > * {
+    grid-row: 1;
+    grid-column: 1;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 button#enviar {
-    margin-top: 2%;
-    width: 40%;
+    width: 50%;
+    justify-self: center;
+    margin-bottom: 1%;
+}
+
+span.placeholder {
+    color: gray;
+}
+
+label input:not(:placeholder-shown) + span.placeholder {
+    position: relative;
+    color: var(--global_font_color);
+    top: -110%;
+}
+
+label textarea:not(:placeholder-shown) + span.placeholder {
+    position: relative;
+    color: var(--global_font_color);
+    top: -1.4em;
+}
+
+span#word_counter {
+    position: relative;
+    right: 2%;
+    top: 1.2em;
+    justify-self: flex-end;
+}
+
+/*Vents area*/
+
+article#desabafos {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+article#desabafos div {
+    display: grid;
+    width: 90%;
+    height: fit-content;
+    border: solid var(--border_color);
+}
+
+div#buttons {
+    display: flex;
+    flex-direction: row;
 }
