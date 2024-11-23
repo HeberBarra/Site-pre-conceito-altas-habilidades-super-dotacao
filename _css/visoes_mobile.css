@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+    --font_size: 12pt;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -18,6 +22,8 @@ nav div.menu-item a{
     align-items: center;
     color: var(--link_color);
     text-decoration: none;
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    font-size: calc(var(--font_size) - 2pt);
 }
 
 article {
@@ -31,4 +37,9 @@ article {
 article > * {
     text-indent: 4%;
     padding: 1%;
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+}
+
+h1 {
+    font-size: calc(var(--font_size) + 2pt);
 }

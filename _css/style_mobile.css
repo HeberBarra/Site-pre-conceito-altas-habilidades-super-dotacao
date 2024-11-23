@@ -1,5 +1,9 @@
 @charset "UTF8";
 
+:root {
+    --font_size: 12pt
+}
+
 /*Global tag formating*/
 
 a {
@@ -8,6 +12,17 @@ a {
     align-items: center;
     color: var(--link_color);
     text-decoration: none;
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    font-size: calc(var(--font_size) - 2pt);
+}
+
+h1, h2 {
+    font-family: 'Lobster', 'Times new Roman', Roboto, Arial, serif;
+}
+
+button {
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
+    font-size: calc(var(--font_size) - 4pt);
 }
 
 header {
@@ -70,11 +85,12 @@ article {
     background-color: var(--item_background_color);
     width: 90%;
     box-shadow: 5px 5px 5px var(--shadow_color);
+    font-family: 'Kdam Thmor Pro', 'Times new Roman', Arial, serif;
 }
 
 article > * {
     text-indent: 4%;
-    padding: 1%;
+    padding: 2%;
     text-align: justify;
 }
 
@@ -101,7 +117,7 @@ div#video-fatos_mitos > * {
     box-shadow: 5px 5px 5px var(--shadow_color);
 }
 
-div#video {
+#video {
     display: flex;
     justify-content: center;
     align-items: center;
