@@ -115,16 +115,20 @@
         </article>
         <article id="desabafos">
         <?php
+            $index = isset($_GET["index"])?$_GET["index"]:1
             $sqlGetVents = 'SELECT * FROM VENTS'
             $ventComments = $sqlGetVents.execute()
-            foreach ($ventComments as $comment) {
+            for ($i=($index - 1) * 10; $i <= $index * 10; $i++) {
+                if ($i == count($ventComments) - 1) {
+                    break
+                }
                 print(
                     "<div class='vent'>" . 
-                    "<h3>" . $comment["name"] . " #" . $comment["id"] . "</h3>" . 
-                    "<p>" . $comment["vent"] . "</p>" .
+                    "<h3>" . $ventComments[$i]["name"] . " #" . $ventComments[$i]["id"] . "</h3>" . 
+                    "<p>" . $ventComments[$i]["vent"] . "</p>" .
                     "</div>"
                 );
-            };
+            }
         ?>
             <form id="buttons" action="desabafos.php" method="get">
                 <input type="text" name="theme" style="display: none;" readonly value="light">

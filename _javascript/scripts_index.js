@@ -107,7 +107,13 @@ progressBar.addEventListener("click", (param) => {
 })
 
 subtitlesButton.addEventListener("click", () => {
-    giftedKidsVideo.textTracks[0].mode = 'showing'
+    if (giftedKidsVideo.textTracks[0].mode === 'showing') {
+        giftedKidsVideo.textTracks[0].mode = "hidden";
+        subtitlesButton.innerText = "Legendas";
+        return; 
+    }
+    giftedKidsVideo.textTracks[0].mode = "showing";
+    subtitlesButton.innerText = "Português";
 })
 
 fullscreenButton.addEventListener("click", () => {
