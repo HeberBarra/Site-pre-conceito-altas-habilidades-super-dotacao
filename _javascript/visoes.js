@@ -1,6 +1,7 @@
+"use strict";
 const noteButton = document.querySelector("#noteButton");
 const spanStatus = document.querySelectorAll("span")[1];
-const spanNotes = document.querySelectorAll("span");
+const spanNotes = document.querySelectorAll("span.nota");
 const buttonValues = ["Esconder Notas", "Mostrar Notas"];
 const statusValues = ["visíveis", "ocultas"];
 if (noteButton && spanStatus && spanNotes) {

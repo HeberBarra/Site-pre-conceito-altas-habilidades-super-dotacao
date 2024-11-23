@@ -1,0 +1,41 @@
+@mixin commonHeaderStyle {
+    padding: .5em;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    text-align: center;
+
+    div#logo-image {
+        justify-self: center;
+        grid-column: 1;
+    }
+}
+
+@mixin commonNavStyle {
+    @include flexrow(unset);
+
+    div.menu-item {
+        width: 100%;
+        
+        * {
+            @include flexcenter;
+            color: var(--alternative_font_color);
+            text-decoration: none;
+            background-color: var(--background_tertiary_color);
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: $fontSize;
+
+            &:hover {
+                &, *{
+                background-color: var(--alternative_background_color);
+                }               
+            }
+        }
+
+        img {
+            width: 1em;
+        }
+    }
+}

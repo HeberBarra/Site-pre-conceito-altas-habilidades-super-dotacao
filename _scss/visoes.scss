@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 @import "flexstyles";
-@import "variables"; 
+@import "variables";
+@import "header_style"; 
 
 /*Light theme colors*/
 :root {
@@ -29,22 +30,19 @@
     font-family: $fontFamily;
 }
 
-nav#menu {
-    @include flexrow(unset);
+body {
+    background-color: var(--background_primary_color);
+}
 
-    div.menu-item {
-        background-color: var(--background_secondary_color);
-        width: 100%;
+header {
     
-        a {
-            @include flexcenter;
-            color: var(--alternative_font_color);
-            text-decoration: none;
+    h1 {
+        @include commonHeaderStyle;
+        color: var(--font_color);
+    }
 
-            &:hover {
-                background-color: var(--alternative_background_color);
-            }
-        }
+    nav#menu {
+        @include commonNavStyle;
     }
 }
 
@@ -56,6 +54,11 @@ article {
         background-color: var(--background_tertiary_color);
         color: var(--alternative_font_color);
         padding-left: .5em;
+    }
+
+    h1#info_notas {
+        @include flexrow(unset);
+        justify-content: space-between;
     }
 
     p, ul li {
