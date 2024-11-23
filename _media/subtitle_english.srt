@@ -1,366 +1,366 @@
 1
-00:00:00,080 --> 00:00:04,400
+00:00:00,000 --> 00:00:02,267
 So "Oh boy I sure do love being perceived
 
 2
-00:00:02,320 --> 00:00:06,960
+00:00:02,268 --> 00:00:04,067
 as a gifted child, I hope I don't end up
 
 3
-00:00:04,400 --> 00:00:08,480
+00:00:04,068 --> 00:00:06,933
 as being a perfectionist... perfectionist
 
 4
-00:00:06,960 --> 00:00:10,160
+00:00:06,934 --> 00:00:07,900
 burnout with...
 
 5
-00:00:08,480 --> 00:00:12,240
+00:00:07,901 --> 00:00:09,967
 burnt out I suppose, with depression,
 
 6
-00:00:10,160 --> 00:00:14,400
+00:00:09,968 --> 00:00:12,030
 anxiety, unfulfilled expectations
 
 7
-00:00:12,240 --> 00:00:16,080
+00:00:12,031 --> 00:00:13,333
 and no real interests or goals".
 
 8
-00:00:14,400 --> 00:00:17,760
+00:00:13,334 --> 00:00:16,000
 So this is something that someone
 
 9
-00:00:16,080 --> 00:00:19,359
+00:00:16,001 --> 00:00:18,065
 cross-posted to our subreddit, you know
 
 10
-00:00:17,760 --> 00:00:23,279
+00:00:18,066 --> 00:00:19,433
 it's a meme. We've had a couple of
 
 11
-00:00:19,359 --> 00:00:23,279
+00:00:19,359 --> 00:00:25,860
 streams about burnout and gifted kids,
 so today what I'd like to talk to you
 
 12
-00:00:25,599 --> 00:00:32,960
+00:00:25,861 --> 00:00:27,767
 all a little bit about is
 
 13
-00:00:28,400 --> 00:00:34,640
+00:00:27,768 --> 00:00:33,031
 the pathway from gifted child to burnt
 
 14
-00:00:32,960 --> 00:00:37,040
+00:00:33,032 --> 00:00:34,100
 out perfectionist
 
 15
-00:00:34,640 --> 00:00:39,840
+00:00:34,101 --> 00:00:36,933
 as well as sort of the way that society
 
 16
-00:00:37,040 --> 00:00:41,120
+00:00:36,934 --> 00:00:39,600
 actually sets gifted children up 
 
 17
-00:00:39,840 --> 00:00:42,399
+00:00:39,601 --> 00:00:40,866
 to kind of fail
 
 18
-00:00:41,120 --> 00:00:45,200
+00:00:41,867 --> 00:00:42,900
 So I know it's kind of interesting, but
 
 19
-00:00:42,399 --> 00:00:47,440
+00:00:42,901 --> 00:00:45,033
 when we think about a gifted child
 
 20
-00:00:45,200 --> 00:00:49,600
+00:00:45,034 --> 00:00:47,567
 we think about we perceive
 
 21
-00:00:47,440 --> 00:00:51,199
+00:00:47,568 --> 00:00:49,067
 gifted as an advantage
 
 22
-00:00:49,600 --> 00:00:53,280
+00:00:49,068 --> 00:00:51,300
 but in my experience working with a lot
 
 23
-00:00:51,199 --> 00:00:55,039
+00:00:51,301 --> 00:00:53,467
 of gifted children, it's not always an
 
 24
-00:00:53,280 --> 00:00:56,640
+00:00:53,467 --> 00:00:54,900
 advantage and in fact often times
 
 25
-00:00:55,039 --> 00:00:58,000
+00:00:54,901 --> 00:00:55,833
 it can be a burden,
 
 26
-00:00:56,640 --> 00:00:59,039
+00:00:55,834 --> 00:00:58,167
 and so I've seen this a lot in our
 
 27
-00:00:58,000 --> 00:01:01,039
+00:00:58,168 --> 00:00:59,100
 community I've worked with a lot of
 
 28
-00:00:59,039 --> 00:01:02,879
+00:00:59,101 --> 00:01:01,533
 people who kind of fall into that this category,
 
 29
-00:01:01,039 --> 00:01:04,000
+00:01:01,534 --> 00:01:02,767
 I suppose I sort of fall 
 
 30
-00:01:02,879 --> 00:01:06,400
+00:01:02,768 --> 00:01:03,733
 into it as well.
 
 31
-00:01:04,000 --> 00:01:08,320
+00:01:03,734 --> 00:01:06,967
 Where I grew up kind of... I'm gifted, right?
 
 32
-00:01:06,400 --> 00:01:09,920
+00:01:06,968 --> 00:01:08,500
 So like school was easy for me, I
 
 33
-00:01:08,320 --> 00:01:11,280
+00:01:08,501 --> 00:01:09,733
 was told from a very young age 
 
 34
-00:01:09,920 --> 00:01:14,159
+00:01:09,734 --> 00:01:10,567
 that I was smart,
 
 35
-00:01:11,280 --> 00:01:16,080
+00:01:10,568 --> 00:01:13,400
 I was also kind of held accountable for
 
 36
-00:01:14,159 --> 00:01:18,720
+00:01:13,401 --> 00:01:16,100
 like... not studying, right? There like I'd
 
 37
-00:01:16,080 --> 00:01:21,600
+00:01:16,101 --> 00:01:17,800
 kind of like not study very much and
 
 38
-00:01:18,720 --> 00:01:23,680
+00:01:17,801 --> 00:01:21,167
 maybe get a B+ or an A-.
 
 39
-00:01:21,600 --> 00:01:25,040
+00:01:21,168 --> 00:01:23,733
 And my teachers would tell my parents
 
 40
-00:01:23,680 --> 00:01:26,400
+00:01:23,734 --> 00:01:25,267
 the same thing every single
 
 41
-00:01:25,040 --> 00:01:28,240
+00:01:25,268 --> 00:01:26,590
 parent-teacher conference, they'd always
 
 42
-00:01:26,400 --> 00:01:30,720
+00:01:26,591 --> 00:01:28,333
 say "well, if Alok look just applied
 
 43
-00:01:28,240 --> 00:01:31,840
+00:01:28,334 --> 00:01:30,500
 himself he would be the best 
 
 44
-00:01:30,720 --> 00:01:33,280
+00:01:30,501 --> 00:01:31,200
 student in the class",
 
 45
-00:01:31,840 --> 00:01:34,799
+00:01:31,201 --> 00:01:33,967
 "If he only just like studied more 
 
 46
-00:01:33,280 --> 00:01:35,920
+00:01:33,968 --> 00:01:34,833
 he'd be the best student in
 
 47
-00:01:34,799 --> 00:01:38,560
+00:01:34,834 --> 00:01:36,000
 the class", right, they were like "He's
 
 48
-00:01:35,920 --> 00:01:40,000
+00:01:36,001 --> 00:01:38,000
 super smart, he has a lot of potential",
 
 49
-00:01:38,560 --> 00:01:41,680
+00:01:38,001 --> 00:01:39,867
 right, so they use these words like... 
 
 50
-00:01:40,000 --> 00:01:43,680
+00:01:39,868 --> 00:01:41,933
 they talk about how smart I am, they talk
 
 51
-00:01:41,680 --> 00:01:45,520
+00:01:41,934 --> 00:01:43,667
 about all the potential I have, and if I
 
 52
-00:01:43,680 --> 00:01:46,640
+00:01:43,668 --> 00:01:45,765
 just applied myself I'd be you know... 
 
 53
-00:01:45,520 --> 00:01:49,119
+00:01:45,766 --> 00:01:46,933
 I'd be such a...
 
 54
-00:01:46,640 --> 00:01:48,000
+00:01:46,934 --> 00:01:48,267
 I'd be the best student.
 
 55
-00:01:49,119 --> 00:01:53,280
+00:01:48,268 --> 00:01:50,500
 So it's kind of interesting because we
 
 56
-00:01:50,399 --> 00:01:55,119
+00:01:50,501 --> 00:01:52,767
 perceive giftedness as an advantage,
 
 57
-00:01:53,280 --> 00:01:56,159
+00:01:52,768 --> 00:01:55,200
 but as one of my teachers once told me
 
 58
-00:01:55,119 --> 00:01:57,200
+00:01:55,201 --> 00:01:56,125
 we'll kind of get to 
 
 59
-00:01:56,159 --> 00:01:59,360
+00:01:56,126 --> 00:01:56,867
 this towards the end,
 
 60
-00:01:57,200 --> 00:02:01,680
+00:01:56,868 --> 00:01:59,467
 they once explained to me that um... this
 
 61
-00:01:59,360 --> 00:02:02,960
+00:01:59,468 --> 00:02:01,900
 is in... in... not in medical school, but when
 
 62
-00:02:01,680 --> 00:02:04,719
+00:02:01,901 --> 00:02:03,133
 I was training to become a psychiatrist,
 
 63
-00:02:02,960 --> 00:02:06,960
+00:02:03,134 --> 00:02:04,533
 I had a supervisor who once told me that
 
 64
-00:02:04,719 --> 00:02:08,879
+00:02:04,534 --> 00:02:06,967
 gifted... gifted children are special needs
 
 65
-00:02:06,960 --> 00:02:11,520
+00:02:06,968 --> 00:02:08,900
 children and what that literally means
 
 66
-00:02:08,879 --> 00:02:13,440
+00:02:08,901 --> 00:02:11,667
 is that like the needs of a child who's
 
 67
-00:02:11,520 --> 00:02:15,599
+00:02:11,668 --> 00:02:13,664
 gifted are actually different from the
 
 68
-00:02:13,440 --> 00:02:17,840
+00:02:13,665 --> 00:02:15,667
 average child, and the parents who
 
 69
-00:02:15,599 --> 00:02:19,520
+00:02:15,668 --> 00:02:17,900
 recognize that and recognize that this
 
 70
-00:02:17,840 --> 00:02:20,720
+00:02:17,901 --> 00:02:19,731
 child is going to need like a slightly
 
 71
-00:02:19,520 --> 00:02:22,160
+00:02:19,732 --> 00:02:20,767
 different structure, a different
 
 72
-00:02:20,720 --> 00:02:24,400
+00:02:20,768 --> 00:02:22,333
 curriculum or a different way of being
 
 73
-00:02:22,160 --> 00:02:26,720
+00:02:22,334 --> 00:02:24,267
 raised, are the ones that end up sort of
 
 74
-00:02:24,400 --> 00:02:29,120
+00:02:24,268 --> 00:02:26,767
 doing a really good job, and oddly enough
 
 75
-00:02:26,720 --> 00:02:31,120
+00:02:26,768 --> 00:02:29,067
 in her clinical experience she found
 
 76
-00:02:29,120 --> 00:02:32,879
+00:02:29,068 --> 00:02:30,533
 that much like any other
 
 77
-00:02:31,120 --> 00:02:36,560
+00:02:30,534 --> 00:02:32,533
 special needs children um...
 
 78
-00:02:32,879 --> 00:02:38,480
+00:02:32,534 --> 00:02:34,900
 you know, kids that were not
 
 79
-00:02:36,560 --> 00:02:40,160
+00:02:34,901 --> 00:02:38,629
 treated... appropriately, despite their
 
 80
-00:02:38,480 --> 00:02:42,319
+00:02:38,630 --> 00:02:40,390
 gifts, were the ones that kind of
 
 81
-00:02:40,160 --> 00:02:43,760
+00:02:40,391 --> 00:02:42,467
 struggled. So this statement, when I first
 
 82
-00:02:42,319 --> 00:02:45,440
+00:02:42,468 --> 00:02:44,990
 heard it, I thought was like absolutely
 
 83
-00:02:43,760 --> 00:02:47,120
+00:02:43,991 --> 00:02:45,433
 ridiculous, kind of  blew my mind a little
 
 84
-00:02:45,440 --> 00:02:49,200
+00:02:45,434 --> 00:02:47,395
 bit, but I respected the supervisor a lot
 
 85
-00:02:47,120 --> 00:02:48,000
+00:02:47,396 --> 00:02:48,667
 and I started thinking about it.
 
 86
-00:02:49,200 --> 00:02:53,680
+00:02:48,668 --> 00:02:50,800
 So what I'd like to share with you all
 
 87
-00:02:50,720 --> 00:02:55,599
+00:02:50,801 --> 00:02:52,767
 today is sort of the pathway 
 
 88
-00:02:53,680 --> 00:02:57,440
+00:02:52,768 --> 00:02:55,067
 that a gifted child takes,
 
 89
-00:02:55,599 --> 00:02:59,280
+00:02:55,068 --> 00:02:57,533
 how a society treats them, how parents
 
 90
-00:02:57,440 --> 00:03:00,720
+00:02:57,334 --> 00:02:59,267
 treat them, the kind of struggles they
 
 91
-00:02:59,280 --> 00:03:01,920
+00:02:59,268 --> 00:03:00,967
 face, or the influences that they have,
 
 92
