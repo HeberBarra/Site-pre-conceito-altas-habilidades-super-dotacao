@@ -4,8 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
 
 body {
-    background-color: lightgray;
-    background: url("../fundo.jpg") top center fixed;
+    background: url("../_imagens/fundo.jpg") top center fixed;
     background-repeat: no-repeat;
 }
 
@@ -21,43 +20,40 @@ header {
     height: 300px;
 }
 
-header div#foto_fundo h1 {
-    display: block;
-    position: relative;
-    width: fit-content;
-    padding-left: 6px;
-    padding-right: 4px;
-    left: 0px;
-    font-family: 'Lobster', cursive;
-    font-weight: normal;
-    font-size: 27pt;
-}
-
 header div#logo {
-    display: block;
+    display: flex;
     position: absolute;
     top: 8px;
-    width: 196px; 
-    height: 196px;
+    width: 175px; 
+    height: 175px;
     background-color: black;
     border: 1px solid blue;
     color: white;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-size: 27pt;
 }
 
 header div#foto_fundo {
-    display: block;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     top: 0px;
     left: 200px;
-    border: 1px solid blue;
-    background-color: white;
+    border: solid white;
     width: 775px;
     height: 100px;
+    background: url("../_imagens/fundo.jpg");
+}
+
+header div#foto_fundo h1 {
+    display: block;
+    position: relative;
+    width: fit-content;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
     font-size: 27pt;
-    background: url("../fundo_titulo.jpg");
-    background-repeat: no-repeat;
 }
 
 /*Formatação do menu*/
@@ -88,7 +84,6 @@ nav#menu div.menu-item a{
     display: block;
     position: relative;
     top: -27px;
-    color: lightblue;
     text-decoration: none;
     height: 75px;
 }
@@ -97,6 +92,7 @@ nav#menu div.menu-item p {
     display: block;
     position: relative;
     top: 20px;
+    color: lightblue;
 }
 
 nav#menu div.menu-item p:hover {
@@ -104,7 +100,27 @@ nav#menu div.menu-item p:hover {
     font-weight: bolder;
 }
 
-/*Formatação do article do texto de introdução*/
+/*Formatação global dos articles*/
+
+article h3.titulo_provisorio {
+    /*Temporário*/
+    display: block;
+    position: relative;
+    font-size: 30pt;
+    color: white;
+}
+
+article p.article_content {
+    font-family: 'Nuosu SIL', serif;
+    font-size: 15pt;
+    color: white;
+    text-indent: 20px;
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*Formatação article texto introdutório*/
 
 article#texto_introdutorio {
     display: block;
@@ -128,23 +144,6 @@ article#texto_introdutorio h2 {
     color: white;
 }
 
-article#texto_introdutorio h3 {
-    /*Temporário*/
-    font-size: 30pt;
-    padding-left: 8px;
-    color: white;
-}
-
-article#texto_introdutorio p {
-    font-family: 'Nuosu SIL', serif;
-    font-size: 15pt;
-    color: white;
-    text-indent: 20px;
-    text-align: justify;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
 /*Formatação do article do texto principal*/
 
 article#texto_principal {
@@ -154,9 +153,6 @@ article#texto_principal {
     background-color: rgb(80, 80, 87);
     width: 1325px;
     height: 400px;
-    text-align: center;
-    font-size: 30pt;
-    color: white;
     border: solid white;
     box-shadow: 5px 5px 5px black;
 }
@@ -167,13 +163,15 @@ div#foto {
     height: 200px;
     width: 300px;
     background-color: black;
-    display: block;
+    display: flex;
     position: absolute;
     left: 1033px;
     top: 540px;
     border: solid blue;
     box-shadow: 5px 5px 5px black;
 }
+
+/*Formatação do article do texto secundário*/
 
 article#texto_secundario {
     border: solid white;
@@ -186,6 +184,7 @@ article#texto_secundario {
     box-shadow: 5px 5px 5px black;
 }
 
+/*Formatação video*/
 
 div#video1 {
     border: solid white;
@@ -198,6 +197,8 @@ div#video1 {
     left: 27px;
     box-shadow: 5px 5px 5px black;
 }
+
+/*Formatação iframe fatos e mitos*/
 
 iframe#fatos_mitos {
     border: solid white;
@@ -228,6 +229,7 @@ nav#menu_inferior div.box_m2 {
     font-size: 15pt;
     text-align: center;
     margin-bottom: 5px;
+    box-shadow: 5px 5px 5px black;
 }
 
 nav#menu_inferior div.box_m2:hover {
@@ -239,7 +241,6 @@ nav#menu_inferior div.box_m2 a {
     display: block;
     position: relative;
     top: -23px;
-    color: lightblue;
     text-decoration: none;
 }
 
@@ -253,4 +254,5 @@ nav#menu_inferior div.box_m2 a p {
     position: relative;
     top: 21px;
     font-size: 16pt;
+    color: lightblue;
 }
