@@ -2,6 +2,11 @@
 @import "root_variables";
 @import "variables";
 
+button {
+    background-color: transparent;
+    &:hover {background-color: var(--alternative_background_color);}
+}
+
 article {
     width: 100%;
     border: none;
