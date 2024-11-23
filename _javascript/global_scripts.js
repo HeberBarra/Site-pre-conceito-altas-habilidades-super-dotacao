@@ -1,153 +1,166 @@
 /*CSS Variables Names*/
+/*First color in values is the dark mode color and the second is the light mode color*/
 
 const cssVariables = [
-    '--border_color',
-    '--item_background_color',
-    '--alternative_background_color',
-    '--body_color',
-    '--shadow_color',
-    '--link_color',
-    '--alternative_link_color',
-    '--global_font_color'
-];
-
-/*Dark Theme Colors*/
-
-const darkColors = [
-    'white', /*--border color*/
-    'rgb(80, 80, 87)', /*--item_background_color*/
-    'lightgray', /*--alternative_background_color*/
-    'rgb(53, 52, 52)', /*--body_color*/
-    'rgba(199, 193, 193, 0.4)', /*--shadow_color*/
-    'aquamarine', /*--link_color*/
-    'cyan', /*alternative_link_color*/
-    'white' /*--global_font_color*/
-];
-
-/*Light Theme Colors*/
-
-const lightColors = [
-    'gray', /*--border_color*/
-    'white', /*--item_background_color*/
-    'lightgray', /*--alternative_background_color*/
-    'lightblue', /*--body_color*/
-    'rgba(0, 0, 0, 0.4)', /*--shadow_color*/
-    'lightblue', /*--link_color*/
-    'blue', /*--alternative_link_color*/
-    'black' /*--global_font_color*/
-];
-
-/*Anchors Variables*/
+    {
+        "variableName": "--border_color", 
+        "values": ["white", "gray"]
+    },
+    {
+        "variableName": "--item_background_color", 
+        "values": ["rgb(80, 80, 87)", "white"]
+    },
+    {
+        "variableName": "--alternative_background_color",
+        "values": ["lightgray", "lightgray"]
+    },
+    {
+        "variableName": "--body_color",
+        "values": ["rgb(53, 52, 52)", "lightblue"]
+    },
+    {
+        "variableName": "--shadow_color",
+        "values": ["rgba(199, 193, 193, 0.4)", "rgba(0, 0, 0, 0.4)"]
+    },
+    {
+        "variableName": "--link_color",
+        "values": ["aquamarine", "lightblue"]
+    },
+    {
+        "variableName": "--alternative_link_color",
+        "values": ["cyan", "blue"]
+    },
+    {
+        "variableName": "--global_font_color",
+        "values": ["white", "black"]
+    }
+]
 
 const menuAnchors = document.getElementsByClassName("menu-link");
 const originalHrefs = []
 const url = window.location.href
-
-/*Variables*/ 
-
-let themeButton = document.getElementById('botao_de_tema');
-let root = document.querySelector(':root');
+const themeButton = document.getElementById('botao_de_tema');
+const root = document.querySelector(':root');
+const iframe = document.getElementsByTagName("iframe")[0];
 let siteTheme = null;
-let iframe = document.getElementsByTagName("iframe")[0];
+
 
 /*Functions*/
 
-getOriginalHrefs = function() {
-    for (let i = 0; i < menuAnchors.length; i++) {
-        originalHrefs.push(menuAnchors[i].href)
-    }
-    console.table(originalHrefs)
-}
+const getOriginalHrefs = () => {
+    for (anchor of menuAnchors) {
+        originalHrefs.push(anchor.href);
+    };
+    console.table(originalHrefs);
+};
 
-getOriginalIframeSrc = function () {
-    if (!(iframe)) {
-        return;
-    }
 
-    return iframe.src.split('?')[0]
-}
-
-getCurrentTheme = function() {
+const getUnpreferredTheme = () => {
     if (matchMedia('(prefers-color-scheme: dark)').matches) {
         return 'light';
     }
 
-    return 'dark';  
-}
+    return 'dark';
+};
 
-getUrlTheme = function() {
-    let urlParameters = url.split('?');
+const getUrlTheme = () => {
+    const urlParameters = url.split("?");
     if (urlParameters.length === 1) {
         return;
-    }
+    };
 
     if (urlParameters[1] === "theme=dark") {
-        return 'dark';
-    }
-
-    return 'light';
-}
-
-changeAnchorsherfs = function(theme) {
-    for (let i = 0; i < menuAnchors.length; i++) {
-        menuAnchors[i].href = `${originalHrefs[i]}?theme=${theme}`;
+        return "dark";
+    } else if (urlParameters[1] === "theme=light") {
+        return "light";
     } 
-}
-
-changeTheme = function(colorList) {
-    for (let i = 0; i < cssVariables.length; i++) {
-        root.style.setProperty(cssVariables[i], colorList[i]);
-    }
-}
-
-changeIframe = function(theme) {
-    iframeSrc = getOriginalIframeSrc()
-    if (!(iframeSrc)) {
-        return;
-    }
-
-    iframe.src = `${iframeSrc}?theme=${theme}`;
-}
-
-changeThemeOnLoad = function() {
-    getOriginalHrefs()
-    siteTheme = getUrlTheme()
-    if(siteTheme != null) {
-        if (siteTheme === 'light') {
-            changeTheme(lightColors)
-            changeIframe('light')
-            changeAnchorsherfs('light')
-            siteTheme = 'dark';
-            return;
-        }
-
-        changeTheme(darkColors)
-        changeIframe('dark')
-        changeAnchorsherfs('dark')
-        siteTheme = 'light'
-        return;
-    }
     
-    siteTheme = getCurrentTheme()
+    return;
+};
+
+const changeAnchorsTheme = (theme) => {
+    for (let i=0; i < menuAnchors.length; i++) {
+        menuAnchors[i].href = `${originalHrefs[i]}?theme=${theme}`;
+    };
+};
+
+const changeIframe = (theme) => {
+    if (!(iframe)) {
+        return;
+    };
+    let originalSrc = iframe.src.split("?")[0];
+    iframe.src = `${originalSrc}?theme=${theme}`;
+};
+
+const changeTheme = (theme) => {
+    let colorIndex = 0
+
+    if (theme === "dark") {
+        colorIndex = 0
+    } else {
+        colorIndex = 1
+    }
+
+    for (variable of cssVariables) {
+        root.style.setProperty(variable.variableName, variable.values[colorIndex])
+    }
 }
 
-changeThemeOnLoad()
+const changeThemeButton = (theme) => {
+    if(!(themeButton)) {
+        return;
+    };
 
-if (themeButton != null) {
-    themeButton.addEventListener('click', function () {
-        changeAnchorsherfs(siteTheme)
+    if (theme === "dark") {
+        themeButton.innerHTML = "<i data-feather='moon'></i>"
+    } else {
+        themeButton.innerHTML = "<i data-feather='sun'></i>"
+    };
+
+    if(!(feather)) {
+        throw "Feather was not loaded!"
+    };
+
+    feather.replace();
+};
+
+const changeThemeOnLoad = () => {
+    getOriginalHrefs();
+    siteTheme = getUrlTheme();
+    if (siteTheme) {
+        changeTheme(siteTheme)
+        changeAnchorsTheme(siteTheme)
         changeIframe(siteTheme)
+        changeTheme(siteTheme)
+
+        if (siteTheme === "dark") {
+            siteTheme = "light"
+            return;
+        };
+
+        siteTheme = "dark"
+        return;
+    };
+    siteTheme = getUnpreferredTheme();
+};
+
+changeThemeOnLoad();
+if (siteTheme === "dark") {
+    changeThemeButton("light");
+} else {
+    changeThemeButton("dark");
+};
+
+if (themeButton) {
+    themeButton.addEventListener('click', function () {
+        changeThemeButton(siteTheme)
+        changeAnchorsTheme(siteTheme)
+        changeIframe(siteTheme)
+        changeTheme(siteTheme)
 
         if (siteTheme == "light") {
-            changeTheme(lightColors);
-            console.log('changed to light theme');
             siteTheme = "dark";
-            themeButton.innerHTML = '<i data-feather="sun"></i>'
         } else {
-            changeTheme(darkColors);
-            console.log('changed to dark theme');
             siteTheme = "light";
-            themeButton.innerHTML = '<i data-feather="moon"></i>'
         }
-        feather.replace()
-})}
+})};
