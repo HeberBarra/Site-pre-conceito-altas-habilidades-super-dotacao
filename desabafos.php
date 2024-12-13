@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https:\\www.cep.pr.gov.br/sites/cep/themes/custom/cep_2022/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://www.cep.pr.gov.br/sites/cep/themes/custom/cep_2022/favicon.ico">
     <title>Desabafos</title>
     <script src="javascript/change_theme.js" defer></script>
     <script src="javascript/desabafo_scripts.js" defer></script>
@@ -39,7 +39,7 @@
     </header>
     <main>
         <?php
-					include "databaseConnector.php";
+            include "databaseConnector.php";
         ?>
         <article>
             <p>Esta área do site foi construída para quem quiser desabafar ou relatar algum preconceito sofrido por alguém por ter Altas Habilidades/Superdotação, por ter sofrido um certo grau de preconceito por ser inteligente, eu considero de suma de importância que exista um lugar para que as pessoas possam desabafar e relatar esses acontecimentos. Por favor, seja gentil e empático. "Faça o mal e terá tribulação, faça o bem e terá paz."</p>
@@ -68,67 +68,76 @@
                 <button id="enviar">Enviar</button>
             </form>
             <?php
-						if (!$conn) {
-							return;
-						}
+                if (!$conn) {
+                    print("<script>window.alert('Página de desabafos indisponível')</script>");
+                }
 
-            $username = isset($_POST["username"]) ? $_POST["username"] : NULL;
-            $vent = isset($_POST["vent"]) ? $_POST["vent"] : NULL;
+                $username = $_POST["username"] ?? NULL;
+                $vent = $_POST["vent"] ?? NULL;
 
-            if ($username == "") {
-                $username = "Anônimo";
-            };
+                function saveVent($vent, $username) {
+                    global $conn;
+                    if (!$vent) return;
 
-            if ($vent) {
-                // replaces "script>" and "?php" with "code>" to prevent script injections
-                $vent = str_ireplace(["script>", "?php"], "code>", $vent);
+                    // replaces "script>" and "?php" with "code>" to prevent script injections
+                    $vent = str_ireplace(["script>", "?php"], "code>", $vent);
 
-                // replaces <? with <code>
-                $vent = str_ireplace("<?", "<code>", $vent);
+                    // replaces <? with <code>
+                    $vent = str_ireplace("<?", "<code>", $vent);
 
-                // replaces ? > with </code> to form a complete code tag
-                $vent = str_ireplace("?>", "</code>", $vent);
+                    // replaces ? > with </code> to form a complete code tag
+                    $vent = str_ireplace("?>", "</code>", $vent);
 
-                // removes whitespace, new lines (\n) and tabs from the start and end of `$vent`
-                $vent = trim($vent, "\t\v\n ");
+                    // removes whitespace, new lines (\n) and tabs from the start and end of `$vent`
+                    $vent = trim($vent, "\t\v\n ");
 
-                $sqlInsert = "INSERT INTO vents (username, vent) VALUES (?, ?)";
-                $insertIntoDatabase = $conn->prepare($sqlInsert);
-                $insertIntoDatabase->bind_param('ss', $username, $vent);
-                $insertIntoDatabase->execute();
-                $insertIntoDatabase->close();
-            };
+                    if ($username == "") {
+                        $username = "Anônimo";
+                    }
+
+                    $sqlInsert = "INSERT INTO tbVent (username_vent, vent) VALUES (?, ?)";
+                    $insertIntoDatabase = $conn->prepare($sqlInsert);
+                    $insertIntoDatabase->bind_param('ss', $username, $vent);
+                    $insertIntoDatabase->execute();
+                    $insertIntoDatabase->close();
+                }
+
+                saveVent($vent, $username);
             ?>
         </article>
-        <article id="desabafos" style="margin-bottom: 1.3em;">
+        <article id="desabafos">
             <?php
-						if (!$conn) {
-							return;
-						}
+                if (!$conn) {
+                    return;
+                }
 				
-						$index = isset($_GET["index"]) ? $_GET["index"] : 1;
-						$sqlGetVents = "SELECT * FROM vents WHERE id > ((?) * 10)";
-						$getVentsStatment = $conn->prepare($sqlGetVents);
-						$getVentsStatment->bind_param("s", $index);
-            $ventComments = $getVentsStatment->execute();
-            for ($i = ($index - 1) * 10; $i < $index * 10; $i++) {
-                $row = $ventComments->fetch_assoc();
-                if (!$row) {
-                    break;
-                };
-                print("<div class='vent' style='margin: .3em;'>" .
-                    "<h3>" . $row["username"] . " #" . $row["id"] . "</h3>" .
-                    "<p>" . $row["vent"] . "</p>" .
-                    "</div>"
-                );
-            };
+                $index = $_GET["index"] ?? 1;
+                $sqlGetVents = "SELECT * FROM tbVent WHERE id BETWEEN ((? - 1) * 10) AND ((? * 10) + 1)";
+                $getVentsStatment = $conn->prepare($sqlGetVents);
+                $getVentsStatment->bind_param("ii", $index, $index);
+                $getVentsStatment->execute();
+                $ventComments = $getVentsStatment->get_result();
+
+                for ($i = ($index - 1) * 10; $i < $index * 10; $i++) {
+                    $row = $ventComments->fetch_assoc();
+
+                    if (!$row) {
+                        break;
+                    }
+
+                    print("<div class='vent'>" .
+                        "<h3>" . $row["username_vent"] . " #" . $row["id"] . "</h3>" .
+                        "<p>" . $row["vent"] . "</p>" .
+                        "</div>"
+                    );
+                }
             ?>
             <form id="buttons" action="desabafos.php" method="get">
                 <?php
-                $nextIndex = $index + 1;
-                $priorIndex = $index == 1 ? 1 : $index - 1;
-                print("<button name='index' value=$priorIndex>Voltar</button>");
-                print("<button name='index' value=$nextIndex>Próxima Página</button>");
+                    $nextIndex = $index + 1;
+                    $priorIndex = $index == 1 ? 1 : $index - 1;
+                    print("<button name='index' value=$priorIndex>Voltar</button>");
+                    print("<button name='index' value=$nextIndex>Próxima Página</button>");
                 ?>
             </form>
         </article>

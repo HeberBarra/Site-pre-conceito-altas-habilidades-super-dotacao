@@ -99,9 +99,15 @@ main {
     }
 
     article#desabafos {
+        margin-bottom: 1.3em;
+
         form#buttons {
             @include flexstyles.flexRow(unset);
             justify-content: space-between;
+        }
+
+        div.vent {
+            margin: 0.3em;
         }
     }
 }

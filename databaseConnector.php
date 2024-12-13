@@ -1,11 +1,7 @@
 <?php
-	$host = getenv('MYSQL_HOST');
+	$host = "mysql-server";
 	$username = "usuario";
-	$password = getenv('MYSQL_SENHA_USUARIO');
+	$password = getenv("MYSQL_SENHA_USUARIO");
 	$database = getenv('MYSQL_DATABASE');
 
-	$conn = null;
-	try {
-		$conn = mysqli_connect($host, $username, $password, $database);
-	} catch(Exception $e) {}
-?>
+	$conn = new mysqli($host, $username, $password, $database);
