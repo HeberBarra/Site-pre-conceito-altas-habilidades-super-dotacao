@@ -79,16 +79,8 @@
                     global $conn;
                     if (!$vent) return;
 
-                    // replaces "script>" and "?php" with "code>" to prevent script injections
-                    $vent = str_ireplace(["script>", "?php"], "code>", $vent);
-
-                    // replaces <? with <code>
-                    $vent = str_ireplace("<?", "<code>", $vent);
-
-                    // replaces ? > with </code> to form a complete code tag
-                    $vent = str_ireplace("?>", "</code>", $vent);
-
-                    // removes whitespace, new lines (\n) and tabs from the start and end of `$vent`
+                    $vent = str_ireplace("<script>", "<code>", $vent);
+                    $vent = str_ireplace("</script>", "</code>", $vent);
                     $vent = trim($vent, "\t\v\n ");
 
                     if ($username == "") {
@@ -102,7 +94,7 @@
                     $insertIntoDatabase->close();
                 }
 
-                saveVent($vent, $username);
+                if ($conn) saveVent($vent, $username);
             ?>
         </article>
         <article id="desabafos">
