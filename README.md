@@ -8,3 +8,11 @@
 ***
 O primeiro design do site foi uma criação cojunta minha e dos outros estudantes que estão participando do projeto
 O design atual foi baseado no design do site ofical do Colégio Estadual do Paraná
+
+# Variáveis de Ambiente
+
+Para utilizar 100% da funcionalidade do site é necessário definir as seguintes variáveis de ambiente:
+
+* MYSQL_DATABASE
+* MYSQL_ROOT_PASSWORD
+* MYSQL_SENHA_USUARIO
