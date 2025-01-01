@@ -9,7 +9,7 @@
   "author": "Heber Ferreira Barra",
   "license": "MIT",
   "dependencies": {
-    "sass": "^1.81.0",
+    "sass": "^1.83.0",
     "typescript": "^5.7.2"
   }
 }
