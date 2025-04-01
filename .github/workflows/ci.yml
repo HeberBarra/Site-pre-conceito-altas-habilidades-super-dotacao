@@ -27,7 +27,7 @@ jobs:
       - name: Create ZIP file
         run: zip -r Site-pre-conceito-AHSD.zip LICENSE README.md *.html *.php visoes/ Dockerfile docker-compose.yaml javascript/ css/ database/ img/
       - name: Save ZIP file
-        uses: actions/upload-artifact@v4.6.1
+        uses: actions/upload-artifact@v4.6.2
         with:
           path: ./Site-pre-conceito-AHSD.zip
           name: Site-pre-conceito-AHSD.zip
